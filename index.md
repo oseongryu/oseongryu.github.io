@@ -5,4 +5,12 @@
 layout: home
 ---
 
-React Native Manual
+home
+
+```java
+public class TestCode {
+
+    public static void main(String[] args) throws UnsupportedEncodingException{
+    }
+}
+```
