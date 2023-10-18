@@ -1,4 +1,4 @@
----layout: defaultparent: tiltitle: [Android].mdnav_order: 1---## Table of contents{: .no_toc .text-delta }1. TOC{:toc}---### 안드로이드 단축키
+---layout: defaultparent: tiltitle: [Android]nav_order: 1---## Table of contents{: .no_toc .text-delta }1. TOC{:toc}---### 안드로이드 단축키
 
 ```
 Ctrl +  Alt + L : 코드정렬

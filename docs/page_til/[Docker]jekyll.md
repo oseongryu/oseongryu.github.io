@@ -1,4 +1,4 @@
----layout: defaultparent: tiltitle: [Docker]jekyll.mdnav_order: 1---## Table of contents{: .no_toc .text-delta }1. TOC{:toc}---### CentOS 설치
+---layout: defaultparent: tiltitle: [Docker]jekyllnav_order: 1---## Table of contents{: .no_toc .text-delta }1. TOC{:toc}---### CentOS 설치
 ```
 docker pull centos:7.9.2009
 docker run -it --name centos-jekyll -p 8088:8088 centos:7.9.2009

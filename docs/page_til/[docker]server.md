@@ -1,4 +1,4 @@
----layout: defaultparent: tiltitle: [docker]server.mdnav_order: 1---## Table of contents{: .no_toc .text-delta }1. TOC{:toc}---### setting
+---layout: defaultparent: tiltitle: [docker]servernav_order: 1---## Table of contents{: .no_toc .text-delta }1. TOC{:toc}---### setting
 ```bash
 # Docker 설치
 # https://docs.docker.com/engine/install/centos/ 사이트 자료를 참고하여 설치한다.

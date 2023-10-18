@@ -1,4 +1,4 @@
----layout: defaultparent: tiltitle: [Docker]CentOS.mdnav_order: 1---## Table of contents{: .no_toc .text-delta }1. TOC{:toc}---## docker
+---layout: defaultparent: tiltitle: [Docker]CentOSnav_order: 1---## Table of contents{: .no_toc .text-delta }1. TOC{:toc}---## docker
 docker pull centos
 docker image list
 docker run -i -t centos /bin/bash

@@ -1,4 +1,4 @@
----layout: defaultparent: tiltitle: [Docker]1_Setup.mdnav_order: 1---## Table of contents{: .no_toc .text-delta }1. TOC{:toc}---## Docker 설치
+---layout: defaultparent: tiltitle: [Docker]1_Setupnav_order: 1---## Table of contents{: .no_toc .text-delta }1. TOC{:toc}---## Docker 설치
 
 ### (1) Windows Docker 설치
 

@@ -1,4 +1,4 @@
----layout: defaultparent: tiltitle: [Java].mdnav_order: 1---## Table of contents{: .no_toc .text-delta }1. TOC{:toc}---###
+---layout: defaultparent: tiltitle: [Java]nav_order: 1---## Table of contents{: .no_toc .text-delta }1. TOC{:toc}---###
 ```
 자바프로그램 만들어서 jar파일로 배포하고 실행할떄 unable to access jarfile 오류
 - java -jar Test.jar 로 실행

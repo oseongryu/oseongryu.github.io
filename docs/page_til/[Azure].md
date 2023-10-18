@@ -1,4 +1,4 @@
----layout: defaultparent: tiltitle: [Azure].mdnav_order: 1---## Table of contents{: .no_toc .text-delta }1. TOC{:toc}---
+---layout: defaultparent: tiltitle: [Azure]nav_order: 1---## Table of contents{: .no_toc .text-delta }1. TOC{:toc}---
 ## Microsoft Azure- CDN
     https://asecurity.so/2016/04/2%EB%85%84%EA%B0%84%EC%9D%98-azure-%EB%AC%B4%EB%A3%8C-%EC%82%AC%EC%9A%A9%EA%B8%B0-msdn-subscription-100-%ED%99%9C%EC%9A%A9%ED%95%98%EA%B8%B0/
 

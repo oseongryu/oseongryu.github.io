@@ -1,4 +1,4 @@
----layout: defaultparent: tiltitle: [AWS].mdnav_order: 1---## Table of contents{: .no_toc .text-delta }1. TOC{:toc}---### Setting(Node)
+---layout: defaultparent: tiltitle: [AWS]nav_order: 1---## Table of contents{: .no_toc .text-delta }1. TOC{:toc}---### Setting(Node)
 
 ```
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -

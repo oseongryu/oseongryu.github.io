@@ -1,4 +1,4 @@
----layout: defaultparent: tiltitle: [AWS]API.mdnav_order: 1---## Table of contents{: .no_toc .text-delta }1. TOC{:toc}---## API Gateway
+---layout: defaultparent: tiltitle: [AWS]APInav_order: 1---## Table of contents{: .no_toc .text-delta }1. TOC{:toc}---## API Gateway
 
 
 ## Lambda

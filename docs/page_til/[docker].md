@@ -1,4 +1,4 @@
----layout: defaultparent: tiltitle: [docker].mdnav_order: 1---## Table of contents{: .no_toc .text-delta }1. TOC{:toc}---### docker setting (windows)
+---layout: defaultparent: tiltitle: [docker]nav_order: 1---## Table of contents{: .no_toc .text-delta }1. TOC{:toc}---### docker setting (windows)
 ```
 # vmmem 점유율
 1. 파일탐색기 %USERPROFILE%
