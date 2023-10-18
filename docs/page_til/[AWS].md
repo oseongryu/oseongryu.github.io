@@ -1,7 +1,7 @@
 ---
 layout: default
-parent: guide
-title: guide-basic
+parent: til
+title: AWS
 nav_order: 1
 ---
 ## Table of contents

@@ -1,7 +1,7 @@
 ---
 layout: default
 parent: til
-title: [Android]
+title: Android
 nav_order: 1
 ---
 ## Table of contents
