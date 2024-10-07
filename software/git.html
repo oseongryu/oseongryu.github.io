@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Git 사용방법 | github.io</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/images/logo.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="description" content="Description">
+    
+    <link rel="preload" href="/assets/css/0.styles.6b5f79b2.css" as="style"><link rel="preload" href="/assets/js/app.d1976609.js" as="script"><link rel="preload" href="/assets/js/20.082c4b95.js" as="script"><link rel="preload" href="/assets/js/2.9ab96aca.js" as="script"><link rel="preload" href="/assets/js/1.cd1be094.js" as="script"><link rel="preload" href="/assets/js/102.c81312e6.js" as="script"><link rel="preload" href="/assets/js/21.4ecdae8a.js" as="script"><link rel="prefetch" href="/assets/js/10.e06d6cb0.js"><link rel="prefetch" href="/assets/js/100.799b6d01.js"><link rel="prefetch" href="/assets/js/101.512f25e8.js"><link rel="prefetch" href="/assets/js/103.17640882.js"><link rel="prefetch" href="/assets/js/104.e09b6d3c.js"><link rel="prefetch" href="/assets/js/105.ae9cc38f.js"><link rel="prefetch" href="/assets/js/106.21a49a7c.js"><link rel="prefetch" href="/assets/js/107.12bc4840.js"><link rel="prefetch" href="/assets/js/108.db8bb410.js"><link rel="prefetch" href="/assets/js/109.c9af00fb.js"><link rel="prefetch" href="/assets/js/11.8e2820cd.js"><link rel="prefetch" href="/assets/js/110.29c2b72d.js"><link rel="prefetch" href="/assets/js/111.e835f900.js"><link rel="prefetch" href="/assets/js/112.5c80798a.js"><link rel="prefetch" href="/assets/js/113.da2fbe9d.js"><link rel="prefetch" href="/assets/js/114.05d9ad94.js"><link rel="prefetch" href="/assets/js/115.11754dca.js"><link rel="prefetch" href="/assets/js/116.29b54438.js"><link rel="prefetch" href="/assets/js/117.497de446.js"><link rel="prefetch" href="/assets/js/118.fda3f847.js"><link rel="prefetch" href="/assets/js/119.bc9cc0f0.js"><link rel="prefetch" href="/assets/js/12.edc499f4.js"><link rel="prefetch" href="/assets/js/120.6be5d894.js"><link rel="prefetch" href="/assets/js/121.6dd2bce2.js"><link rel="prefetch" href="/assets/js/122.b54603f7.js"><link rel="prefetch" href="/assets/js/123.67966b4b.js"><link rel="prefetch" href="/assets/js/124.bf6ba67d.js"><link rel="prefetch" href="/assets/js/125.d5f9ec85.js"><link rel="prefetch" href="/assets/js/126.bec54cf7.js"><link rel="prefetch" href="/assets/js/127.f72780da.js"><link rel="prefetch" href="/assets/js/128.eab193dc.js"><link rel="prefetch" href="/assets/js/129.41f7b514.js"><link rel="prefetch" href="/assets/js/13.f3683ba3.js"><link rel="prefetch" href="/assets/js/130.282bc3e9.js"><link rel="prefetch" href="/assets/js/131.b14fce8a.js"><link rel="prefetch" href="/assets/js/132.2e56b792.js"><link rel="prefetch" href="/assets/js/133.694bf2a9.js"><link rel="prefetch" href="/assets/js/134.13e6069b.js"><link rel="prefetch" href="/assets/js/135.8672602c.js"><link rel="prefetch" href="/assets/js/14.6eade5a2.js"><link rel="prefetch" href="/assets/js/15.7dfe9f7c.js"><link rel="prefetch" href="/assets/js/16.7750d38e.js"><link rel="prefetch" href="/assets/js/17.2edda520.js"><link rel="prefetch" href="/assets/js/18.8d50ab20.js"><link rel="prefetch" href="/assets/js/19.bb8ff7e1.js"><link rel="prefetch" href="/assets/js/22.f4714518.js"><link rel="prefetch" href="/assets/js/23.b2fe7383.js"><link rel="prefetch" href="/assets/js/24.c1374ce8.js"><link rel="prefetch" href="/assets/js/25.c15fd52a.js"><link rel="prefetch" href="/assets/js/26.62e757bc.js"><link rel="prefetch" href="/assets/js/27.f43d25b1.js"><link rel="prefetch" href="/assets/js/28.eaa66a30.js"><link rel="prefetch" href="/assets/js/29.563d63ff.js"><link rel="prefetch" href="/assets/js/3.50dc3479.js"><link rel="prefetch" href="/assets/js/30.8a6fa97e.js"><link rel="prefetch" href="/assets/js/31.e5ded6fa.js"><link rel="prefetch" href="/assets/js/32.3b165ecb.js"><link rel="prefetch" href="/assets/js/33.7adaf42a.js"><link rel="prefetch" href="/assets/js/34.35cac927.js"><link rel="prefetch" href="/assets/js/35.3a9164e7.js"><link rel="prefetch" href="/assets/js/36.e1880931.js"><link rel="prefetch" href="/assets/js/37.0af861f2.js"><link rel="prefetch" href="/assets/js/38.1ddfdb8d.js"><link rel="prefetch" href="/assets/js/39.29d1b91e.js"><link rel="prefetch" href="/assets/js/4.7c332f88.js"><link rel="prefetch" href="/assets/js/40.a3d4295f.js"><link rel="prefetch" href="/assets/js/41.39eb7776.js"><link rel="prefetch" href="/assets/js/42.e55e8ae9.js"><link rel="prefetch" href="/assets/js/43.c1c8e780.js"><link rel="prefetch" href="/assets/js/44.56400efa.js"><link rel="prefetch" href="/assets/js/45.8fbf584e.js"><link rel="prefetch" href="/assets/js/46.c4e813c9.js"><link rel="prefetch" href="/assets/js/47.1defe09f.js"><link rel="prefetch" href="/assets/js/48.4a3adf4c.js"><link rel="prefetch" href="/assets/js/49.bc57ecd0.js"><link rel="prefetch" href="/assets/js/5.5a74b1f3.js"><link rel="prefetch" href="/assets/js/50.e5249bad.js"><link rel="prefetch" href="/assets/js/51.2426c406.js"><link rel="prefetch" href="/assets/js/52.51a9793b.js"><link rel="prefetch" href="/assets/js/53.3d571b76.js"><link rel="prefetch" href="/assets/js/54.2fce2aa5.js"><link rel="prefetch" href="/assets/js/55.3dc09200.js"><link rel="prefetch" href="/assets/js/56.430434d4.js"><link rel="prefetch" href="/assets/js/57.6d515eea.js"><link rel="prefetch" href="/assets/js/58.d93fdfc4.js"><link rel="prefetch" href="/assets/js/59.e24cd2dc.js"><link rel="prefetch" href="/assets/js/6.08cf40a8.js"><link rel="prefetch" href="/assets/js/60.b8c1c839.js"><link rel="prefetch" href="/assets/js/61.bacc177a.js"><link rel="prefetch" href="/assets/js/62.3faffb30.js"><link rel="prefetch" href="/assets/js/63.e5fdc614.js"><link rel="prefetch" href="/assets/js/64.4fd3c4f0.js"><link rel="prefetch" href="/assets/js/65.5ca239bb.js"><link rel="prefetch" href="/assets/js/66.99691ce7.js"><link rel="prefetch" href="/assets/js/67.a08a19e6.js"><link rel="prefetch" href="/assets/js/68.afc12570.js"><link rel="prefetch" href="/assets/js/69.7164c014.js"><link rel="prefetch" href="/assets/js/7.92d79a17.js"><link rel="prefetch" href="/assets/js/70.66b97d65.js"><link rel="prefetch" href="/assets/js/71.6ebadf8a.js"><link rel="prefetch" href="/assets/js/72.5c95375e.js"><link rel="prefetch" href="/assets/js/73.a1851be0.js"><link rel="prefetch" href="/assets/js/74.baf28081.js"><link rel="prefetch" href="/assets/js/75.9c7fad15.js"><link rel="prefetch" href="/assets/js/76.8eddd9cb.js"><link rel="prefetch" href="/assets/js/77.ae17ce20.js"><link rel="prefetch" href="/assets/js/78.74883433.js"><link rel="prefetch" href="/assets/js/79.aceb7fee.js"><link rel="prefetch" href="/assets/js/80.cabb9935.js"><link rel="prefetch" href="/assets/js/81.16d64f7b.js"><link rel="prefetch" href="/assets/js/82.86a512b8.js"><link rel="prefetch" href="/assets/js/83.5d360f70.js"><link rel="prefetch" href="/assets/js/84.6bf622f9.js"><link rel="prefetch" href="/assets/js/85.cd0a3fe7.js"><link rel="prefetch" href="/assets/js/86.af7c787e.js"><link rel="prefetch" href="/assets/js/87.ae6e9664.js"><link rel="prefetch" href="/assets/js/88.8784278f.js"><link rel="prefetch" href="/assets/js/89.9a6f1c34.js"><link rel="prefetch" href="/assets/js/90.90af989d.js"><link rel="prefetch" href="/assets/js/91.92952a34.js"><link rel="prefetch" href="/assets/js/92.712d5e1b.js"><link rel="prefetch" href="/assets/js/93.2cc2ee0b.js"><link rel="prefetch" href="/assets/js/94.db6dea85.js"><link rel="prefetch" href="/assets/js/95.a907efa3.js"><link rel="prefetch" href="/assets/js/96.5e3155d7.js"><link rel="prefetch" href="/assets/js/97.1a40fe99.js"><link rel="prefetch" href="/assets/js/98.dc9dfe48.js"><link rel="prefetch" href="/assets/js/99.8cff8b89.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.bd3cdb54.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6b5f79b2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">github.io</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://oseongryu.github.io/" target="_self" class="nav-link external">
+  Home
+  <!----></a></div><div class="nav-item"><a href="https://github.com/oseongryu/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://oseongryu.github.io/" target="_self" class="nav-link external">
+  Home
+  <!----></a></div><div class="nav-item"><a href="https://github.com/oseongryu/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>os</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/os/mac.html" class="sidebar-link">mac</a></li><li><a href="/os/windows.html" class="sidebar-link">windows</a></li><li><a href="/os/ubuntu.html" class="sidebar-link">ubuntu</a></li><li><a href="/os/centos.html" class="sidebar-link">centos</a></li><li><a href="/os/wsl.html" class="sidebar-link">wsl</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>docker</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docker/docker-1_setup.html" class="sidebar-link">docker-1_setup</a></li><li><a href="/docker/docker-2_using.html" class="sidebar-link">docker-2_using</a></li><li><a href="/docker/docker-centos.html" class="sidebar-link">docker-centos</a></li><li><a href="/docker/docker-env.html" class="sidebar-link">docker-env</a></li><li><a href="/docker/docker-jekyll.html" class="sidebar-link">docker-jekyll</a></li><li><a href="/docker/docker-mac-m1.html" class="sidebar-link">docker-mac-m1</a></li><li><a href="/docker/docker-mariadb.html" class="sidebar-link">docker-mariadb</a></li><li><a href="/docker/docker.html" class="sidebar-link">docker</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>jenkins</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>asp</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>aws</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>cs</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>dbms</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>deploy</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>domain</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>education</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>etc</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>flutter</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>hadoop</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>java</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>javascript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>project</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>python</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>react</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>rn</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>software</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>springboot</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>vue</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h4 id="git-사용방법"><a href="#git-사용방법" class="header-anchor">#</a> Git 사용방법</h4> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> config <span class="token parameter variable">--global</span> init.defaultBranch main
+<span class="token function">git</span> <span class="token parameter variable">--version</span>
+<span class="token function">git</span> config <span class="token parameter variable">--global</span> user.name <span class="token string">&quot;사용자명&quot;</span>
+<span class="token function">git</span> config <span class="token parameter variable">--global</span> user.email <span class="token string">&quot;이메일&quot;</span>
+<span class="token function">git</span> config <span class="token parameter variable">--global</span> init.defaultBranch main
+
+<span class="token function">git</span> config <span class="token parameter variable">--list</span>
+
+<span class="token builtin class-name">cd</span> C:<span class="token punctuation">\</span>Temp<span class="token punctuation">\</span>sample
+<span class="token function">git</span> init
+<span class="token function">git</span> <span class="token function">add</span> *
+<span class="token function">git</span> commit <span class="token parameter variable">-m</span> <span class="token string">&quot;설명&quot;</span>
+<span class="token function">git</span> status
+
+<span class="token function">git</span> remote <span class="token function">add</span> origin https://github.com/f5074/sample.git
+<span class="token function">git</span> push origin main
+</code></pre></div><h3 id="gitignore-global"><a href="#gitignore-global" class="header-anchor">#</a> gitignore global</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">touch</span> ~/.gitignore
+<span class="token function">git</span> config <span class="token parameter variable">--global</span> core.excludesfile ~/.gitignore
+</code></pre></div><h4 id="git-revert"><a href="#git-revert" class="header-anchor">#</a> Git Revert</h4> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> log
+<span class="token function">git</span> reset <span class="token parameter variable">--hard</span> <span class="token string">&quot;원하는 HEAD&quot;</span>
+<span class="token function">git</span> push <span class="token parameter variable">-f</span> origin main
+</code></pre></div><h4 id="git-reset"><a href="#git-reset" class="header-anchor">#</a> Git Reset</h4> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> reset HEAD^ // 마지막 커밋 삭제
+<span class="token function">git</span> reset <span class="token parameter variable">--hard</span> HEAD // 마지막 커밋 상태로 되돌림
+<span class="token function">git</span> reset HEAD * // 스테이징을 언스테이징으로 변경
+</code></pre></div><h4 id="git-병합취소"><a href="#git-병합취소" class="header-anchor">#</a> git 병합취소</h4> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> merge <span class="token parameter variable">--abort</span>
+</code></pre></div><h4 id="git-config-설정시-저장-위치"><a href="#git-config-설정시-저장-위치" class="header-anchor">#</a> git config 설정시 저장 위치</h4> <div class="language-bash extra-class"><pre class="language-bash"><code>System	 <span class="token operator">&lt;</span>git-install-root<span class="token operator">&gt;</span><span class="token punctuation">\</span>mingw64<span class="token punctuation">\</span>etc<span class="token punctuation">\</span>gitconfig	 gitconfig
+Global	 C:<span class="token punctuation">\</span>Users<span class="token punctuation">\</span>username<span class="token punctuation">\</span>.gitconfig	 .gitconfig
+Local	 <span class="token operator">&lt;</span>git-repo<span class="token operator">&gt;</span><span class="token punctuation">\</span>.git<span class="token punctuation">\</span>config	 config
+Worktree	 <span class="token operator">&lt;</span>git-repo<span class="token operator">&gt;</span><span class="token punctuation">\</span>.git<span class="token punctuation">\</span>config.worktree	 config.worktree
+Portable	 C:<span class="token punctuation">\</span>ProgramData<span class="token punctuation">\</span>Git<span class="token punctuation">\</span>config	 config
+
+<span class="token function">git</span> config <span class="token parameter variable">--global</span> user.name <span class="token string">&quot;사용자명&quot;</span>
+<span class="token function">git</span> config <span class="token parameter variable">--global</span> user.email <span class="token string">&quot;이메일&quot;</span>
+<span class="token function">git</span> config <span class="token parameter variable">--local</span> user.name <span class="token string">&quot;사용자명&quot;</span>
+<span class="token function">git</span> config <span class="token parameter variable">--local</span> user.email <span class="token string">&quot;이메일&quot;</span>
+<span class="token function">git</span> config <span class="token parameter variable">--list</span>
+</code></pre></div><h4 id="git-branch"><a href="#git-branch" class="header-anchor">#</a> git branch</h4> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> checkout <span class="token parameter variable">-b</span> deploy/prod
+<span class="token function">git</span> push origin deploy/prod
+<span class="token function">git</span> branch --set-upstream-to origin/deploy/prod
+
+<span class="token comment">### branch 삭제</span>
+<span class="token function">git</span> checkout amin
+<span class="token function">git</span> branch <span class="token parameter variable">--delete</span> deploy/prod
+<span class="token function">git</span> branch <span class="token parameter variable">-D</span> deploy/prod
+<span class="token function">git</span> push origin :deploy/prod
+</code></pre></div><h4 id="git-rebase"><a href="#git-rebase" class="header-anchor">#</a> git rebase</h4> <div class="language- extra-class"><pre class="language-text"><code>git branch
+git checkout develop
+git push
+
+git checkout feature/test
+git rebase develop
+git checkout develop
+git merge feature/test --ff
+</code></pre></div><h4 id="git-로컬-내용-업데이트"><a href="#git-로컬-내용-업데이트" class="header-anchor">#</a> git 로컬 내용 업데이트</h4> <div class="language- extra-class"><pre class="language-text"><code>git branch -r
+git remote update
+
+git branch -a
+</code></pre></div><h4 id="git-log"><a href="#git-log" class="header-anchor">#</a> git log</h4> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> log <span class="token parameter variable">--oneline</span>
+<span class="token function">git</span> log <span class="token parameter variable">--pretty</span><span class="token operator">=</span>format:<span class="token string">&quot;%h - %an, %ar : %s&quot;</span>
+<span class="token function">git</span> log <span class="token parameter variable">--pretty</span><span class="token operator">=</span>format:<span class="token string">&quot;%h %cd %an %s&quot;</span>
+<span class="token function">git</span> log <span class="token parameter variable">--stat</span>
+
+<span class="token function">git</span> log <span class="token parameter variable">--pretty</span><span class="token operator">=</span>format:<span class="token string">&quot;%h %cd %an %s&quot;</span> <span class="token parameter variable">--since</span><span class="token operator">=</span><span class="token string">&quot;2022-11-01&quot;</span> <span class="token parameter variable">--until</span><span class="token operator">=</span><span class="token string">&quot;2022-11-30&quot;</span> <span class="token parameter variable">--committer</span><span class="token operator">=</span>aaaa <span class="token parameter variable">--committer</span><span class="token operator">=</span>bbbb <span class="token parameter variable">--committer</span><span class="token operator">=</span>cccc
+<span class="token function">git</span> log <span class="token parameter variable">--pretty</span><span class="token operator">=</span>format:<span class="token string">&quot;%h %cd %an %s&quot;</span> <span class="token parameter variable">--since</span><span class="token operator">=</span><span class="token string">&quot;2022-12-01&quot;</span> <span class="token parameter variable">--until</span><span class="token operator">=</span><span class="token string">&quot;2022-12-31&quot;</span> <span class="token parameter variable">--committer</span><span class="token operator">=</span>aaaa <span class="token parameter variable">--committer</span><span class="token operator">=</span>bbbb <span class="token parameter variable">--committer</span><span class="token operator">=</span>cccc
+<span class="token function">git</span> log <span class="token parameter variable">--pretty</span><span class="token operator">=</span>format:<span class="token string">&quot;%h %cd %an %s&quot;</span> <span class="token parameter variable">--since</span><span class="token operator">=</span><span class="token string">&quot;2023-01-01&quot;</span> <span class="token parameter variable">--until</span><span class="token operator">=</span><span class="token string">&quot;2023-01-31&quot;</span> <span class="token parameter variable">--committer</span><span class="token operator">=</span>aaaa <span class="token parameter variable">--committer</span><span class="token operator">=</span>bbbb <span class="token parameter variable">--committer</span><span class="token operator">=</span>cccc
+
+<span class="token comment"># 파일목록 추가확인</span>
+<span class="token function">git</span> log --name-only <span class="token parameter variable">--pretty</span><span class="token operator">=</span>format:<span class="token string">&quot;%h %cd %an %s&quot;</span> <span class="token parameter variable">--since</span><span class="token operator">=</span><span class="token string">&quot;2022-11-01&quot;</span> <span class="token parameter variable">--committer</span><span class="token operator">=</span>aaaa
+
+<span class="token comment"># 파일목록 정렬 및 하나로 통합</span>
+<span class="token function">git</span> log --name-only <span class="token parameter variable">--pretty</span><span class="token operator">=</span>format: <span class="token parameter variable">--since</span><span class="token operator">=</span><span class="token string">&quot;2022-02-01&quot;</span> <span class="token parameter variable">--committer</span><span class="token operator">=</span>aaa <span class="token operator">|</span> <span class="token function">sort</span> <span class="token operator">|</span> <span class="token function">uniq</span>
+</code></pre></div><h4 id="리눅스-권한-문제-관련이-있을-경우-git의-폴더에서-확인"><a href="#리눅스-권한-문제-관련이-있을-경우-git의-폴더에서-확인" class="header-anchor">#</a> 리눅스 권한 문제 관련이 있을 경우 (.git의 폴더에서 확인)</h4> <div class="language- extra-class"><pre class="language-text"><code>Unable to create '/home/user/repo/.git/refs
+chown -R user:usergroup file/folder
+</code></pre></div><h4 id="맥에서-git-계정-2개-이상-사용-시-ssh-인증"><a href="#맥에서-git-계정-2개-이상-사용-시-ssh-인증" class="header-anchor">#</a> 맥에서 git 계정 2개 이상 사용 시 ssh 인증</h4> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment">### ssh-keygen 생성</span>
+<span class="token builtin class-name">cd</span> ~/.ssh or <span class="token function">mkdir</span> ~/.ssh
+
+ssh-keygen <span class="token parameter variable">-t</span> <span class="token operator">&lt;</span>암호화방식<span class="token operator">&gt;</span> <span class="token parameter variable">-b</span> <span class="token operator">&lt;</span>key크기 기본307<span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span> <span class="token parameter variable">-C</span> <span class="token string">'깃헙등록메일@메일.com'</span>
+ssh-keygen <span class="token parameter variable">-t</span> rsa <span class="token parameter variable">-b</span> <span class="token number">4096</span> <span class="token parameter variable">-C</span> <span class="token string">'myuser@email.com'</span>
+ssh-keygen <span class="token parameter variable">-t</span> rsa <span class="token parameter variable">-b</span> <span class="token number">4096</span> <span class="token parameter variable">-C</span> <span class="token string">'oseongryu@gmail.com'</span>
+
+Enter <span class="token function">file</span> <span class="token keyword">in</span> <span class="token function">which</span> to save the key <span class="token punctuation">(</span>/Users/<span class="token variable">${<span class="token environment constant">USER</span>}</span>/.ssh/id_rsa<span class="token punctuation">)</span>: <span class="token operator">&lt;</span>id_rsa_이름지정<span class="token operator">&gt;</span>
+Enter <span class="token function">file</span> <span class="token keyword">in</span> <span class="token function">which</span> to save the key <span class="token punctuation">(</span>/Users/<span class="token variable">${<span class="token environment constant">USER</span>}</span>/.ssh/id_rsa<span class="token punctuation">)</span>: id_rsa_myuser
+Enter <span class="token function">file</span> <span class="token keyword">in</span> <span class="token function">which</span> to save the key <span class="token punctuation">(</span>/Users/<span class="token variable">${<span class="token environment constant">USER</span>}</span>/.ssh/id_rsa<span class="token punctuation">)</span>: id_rsa_oseongryu
+
+
+<span class="token builtin class-name">eval</span> <span class="token string">&quot;<span class="token variable"><span class="token variable">$(</span>ssh-agent <span class="token parameter variable">-s</span><span class="token variable">)</span></span>&quot;</span>
+ssh-add <span class="token operator">&lt;</span>key파일경로<span class="token operator">&gt;</span>
+ssh-add ~/.ssh/id_rsa_myuser
+ssh-add ~/.ssh/id_rsa_oseongryu
+
+ssh-add <span class="token parameter variable">-l</span>
+
+* 삭제 후 다시 만들 필요가 있는 경우
+ssh-add <span class="token parameter variable">-D</span>
+
+<span class="token function">touch</span> ~/.ssh/config
+<span class="token function">vi</span> ~/.ssh/config
+
+--- 해당 내용 추가
+<span class="token comment"># Git myuser</span>
+Host github.com-myuser
+    HostName github.com
+    IdentityFile ~/.ssh/id_rsa_myuser
+    User myuser
+<span class="token comment"># Git oseongryu</span>
+Host github.com-oseongryu
+    HostName github.com
+    IdentityFile ~/.ssh/id_rsa_oseongryu
+    User oseongryu
+
+<span class="token comment">### github &gt; settings &gt; SSH and GPG keys &gt;&gt; New SSH Key</span>
+pbcopy <span class="token operator">&lt;</span> ~/.ssh/id_rsa_f5074.pub
+
+<span class="token comment">### 테스트</span>
+<span class="token function">ssh</span> <span class="token parameter variable">-T</span> git@github.com-myuser
+
+<span class="token comment">### 사용</span>
+<span class="token function">git</span> remote <span class="token function">add</span> origin git@github.com-oseongryu:oseongryu/til.git
+<span class="token function">git</span> remote set-url origin git@github.com-oseongryu:oseongryu/til.git
+</code></pre></div><h4 id="다른-맥으로-ssh설정-옮기기"><a href="#다른-맥으로-ssh설정-옮기기" class="header-anchor">#</a> 다른 맥으로 .ssh설정 옮기기</h4> <div class="language- extra-class"><pre class="language-text"><code>
+다른 맥에서 .ssh 파일만 옮겨올 경우 아래와 같은 에러가 나타날 수 있음
+private key의 permissions이 많이 되어 있어서 생기는 문제였음
+옮겨온 파일의 권한을 변경해서 처리
+
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/id_rsa
+chmod 644 ~/.ssh/id_rsa.pub
+chmod 644 ~/.ssh/authorized_keys
+chmod 644 ~/.ssh/known_hosts
+
+
+---
+Warning: Permanently added 'github.com,64:ff9b::344e:e76c' (RSA) to the list of known hosts.
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Permissions 0644 for '/Users/oseongryu/.ssh/id_rsa_oseongryu' are too open.
+It is required that your private key files are NOT accessible by others.
+This private key will be ignored.
+Load key &quot;/Users/oseongryu/.ssh/id_rsa_oseongryu&quot;: bad permissions
+---
+
+</code></pre></div><h4 id="원격에서-ssh설정시"><a href="#원격에서-ssh설정시" class="header-anchor">#</a> 원격에서 ssh설정시</h4> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">chown</span> <span class="token environment constant">$USER</span> ~/.ssh/config
+<span class="token function">chmod</span> <span class="token number">644</span> ~/.ssh/config
+</code></pre></div><h4 id="git-commit-message-structure"><a href="#git-commit-message-structure" class="header-anchor">#</a> git Commit Message Structure</h4> <div class="language- extra-class"><pre class="language-text"><code>feat : 새로운 기능 추가
+fix : 버그 수정
+docs : 문서 수정
+style : 코드 포맷팅, 세미콜론 누락, 코드 변경이 없는 경우
+refactor : 코드 리펙토링
+test : 테스트 코드, 리펙토링 테스트 코드 추가
+chore : 빌드 업무 수정, 패키지 매니저 수정
+
+feat: (new feature for the user, not a new feature for build script)
+fix: (bug fix for the user, not a fix to a build script)
+docs: (changes to the documentation)
+style: (formatting, missing semi colons, etc; no production code change)
+refactor: (refactoring production code, eg. renaming a variable)
+test: (adding missing tests, refactoring tests; no production code change)
+chore: (updating grunt tasks etc; no production code change)
+</code></pre></div><h4 id="git-local-pull-request"><a href="#git-local-pull-request" class="header-anchor">#</a> git local pull request</h4> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment">#### local get pull request</span>
+<span class="token function">git</span> config <span class="token parameter variable">--add</span> remote.origin.fetch <span class="token string">&quot;+refs/pull/*/head:refs/remotes/origin/pr/*&quot;</span>
+<span class="token function">git</span> fetch origin
+<span class="token function">git</span> checkout <span class="token parameter variable">-t</span> origin/pr/35
+
+s<span class="token comment">#### config 추가</span>
+<span class="token function">git</span> config <span class="token parameter variable">--add</span> remote.origin.fetch <span class="token string">&quot;+refs/heads/*:refs/remotes/origin/*&quot;</span>
+
+<span class="token comment">#### config 삭제</span>
+<span class="token function">git</span> config <span class="token parameter variable">--unset</span> <span class="token parameter variable">--local</span> remote.origin.fetch
+<span class="token function">git</span> config --unset-all <span class="token parameter variable">--local</span> remote.origin.fetch
+<span class="token function">git</span> config <span class="token parameter variable">--add</span> remote.origin.fetch <span class="token string">&quot;+refs/heads/*:refs/remotes/origin/*&quot;</span>
+
+</code></pre></div><h4 id="fetch-github-pr-to-local"><a href="#fetch-github-pr-to-local" class="header-anchor">#</a> fetch github pr to local</h4> <div class="language- extra-class"><pre class="language-text"><code>git pull origin pull/35/head
+
+
+
+-- git config에 설정
+[alias]
+  pr  = &quot;!f() { git fetch -fu ${2:-origin} refs/pull/$1/head:pr/$1 &amp;&amp; git checkout pr/$1; }; f&quot;
+  pr-clean = &quot;!git for-each-ref refs/heads/pr/* --format='%(refname)' | while read ref ; do branch=${ref#refs/heads/} ; git branch -D $branch ; done&quot;
+
+ git pr 35
+ git pr-clean
+
+</code></pre></div><h4 id="ssl-certificate-problem-self-signed-certificate-in-certificate-chain"><a href="#ssl-certificate-problem-self-signed-certificate-in-certificate-chain" class="header-anchor">#</a> SSL certificate problem: self signed certificate in certificate chain</h4> <div class="language- extra-class"><pre class="language-text"><code>git config --global http.sslVerify false
+
+</code></pre></div><h4 id="git-remote-origin"><a href="#git-remote-origin" class="header-anchor">#</a> git remote origin</h4> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> config <span class="token parameter variable">--local</span> <span class="token parameter variable">--list</span>
+<span class="token function">git</span> remote <span class="token function">add</span> origin git@github.com:oseongryu/til.git
+
+<span class="token function">git</span> remote remove origin
+<span class="token function">git</span> config <span class="token parameter variable">--local</span> <span class="token parameter variable">--list</span>
+
+<span class="token function">git</span> remote <span class="token function">add</span> origin git@github.com:oseongryu/til.git
+<span class="token function">git</span> push <span class="token parameter variable">-u</span> origin main
+
+</code></pre></div><h4 id="git-merge-option"><a href="#git-merge-option" class="header-anchor">#</a> git merge option</h4> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> merge <span class="token punctuation">[</span>branch<span class="token punctuation">]</span> --strategy-option ours
+<span class="token function">git</span> merge <span class="token punctuation">[</span>branch<span class="token punctuation">]</span> --strategy-option theirs
+
+<span class="token comment">#### fast-forward 관계에 있으면 commit을 생성하지 않고 현재 브랜치의 참조 값 만 변경(default)</span>
+<span class="token function">git</span> merge <span class="token parameter variable">--ff</span> <span class="token punctuation">[</span>branch<span class="token punctuation">]</span>
+
+<span class="token comment">#### fast-forward 관계에 있어도 merged commit 생성</span>
+<span class="token function">git</span> merge --no-ff <span class="token punctuation">[</span>branch<span class="token punctuation">]</span>
+
+<span class="token comment">#### fast-forward 관계에 있어도 merged commit 생성, merging 브랜치 정보 생략</span>
+<span class="token function">git</span> merge <span class="token parameter variable">--squash</span> <span class="token punctuation">[</span>branch<span class="token punctuation">]</span>
+
+</code></pre></div><h4 id="git-remove-specific-file-on-all-commit"><a href="#git-remove-specific-file-on-all-commit" class="header-anchor">#</a> git remove specific file on all commit</h4> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> filter-branch <span class="token parameter variable">--force</span> --index-filter <span class="token string">'git rm --cached --ignore-unmatch 파일명'</span> --prune-empty --tag-name-filter <span class="token function">cat</span> -- <span class="token parameter variable">--all</span>
+<span class="token function">git</span> filter-branch <span class="token parameter variable">--force</span> --index-filter <span class="token string">'git rm -r --cached --ignore-unmatch 99_00_Software/[IntelliJ].md'</span> --prune-empty --tag-name-filter <span class="token function">cat</span> -- <span class="token parameter variable">--all</span>
+</code></pre></div><h4 id="git-stage-to-unstage"><a href="#git-stage-to-unstage" class="header-anchor">#</a> git stage to unstage</h4> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> reset HEAD -- <span class="token builtin class-name">.</span>
+</code></pre></div><h3 id="git-discard-change"><a href="#git-discard-change" class="header-anchor">#</a> git discard change</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> restore <span class="token builtin class-name">.</span>
+<span class="token function">git</span> reset <span class="token parameter variable">--hard</span>
+</code></pre></div><h4 id="git-directory-계정설정"><a href="#git-directory-계정설정" class="header-anchor">#</a> git Directory 계정설정</h4> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> config <span class="token parameter variable">--list</span> --show-origin
+
+.gitconfig<span class="token punctuation">(</span>제외<span class="token punctuation">)</span>
+---
+<span class="token punctuation">[</span>user<span class="token punctuation">]</span>
+    email <span class="token operator">=</span> oseongryu@gmail.com
+    name <span class="token operator">=</span> oseongryu
+---
+
+.gitconfig<span class="token punctuation">(</span>추가<span class="token punctuation">)</span>
+---
+<span class="token punctuation">[</span>includeIf <span class="token string">&quot;gitdir:~/git/personal/&quot;</span><span class="token punctuation">]</span>
+    path <span class="token operator">=</span> .gitconfig-personal
+<span class="token punctuation">[</span>includeIf <span class="token string">&quot;gitdir:~/git/professional/&quot;</span><span class="token punctuation">]</span>
+    path <span class="token operator">=</span> .gitconfig-professional
+---
+
+.gitconfig-personal<span class="token punctuation">(</span>추가<span class="token punctuation">)</span>
+---
+<span class="token punctuation">[</span>user<span class="token punctuation">]</span>
+    email <span class="token operator">=</span> oseongryu@gmail.com
+    name <span class="token operator">=</span> oseongryu
+---
+
+.gitconfig-professional<span class="token punctuation">(</span>추가<span class="token punctuation">)</span>
+---
+<span class="token punctuation">[</span>user<span class="token punctuation">]</span>
+    email <span class="token operator">=</span> osryu@gmail.com
+    name <span class="token operator">=</span> osryu
+---
+
+</code></pre></div><h4 id="리모트-브랜치-참조-업데이트"><a href="#리모트-브랜치-참조-업데이트" class="header-anchor">#</a> 리모트 브랜치 참조 업데이트</h4> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 리모트 브랜치의 더 이상 유효하지 않은 참조를 깨끗이 지우는 명령어</span>
+<span class="token function">git</span> remote prune origin
+<span class="token function">git</span> remote update <span class="token parameter variable">--prune</span>
+
+<span class="token comment"># 로컬 저장소를 최신 정보로 갱신(리모트 저장소와 동기화)하며 자동적으로 더이상 유효하지 않은 참조를 제거</span>
+<span class="token function">git</span> fetch <span class="token parameter variable">-p</span>
+</code></pre></div><h4 id="실수로-삭제한-브랜치-복구하기"><a href="#실수로-삭제한-브랜치-복구하기" class="header-anchor">#</a> 실수로 삭제한 브랜치 복구하기</h4> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> reflog
+<span class="token function">git</span> checkout <span class="token parameter variable">-b</span> <span class="token string">'temp'</span> HEAD@<span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">}</span>
+</code></pre></div><h4 id="원격-브랜치-삭제"><a href="#원격-브랜치-삭제" class="header-anchor">#</a> 원격 브랜치 삭제</h4> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> push origin <span class="token parameter variable">--delete</span> feature/oseongryu
+</code></pre></div><h4 id="git-커밋이-잘못되어-복구하는-방법"><a href="#git-커밋이-잘못되어-복구하는-방법" class="header-anchor">#</a> git 커밋이 잘못되어 복구하는 방법</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 1. 방법</span>
+<span class="token number">1.</span> 로그로 특정 부분 헤더 확인
+git log <span class="token operator">--</span>pretty<span class="token operator">=</span>format<span class="token operator">:</span><span class="token string">&quot;%h %cd %an %s&quot;</span> <span class="token operator">--</span>since<span class="token operator">=</span><span class="token string">&quot;2022-11-01&quot;</span> <span class="token operator">--</span>until<span class="token operator">=</span><span class="token string">&quot;2022-11-30&quot;</span> <span class="token operator">--</span>committer<span class="token operator">=</span>aaaa <span class="token operator">--</span>committer<span class="token operator">=</span>bbbb <span class="token operator">--</span>committer<span class="token operator">=</span>cccc
+git log <span class="token operator">--</span>pretty<span class="token operator">=</span>format<span class="token operator">:</span><span class="token string">&quot;%h %cd %an %s&quot;</span> <span class="token operator">--</span>since<span class="token operator">=</span><span class="token string">&quot;2022-12-01&quot;</span> <span class="token operator">--</span>until<span class="token operator">=</span><span class="token string">&quot;2022-12-31&quot;</span> <span class="token operator">--</span>committer<span class="token operator">=</span>aaaa <span class="token operator">--</span>committer<span class="token operator">=</span>bbbb <span class="token operator">--</span>committer<span class="token operator">=</span>cccc
+git log <span class="token operator">--</span>pretty<span class="token operator">=</span>format<span class="token operator">:</span><span class="token string">&quot;%h %cd %an %s&quot;</span> <span class="token operator">--</span>since<span class="token operator">=</span><span class="token string">&quot;2023-01-01&quot;</span> <span class="token operator">--</span>until<span class="token operator">=</span><span class="token string">&quot;2023-01-31&quot;</span> <span class="token operator">--</span>committer<span class="token operator">=</span>aaaa <span class="token operator">--</span>committer<span class="token operator">=</span>bbbb <span class="token operator">--</span>committer<span class="token operator">=</span>cccc
+<span class="token number">2.</span> cherry<span class="token operator">-</span>pick를 사용해서 통합
+
+<span class="token comment">// 2. 간편 방법</span>
+최초 돌릴 부분으로 git reset <span class="token operator">--</span>soft <span class="token punctuation">[</span><span class="token constant">HEAD</span>명<span class="token punctuation">]</span> 으로 돌린후
+git status로 수정한 파일에서 자신이 수정한 파일목록 확인
+</code></pre></div><h4 id="ssh-config-github-gitblit-gitlab"><a href="#ssh-config-github-gitblit-gitlab" class="header-anchor">#</a> ssh config (github, gitblit, gitlab)</h4> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 2022.09.23. github oseongryu</span>
+Host github.com
+    HostName github.com
+    Port <span class="token number">22</span>
+    IdentityFile ~/.ssh/id_rsa_oseongryu
+    User oseongryu
+
+<span class="token comment"># 2022.09.23. gitlab osryu</span>
+Host corporation.gitlab.com
+    HostName corporation.gitlab.com
+    <span class="token comment"># Port 22</span>
+    IdentityFile ~/.ssh/id_rsa
+    User osryu
+
+<span class="token comment"># 2022.09.23. gitblit osryu</span>
+Host corporation.gitblit.com
+    HostName corp.gitblit.com
+    Port <span class="token number">29418</span>
+    IdentityFile ~/.ssh/id_rsa
+    User osryu
+    PubkeyAcceptedAlgorithms +ssh-rsa
+    HostKeyAlgorithms +ssh-rsa
+</code></pre></div><h4 id="git-stash"><a href="#git-stash" class="header-anchor">#</a> git stash</h4> <div class="language- extra-class"><pre class="language-text"><code>git stash
+git stash save
+
+git stash list
+
+git stash apply
+git stash apply stash@{0}
+
+git stash drop stash@{0}
+
+git stash pop
+
+</code></pre></div><h4 id="gitlab"><a href="#gitlab" class="header-anchor">#</a> gitlab</h4> <div class="language- extra-class"><pre class="language-text"><code>데이터이관
+https://trytoso.tistory.com/1313
+
+일부 파일만 Merge
+git checkout -p [가져올 파일이 있는 branch명] [가져올 파일의 경로]
+# 현재 작업중인(checkout) 브랜치는 feature/devMain으로 가정
+$ git checkout -p feature/pubMain \client\components\pages\common\NavTab.vue
+
+y - stage this hunk → 페이지 단위 승인
+n - do not stage this hunk
+q - quit; do not stage this hunk nor any of the remaining ones
+a - stage this hunk and all later hunks in the file → 일괄 승인
+d - do not stage this hunk nor any of the later hunks in the file
+g - select a hunk to go to
+/ - search for a hunk matching the given regex
+j - leave this hunk undecided, see next undecided hunk
+J - leave this hunk undecided, see next hunk
+k - leave this hunk undecided, see previous undecided hunk
+K - leave this hunk undecided, see previous hunk
+s - split the current hunk into smaller hunks
+e - manually edit the current hunk
+? - print help
+
+Origin/main의 소스로 강제 적용
+# 아무것도 병합하거나 리베이스 하지 않고 원격지에서 최신 커밋 정보를 다운로드
+$ git fetch --all
+# 현재 작업중인 것을 백업 브랜치로 분기(필요시)
+$ git branch backup-main
+# 강제로 내려받고자 하는 브랜치로 리셋
+# --hard 옵션은 로컬에 충돌 가능한 수정사항이 있어도 무시하고 내려받음
+$ git reset --hard origin/main
+$ git reset --hard origin/&lt;branch_name&gt;
+
+</code></pre></div><h3 id="git-submodules"><a href="#git-submodules" class="header-anchor">#</a> git submodules</h3> <div class="language- extra-class"><pre class="language-text"><code>git submodule add git@github.com:oseongryu/corp-script.git
+git submodule add git@github.com:oseongryu/corp-script.git 00_corp_script
+
+### remove
+To remove a submodule you need to:
+
+1. Delete the relevant section from the .gitmodules file.
+2. Stage the .gitmodules changes:
+git add .gitmodules
+3. Delete the relevant section from .git/config.
+4. Remove the submodule files from the working tree and index:
+git rm --cached path_to_submodule (no trailing slash).
+5. Remove the submodule's .git directory:
+rm -rf .git/modules/path_to_submodule
+6. Commit the changes:
+git commit -m &quot;Removed submodule &lt;name&gt;&quot;
+7. Delete the now untracked submodule files:
+rm -rf path_to_submodule
+
+git submodule init
+git submodule update
+git submodule foreach git checkout main
+
+</code></pre></div><h3 id="git-bash-zip"><a href="#git-bash-zip" class="header-anchor">#</a> git bash zip</h3> <p>C:\Program Files\Git\mingw64\bin
+https://stackoverflow.com/questions/38782928/how-to-add-man-and-zip-to-git-bash-installation-on-windows</p> <ol><li><a href="https://sourceforge.net/projects/gnuwin32/files/zip/3.0/" target="_blank" rel="noopener noreferrer">Navigate to this sourceforge page<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li>Download zip-3.0-bin.zip</li> <li>In the zipped file, in the bin folder, find the file zip.exe.</li> <li>Extract the file zip.exe to your mingw64 bin folder (for me: C:\Program Files\Git\mingw64\bin)</li> <li><a href="https://sourceforge.net/projects/gnuwin32/files/bzip2/1.0.5/" target="_blank" rel="noopener noreferrer">Navigate to to this sourceforge page<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li>Download bzip2-1.0.5-bin.zip</li> <li>In the zipped file, in the bin folder, find the file bzip2.dll</li> <li>Extract bzip2.dll to your mingw64\bin folder (same folder as above: C:\Program Files\Git\mingw64\bin)</li></ol> <h3 id="git-status-filename-oneline"><a href="#git-status-filename-oneline" class="header-anchor">#</a> git status filename oneline</h3> <div class="language- extra-class"><pre class="language-text"><code>git status --porcelain | sed s/^...//
+git status -s | cut -c4-
+
+git diff --name-only
+git diff --name-only --staged
+git diff --name-only HEAD
+</code></pre></div><h3 id="git-add-취소하기-unstage로-변경"><a href="#git-add-취소하기-unstage로-변경" class="header-anchor">#</a> git add 취소하기(unstage로 변경)</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+
+<span class="token comment"># 전체 되돌리기</span>
+<span class="token function">git</span> reset HEAD
+<span class="token comment"># 특정파일 되돌리기</span>
+<span class="token function">git</span> restore <span class="token parameter variable">--staged</span> filename
+</code></pre></div><h3 id="git-특정-커밋-이미지-파일이-사라지지-않는-경우"><a href="#git-특정-커밋-이미지-파일이-사라지지-않는-경우" class="header-anchor">#</a> git 특정 커밋 이미지 파일이 사라지지 않는 경우</h3> <div class="language- extra-class"><pre class="language-text"><code>특정 커밋 이미지 파일이 깃으로 삭제가 계속 남는 경우
+.git &gt; config 파일에 해당 내용이 사라짐
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+</code></pre></div><h3 id="git-특정-파일의-수정사항-무시"><a href="#git-특정-파일의-수정사항-무시" class="header-anchor">#</a> git 특정 파일의 수정사항 무시</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 특정 파일의 수정사항 무시하기</span>
+<span class="token function">git</span> update-index --assume-unchanged <span class="token punctuation">[</span>file path<span class="token punctuation">]</span>
+<span class="token comment"># 특정 파일의 수정사항 무시 취소하기</span>
+<span class="token function">git</span> update-index --no-assume-unchanged <span class="token punctuation">[</span>file path<span class="token punctuation">]</span>
+<span class="token comment"># 수정사항 무시 파일 조회</span>
+<span class="token function">git</span> ls-files -v<span class="token operator">|</span><span class="token function">grep</span> <span class="token string">'^h'</span>
+</code></pre></div><h3 id="git-lcoal에서만-적용"><a href="#git-lcoal에서만-적용" class="header-anchor">#</a> git lcoal에서만 적용</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 1</span>
+<span class="token function">vim</span> .git/info/exclude
+
+<span class="token function">git</span> update-index --skip-worktree .vscode/launch.json
+<span class="token function">git</span> update-index --no-skip-worktree .vscode/launch.json
+
+<span class="token comment"># 2</span>
+<span class="token function">git</span> update-index --assume-unchanged .vscode/launch.json
+<span class="token function">git</span> update-index --no-assume-unchanged .vscode/launch.json
+<span class="token function">git</span> ls-files <span class="token parameter variable">-v</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">'^[[:lower:]]'</span>
+</code></pre></div><h3 id="git-push-하지-않은-목록-확인"><a href="#git-push-하지-않은-목록-확인" class="header-anchor">#</a> git push 하지 않은 목록 확인</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> log <span class="token parameter variable">--branches</span> <span class="token parameter variable">--not</span> <span class="token parameter variable">--remotes</span>
+<span class="token function">git</span> log <span class="token parameter variable">--branches</span> <span class="token parameter variable">--not</span> <span class="token parameter variable">--remotes</span> <span class="token parameter variable">--oneline</span> <span class="token parameter variable">--graph</span> <span class="token parameter variable">--decorate</span>
+</code></pre></div><h3 id="git-log-clear"><a href="#git-log-clear" class="header-anchor">#</a> git log clear</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> reflog expire <span class="token parameter variable">--expire</span><span class="token operator">=</span>now <span class="token parameter variable">--all</span>
+<span class="token function">git</span> gc <span class="token parameter variable">--aggressive</span> <span class="token parameter variable">--prune</span><span class="token operator">=</span>all
+</code></pre></div><h3 id="git-alias"><a href="#git-alias" class="header-anchor">#</a> git alias</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># https://hannut91.github.io/blogs/git/config</span>
+<span class="token function">git</span> config <span class="token parameter variable">--global</span> alias.cm commit
+<span class="token function">git</span> config <span class="token parameter variable">--global</span> alias.co checkout
+
+<span class="token comment"># 머지된 브랜치 일괄삭제 (.gitconfig)</span>
+<span class="token punctuation">[</span>alias<span class="token punctuation">]</span>
+    cleanbranch <span class="token operator">=</span> <span class="token string">&quot;!git branch -d <span class="token variable"><span class="token variable">$(</span><span class="token function">git</span> branch <span class="token parameter variable">--merged</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token parameter variable">-v</span> <span class="token string">'\\&lt;master\\&gt;'</span><span class="token variable">)</span></span>&quot;</span>
+</code></pre></div><h4 id="references"><a href="#references" class="header-anchor">#</a> References</h4> <div class="language- extra-class"><pre class="language-text"><code>Git Portable Location
+https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/Where-system-global-and-local-Windows-Git-config-files-are-saved
+https://trustyoo86.github.io/git/2017/11/28/git-remote-branch-create.html
+
+https://velog.io/@hwang-eunji/github-2%EA%B0%9C-%EA%B3%84%EC%A0%95-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0
+
+
+https://trustyoo86.github.io/git/2017/11/28/git-remote-branch-create.html
+https://beomseok95.tistory.com/167#google_vignette
+git rebase: https://junlab.tistory.com/m/203
+https://doublesprogramming.tistory.com/256
+git local pull request: https://blog.outsider.ne.kr/1204
+git cherry-pick: https://gitbetter.substack.com/p/how-to-use-git-cherry-pick-effectively
+git submodule: https://pinedance.github.io/blog/2019/05/28/Git-Submodule
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">10/7/2024, 11:33:14 PM</span></div></footer> <!----> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.d1976609.js" defer></script><script src="/assets/js/20.082c4b95.js" defer></script><script src="/assets/js/2.9ab96aca.js" defer></script><script src="/assets/js/1.cd1be094.js" defer></script><script src="/assets/js/102.c81312e6.js" defer></script><script src="/assets/js/21.4ecdae8a.js" defer></script>
+  </body>
+</html>

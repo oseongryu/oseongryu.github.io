@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ORACLE 18C XE 접속방법 | github.io</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/images/logo.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="description" content="Description">
+    
+    <link rel="preload" href="/assets/css/0.styles.6b5f79b2.css" as="style"><link rel="preload" href="/assets/js/app.d1976609.js" as="script"><link rel="preload" href="/assets/js/20.082c4b95.js" as="script"><link rel="preload" href="/assets/js/2.9ab96aca.js" as="script"><link rel="preload" href="/assets/js/1.cd1be094.js" as="script"><link rel="preload" href="/assets/js/41.39eb7776.js" as="script"><link rel="preload" href="/assets/js/21.4ecdae8a.js" as="script"><link rel="prefetch" href="/assets/js/10.e06d6cb0.js"><link rel="prefetch" href="/assets/js/100.799b6d01.js"><link rel="prefetch" href="/assets/js/101.512f25e8.js"><link rel="prefetch" href="/assets/js/102.c81312e6.js"><link rel="prefetch" href="/assets/js/103.17640882.js"><link rel="prefetch" href="/assets/js/104.e09b6d3c.js"><link rel="prefetch" href="/assets/js/105.ae9cc38f.js"><link rel="prefetch" href="/assets/js/106.21a49a7c.js"><link rel="prefetch" href="/assets/js/107.12bc4840.js"><link rel="prefetch" href="/assets/js/108.db8bb410.js"><link rel="prefetch" href="/assets/js/109.c9af00fb.js"><link rel="prefetch" href="/assets/js/11.8e2820cd.js"><link rel="prefetch" href="/assets/js/110.29c2b72d.js"><link rel="prefetch" href="/assets/js/111.e835f900.js"><link rel="prefetch" href="/assets/js/112.5c80798a.js"><link rel="prefetch" href="/assets/js/113.da2fbe9d.js"><link rel="prefetch" href="/assets/js/114.05d9ad94.js"><link rel="prefetch" href="/assets/js/115.11754dca.js"><link rel="prefetch" href="/assets/js/116.29b54438.js"><link rel="prefetch" href="/assets/js/117.497de446.js"><link rel="prefetch" href="/assets/js/118.fda3f847.js"><link rel="prefetch" href="/assets/js/119.bc9cc0f0.js"><link rel="prefetch" href="/assets/js/12.edc499f4.js"><link rel="prefetch" href="/assets/js/120.6be5d894.js"><link rel="prefetch" href="/assets/js/121.6dd2bce2.js"><link rel="prefetch" href="/assets/js/122.b54603f7.js"><link rel="prefetch" href="/assets/js/123.67966b4b.js"><link rel="prefetch" href="/assets/js/124.bf6ba67d.js"><link rel="prefetch" href="/assets/js/125.d5f9ec85.js"><link rel="prefetch" href="/assets/js/126.bec54cf7.js"><link rel="prefetch" href="/assets/js/127.f72780da.js"><link rel="prefetch" href="/assets/js/128.eab193dc.js"><link rel="prefetch" href="/assets/js/129.41f7b514.js"><link rel="prefetch" href="/assets/js/13.f3683ba3.js"><link rel="prefetch" href="/assets/js/130.282bc3e9.js"><link rel="prefetch" href="/assets/js/131.b14fce8a.js"><link rel="prefetch" href="/assets/js/132.2e56b792.js"><link rel="prefetch" href="/assets/js/133.694bf2a9.js"><link rel="prefetch" href="/assets/js/134.13e6069b.js"><link rel="prefetch" href="/assets/js/135.8672602c.js"><link rel="prefetch" href="/assets/js/14.6eade5a2.js"><link rel="prefetch" href="/assets/js/15.7dfe9f7c.js"><link rel="prefetch" href="/assets/js/16.7750d38e.js"><link rel="prefetch" href="/assets/js/17.2edda520.js"><link rel="prefetch" href="/assets/js/18.8d50ab20.js"><link rel="prefetch" href="/assets/js/19.bb8ff7e1.js"><link rel="prefetch" href="/assets/js/22.f4714518.js"><link rel="prefetch" href="/assets/js/23.b2fe7383.js"><link rel="prefetch" href="/assets/js/24.c1374ce8.js"><link rel="prefetch" href="/assets/js/25.c15fd52a.js"><link rel="prefetch" href="/assets/js/26.62e757bc.js"><link rel="prefetch" href="/assets/js/27.f43d25b1.js"><link rel="prefetch" href="/assets/js/28.eaa66a30.js"><link rel="prefetch" href="/assets/js/29.563d63ff.js"><link rel="prefetch" href="/assets/js/3.50dc3479.js"><link rel="prefetch" href="/assets/js/30.8a6fa97e.js"><link rel="prefetch" href="/assets/js/31.e5ded6fa.js"><link rel="prefetch" href="/assets/js/32.3b165ecb.js"><link rel="prefetch" href="/assets/js/33.7adaf42a.js"><link rel="prefetch" href="/assets/js/34.35cac927.js"><link rel="prefetch" href="/assets/js/35.3a9164e7.js"><link rel="prefetch" href="/assets/js/36.e1880931.js"><link rel="prefetch" href="/assets/js/37.0af861f2.js"><link rel="prefetch" href="/assets/js/38.1ddfdb8d.js"><link rel="prefetch" href="/assets/js/39.29d1b91e.js"><link rel="prefetch" href="/assets/js/4.7c332f88.js"><link rel="prefetch" href="/assets/js/40.a3d4295f.js"><link rel="prefetch" href="/assets/js/42.e55e8ae9.js"><link rel="prefetch" href="/assets/js/43.c1c8e780.js"><link rel="prefetch" href="/assets/js/44.56400efa.js"><link rel="prefetch" href="/assets/js/45.8fbf584e.js"><link rel="prefetch" href="/assets/js/46.c4e813c9.js"><link rel="prefetch" href="/assets/js/47.1defe09f.js"><link rel="prefetch" href="/assets/js/48.4a3adf4c.js"><link rel="prefetch" href="/assets/js/49.bc57ecd0.js"><link rel="prefetch" href="/assets/js/5.5a74b1f3.js"><link rel="prefetch" href="/assets/js/50.e5249bad.js"><link rel="prefetch" href="/assets/js/51.2426c406.js"><link rel="prefetch" href="/assets/js/52.51a9793b.js"><link rel="prefetch" href="/assets/js/53.3d571b76.js"><link rel="prefetch" href="/assets/js/54.2fce2aa5.js"><link rel="prefetch" href="/assets/js/55.3dc09200.js"><link rel="prefetch" href="/assets/js/56.430434d4.js"><link rel="prefetch" href="/assets/js/57.6d515eea.js"><link rel="prefetch" href="/assets/js/58.d93fdfc4.js"><link rel="prefetch" href="/assets/js/59.e24cd2dc.js"><link rel="prefetch" href="/assets/js/6.08cf40a8.js"><link rel="prefetch" href="/assets/js/60.b8c1c839.js"><link rel="prefetch" href="/assets/js/61.bacc177a.js"><link rel="prefetch" href="/assets/js/62.3faffb30.js"><link rel="prefetch" href="/assets/js/63.e5fdc614.js"><link rel="prefetch" href="/assets/js/64.4fd3c4f0.js"><link rel="prefetch" href="/assets/js/65.5ca239bb.js"><link rel="prefetch" href="/assets/js/66.99691ce7.js"><link rel="prefetch" href="/assets/js/67.a08a19e6.js"><link rel="prefetch" href="/assets/js/68.afc12570.js"><link rel="prefetch" href="/assets/js/69.7164c014.js"><link rel="prefetch" href="/assets/js/7.92d79a17.js"><link rel="prefetch" href="/assets/js/70.66b97d65.js"><link rel="prefetch" href="/assets/js/71.6ebadf8a.js"><link rel="prefetch" href="/assets/js/72.5c95375e.js"><link rel="prefetch" href="/assets/js/73.a1851be0.js"><link rel="prefetch" href="/assets/js/74.baf28081.js"><link rel="prefetch" href="/assets/js/75.9c7fad15.js"><link rel="prefetch" href="/assets/js/76.8eddd9cb.js"><link rel="prefetch" href="/assets/js/77.ae17ce20.js"><link rel="prefetch" href="/assets/js/78.74883433.js"><link rel="prefetch" href="/assets/js/79.aceb7fee.js"><link rel="prefetch" href="/assets/js/80.cabb9935.js"><link rel="prefetch" href="/assets/js/81.16d64f7b.js"><link rel="prefetch" href="/assets/js/82.86a512b8.js"><link rel="prefetch" href="/assets/js/83.5d360f70.js"><link rel="prefetch" href="/assets/js/84.6bf622f9.js"><link rel="prefetch" href="/assets/js/85.cd0a3fe7.js"><link rel="prefetch" href="/assets/js/86.af7c787e.js"><link rel="prefetch" href="/assets/js/87.ae6e9664.js"><link rel="prefetch" href="/assets/js/88.8784278f.js"><link rel="prefetch" href="/assets/js/89.9a6f1c34.js"><link rel="prefetch" href="/assets/js/90.90af989d.js"><link rel="prefetch" href="/assets/js/91.92952a34.js"><link rel="prefetch" href="/assets/js/92.712d5e1b.js"><link rel="prefetch" href="/assets/js/93.2cc2ee0b.js"><link rel="prefetch" href="/assets/js/94.db6dea85.js"><link rel="prefetch" href="/assets/js/95.a907efa3.js"><link rel="prefetch" href="/assets/js/96.5e3155d7.js"><link rel="prefetch" href="/assets/js/97.1a40fe99.js"><link rel="prefetch" href="/assets/js/98.dc9dfe48.js"><link rel="prefetch" href="/assets/js/99.8cff8b89.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.bd3cdb54.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6b5f79b2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">github.io</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://oseongryu.github.io/" target="_self" class="nav-link external">
+  Home
+  <!----></a></div><div class="nav-item"><a href="https://github.com/oseongryu/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://oseongryu.github.io/" target="_self" class="nav-link external">
+  Home
+  <!----></a></div><div class="nav-item"><a href="https://github.com/oseongryu/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>os</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/os/mac.html" class="sidebar-link">mac</a></li><li><a href="/os/windows.html" class="sidebar-link">windows</a></li><li><a href="/os/ubuntu.html" class="sidebar-link">ubuntu</a></li><li><a href="/os/centos.html" class="sidebar-link">centos</a></li><li><a href="/os/wsl.html" class="sidebar-link">wsl</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>docker</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docker/docker-1_setup.html" class="sidebar-link">docker-1_setup</a></li><li><a href="/docker/docker-2_using.html" class="sidebar-link">docker-2_using</a></li><li><a href="/docker/docker-centos.html" class="sidebar-link">docker-centos</a></li><li><a href="/docker/docker-env.html" class="sidebar-link">docker-env</a></li><li><a href="/docker/docker-jekyll.html" class="sidebar-link">docker-jekyll</a></li><li><a href="/docker/docker-mac-m1.html" class="sidebar-link">docker-mac-m1</a></li><li><a href="/docker/docker-mariadb.html" class="sidebar-link">docker-mariadb</a></li><li><a href="/docker/docker.html" class="sidebar-link">docker</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>jenkins</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>asp</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>aws</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>cs</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>dbms</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/dbms/oracle.html" aria-current="page" class="active sidebar-link">oracle</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>deploy</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>domain</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>education</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>etc</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>flutter</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>hadoop</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>java</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>javascript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>project</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>python</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>react</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>rn</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>software</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>springboot</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>vue</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h4 id="oracle-18c-xe-접속방법"><a href="#oracle-18c-xe-접속방법" class="header-anchor">#</a> ORACLE 18C XE 접속방법</h4> <div class="language- extra-class"><pre class="language-text"><code>(나의 경우 회사 네트워크에서 127.0.0.1이 아니라 정확한 ip를 입력해서 됨)
+https://www.youtube.com/watch?v=jMzhxbiFXtM
+
+sqlplus / as sysdba
+SELECT name, open_mode, cdb FROM v$database;
+show pdbs;
+exit
+
+lsnrctl status (오라클의 ServiceName확인하기)
+
+services.msc oracle이 켜져있는지 확인하기
+
+C:\app\f5074\product\18.0.0\dbhomeXE\network\admin\tnsnames.ora  SERVICE_NAME확인하기
+</code></pre></div><h4 id="오라클-sql파일-임포트-방법"><a href="#오라클-sql파일-임포트-방법" class="header-anchor">#</a> 오라클 sql파일 임포트 방법</h4> <div class="language- extra-class"><pre class="language-text"><code>https://enspring.tistory.com/517
+https://blog.naver.com/PostView.nhn?blogId=kimdj217&amp;logNo=221405032563&amp;parentCategoryNo=&amp;categoryNo=34&amp;viewDate=&amp;isShowPopularPosts=false&amp;from=postView
+cmd 에서 sqlplus system
+@C:\Users\f5074\Documents\ex.sql
+</code></pre></div><h4 id="_1분단위로-날짜-생성"><a href="#_1분단위로-날짜-생성" class="header-anchor">#</a> 1분단위로 날짜 생성</h4> <div class="language- extra-class"><pre class="language-text"><code>SELECT TO_CHAR(TO_DATE(START_DTTM, 'YYYYMMDDHH24MI') + (((LEVEL / 60)) / 24), 'YYYYMMDDHH24MI') TIME_STR
+FROM (
+	SELECT '202012291300' AS START_DTTM
+		, '202012301430' AS END_DTTM
+	FROM DUAL
+	) connect BY TO_DATE(START_DTTM, 'YYYYMMDDHH24MI') + (((LEVEL / 60)) / 24) &lt;= TO_DATE(END_DTTM, 'YYYYMMDDHH24MI');
+</code></pre></div><h4 id="x일-단위로-날짜-생성"><a href="#x일-단위로-날짜-생성" class="header-anchor">#</a> x일 단위로 날짜 생성</h4> <div class="language- extra-class"><pre class="language-text"><code>SELECT TO_CHAR(DUM_DAYS, 'YYYYMMDD') DUM_DAYS
+FROM (
+    SELECT TO_DATE('20200101', 'YYYYMMDD') - 1 + ROWNUM AS DUM_DAYS
+    FROM ALL_OBJECTS
+    WHERE TO_DATE('20200101', 'YYYYMMDD') - 1 + ROWNUM &lt; TO_DATE('20200120', 'YYYYMMDD')
+    )
+ WHERE TO_CHAR(DUM_DAYS, 'D') = '7'
+</code></pre></div><h4 id="x일-단위-활용"><a href="#x일-단위-활용" class="header-anchor">#</a> X일 단위 활용</h4> <div class="language- extra-class"><pre class="language-text"><code>WITH TB_DATE AS (
+	SELECT TO_CHAR(DUM_DAYS, 'YYYYMMDD') DUM_DAYS
+	FROM (
+	    SELECT TO_DATE('20200101', 'YYYYMMDD') - 1 + ROWNUM AS DUM_DAYS
+	    FROM ALL_OBJECTS
+	    WHERE TO_DATE('20200101', 'YYYYMMDD') - 1 + ROWNUM &lt;= TO_DATE('20200120', 'YYYYMMDD')
+	    )
+), TB_CODE AS(
+		SELECT GENE_CD_DESC
+		FROM T_CD_GENE_DATA
+		WHERE 1 = 1
+		  AND GENE_DV = 'STAT_EQP_SET'
+)
+SELECT TD.DUM_DAYS, TC.GENE_CD_DESC
+  FROM TB_DATE TD, TB_CODE TC
+ORDER BY DUM_DAYS
+</code></pre></div><h4 id="설비데이터"><a href="#설비데이터" class="header-anchor">#</a> 설비데이터</h4> <div class="language- extra-class"><pre class="language-text"><code>설비데이터를 차트로 만들때, 각 분단위로 데이터가 쌓이는 상황
+상황에 따라 분단위 데이터가 중간에 빠질 때 빈값이 없도록 등록하는 방법
+1. 클라이언트에서 없을 경우 이전데이터를 추가하는 형태로 구현
+2. 쿼리를 사용해서 없는 데이터의 경우 만들어주는 방법
+3. 설비에서 측정하는 항목별(ITEM_CD)로 날짜별로 데이터를 생성해야함
+4. 데이터가 없는 빈값의 경우 이전 혹은 이후에 있는 데이터로 값을 덮어씌워야 함
+</code></pre></div><h4 id="dblink"><a href="#dblink" class="header-anchor">#</a> DBLINK</h4> <div class="language- extra-class"><pre class="language-text"><code>JOIN 자체를 외부 DB에서 수행하려면, /*+ DRIVING_SITE(EXT_TABLE) */ 을 사용한다.
+
+-&gt; 보통 외부 DB의 TABLE이 큰 경우, 작은 내부 DB DATA 를 그쪽으로 보낸후 JOIN 이후의 결과를 받는 방식
+
+LEADING 등의 힌트가 안 먹을때는? 그냥 테이블, 뷰 순서 바꾸고 ORDERED 힌트 적용하면 먹힘
+
+-&gt; Query Transformation 등으로 인해 Query Block 이 바뀔수 있어 명시적으로 이름을 지정하는 LEADING 힌트가 안먹을 때가
+
+있는 것 같다. 10053 Trace 확인하면 정확한 BLOCK 명이 나오려나?
+</code></pre></div><h4 id="dump파일-import"><a href="#dump파일-import" class="header-anchor">#</a> Dump파일 Import</h4> <div class="language- extra-class"><pre class="language-text"><code>1. 먼저 emt.dmp파일을 C:\DEV에 저장
+2. cmd에서 순서대로 입력을 하면 됨
+
+1) C:\Users\hkedu&gt;sqlplus &quot;/as sysdba&quot;
+2) SQL&gt; create user emt identified by emt default tablespace users;
+3) SQL&gt; grant connect, resource to emt;
+4) SQL&gt; create directory save as 'c:/dev';
+5) SQL&gt; grant read, write on directory save to emt;
+6) SQL&gt; exit
+7) C:\Users\hkedu&gt;impdp emt/emt directory=save file=emt.dmp
+
+
+오류가 생길 경우
+
+1) C:\Users\hkedu&gt;sqlplus &quot;/as sysdba&quot;
+2) SQL&gt; drop user emt cascade;
+3) SQL&gt; drop directory save;
+4) SQL&gt; create user emt identified by emt default tablespace users;
+5) SQL&gt; grant connect, resource to emt;
+6) SQL&gt; create directory save as 'c:/dev';
+7) SQL&gt; grant read, write on directory save to emt;
+8) SQL&gt; exit
+9) C:\Users\hkedu&gt;impdp emt/emt directory=save file=emt.dmp
+</code></pre></div><h4 id="order-by"><a href="#order-by" class="header-anchor">#</a> ORDER BY</h4> <div class="language- extra-class"><pre class="language-text"><code>GROUP BY SITE, CUR_DT, EQP_DESC, EQP_NO, EQP_ID, STATUS, STATUS_D
+ORDER BY SITE, CUR_DT, EQP_DESC ASC, EQP_NO, EQP_ID, STATUS, DECODE(STATUS_D, 'ChangePowder', 1, 'ChangeMold', 2, 'SampleProduction', 3)
+</code></pre></div><h4 id="일-주-월-년-단위-값-구하기"><a href="#일-주-월-년-단위-값-구하기" class="header-anchor">#</a> 일,주,월,년 단위 값 구하기</h4> <div class="language- extra-class"><pre class="language-text"><code>날짜별로 데이터를 수집 후 일, 주, 월, 년 단위로 GROUP BY로 처리할 수 있음
+
+SELECT TO_CHAR(TO_TIMESTAMP('20200209 13595500', 'YYYYMMDD HH24MISSFF3'), 'YYYY-MM-DD') AS YEAR_MONTH_DAYS
+	, TO_CHAR(TO_TIMESTAMP('20200209 13595500', 'YYYYMMDD HH24MISSFF3'), 'YYYY-WW') || ' W' AS YEAR_WEEKS
+	, TO_CHAR(TO_TIMESTAMP('20200209 13595500', 'YYYYMMDD HH24MISSFF3'), 'YYYY-MM') AS YEAR_MONTHS
+	, TO_CHAR(TO_TIMESTAMP('20200209 13595500', 'YYYYMMDD HH24MISSFF3'), 'YYYY') AS YEARS
+FROM DUAL
+
+
+
+SELECT TO_CHAR(SYSDATE, 'YYYY-MM-DD')
+	 , TO_CHAR(SYSDATE, 'YYYY-WW') || ' W'
+	 , TO_CHAR(SYSDATE, 'YYYY-MM')
+	 , TO_CHAR(SYSDATE, 'YYYY')
+  FROM DUAL
+</code></pre></div><h4 id="ora-01000최대-열기-커서-수를-초과했습니다"><a href="#ora-01000최대-열기-커서-수를-초과했습니다" class="header-anchor">#</a> ORA-01000최대 열기 커서 수를 초과했습니다.</h4> <div class="language- extra-class"><pre class="language-text"><code>&gt; 위와같은 에러발생 시 사용하는 트랜잭션 테이블에 Lock가 걸릴 확률이 높음
+
+SELECT SID
+	, USER_NAME
+	, COUNT(SID) CURSOR
+FROM V$OPEN_CURSOR
+WHERE 1 = 1
+--  AND user_name = 'SCOTT'
+GROUP BY SID
+	, USER_NAME
+ORDER BY CURSOR DESC
+</code></pre></div><h4 id="procedures"><a href="#procedures" class="header-anchor">#</a> Procedures</h4> <div class="language- extra-class"><pre class="language-text"><code>##### 1. 테이블생성
+CREATE TABLE TABLE3
+(
+ COLUMN1 VARCHAR2(100)
+,COLUMN2 VARCHAR2(100)
+)
+
+##### 2. 프로시져 생성
+CREATE OR REPLACE PROCEDURE EX_PROC
+(
+   PARA1 IN VARCHAR2
+  ,PARA2 IN VARCHAR2
+)
+IS
+	RETURN_MESSAGE VARCHAR2(100) := 'test';
+	RETURN_MESSAGE2 VARCHAR2(100) := 'test';
+BEGIN
+	dbms_output.put_line(RETURN_MESSAGE);
+	INSERT INTO TABLE3 (COLUMN1, COLUMN2) VALUES(PARA1, PARA2);
+END EX_PROC;
+
+##### 3. 실행 (EXEC가 안될 경우 하단의 방식)
+EXEC EX_PROC('test','test');
+
+BEGIN
+ 	EX_PROC('test','test');
+END;
+
+</code></pre></div><h4 id="oracle-sequence"><a href="#oracle-sequence" class="header-anchor">#</a> Oracle sequence</h4> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">CREATE</span> SEQUENCE TEST<span class="token punctuation">.</span>SQ_ID INCREMENT <span class="token keyword">BY</span> <span class="token number">1</span> MINVALUE <span class="token number">1</span> MAXVALUE <span class="token number">999999999999999</span> <span class="token keyword">CYCLE</span> NOCACHE NOORDER<span class="token punctuation">;</span>
+
+<span class="token comment">-- 시퀀스 현재값 변경-1</span>
+<span class="token keyword">DROP</span> SEQUENCE SEQ_X<span class="token punctuation">;</span>
+<span class="token keyword">CREATE</span>  SEQUENCE SEQ_X <span class="token keyword">START</span> <span class="token keyword">WITH</span> <span class="token number">10001</span> INCREMENT <span class="token keyword">BY</span> <span class="token number">1</span> MAXVALUE  <span class="token number">1</span>E28 MINVALUE  <span class="token number">1</span> NOCYCLE CACHE  <span class="token number">20</span> NOORDER<span class="token punctuation">;</span>
+
+<span class="token comment">-- 시퀀스 현재값 변경-2</span>
+<span class="token keyword">ALTER</span> SEQUENCE SEQ_X INCREMENT <span class="token keyword">BY</span> <span class="token number">10000</span><span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> SEQ_X<span class="token punctuation">.</span>NEXTVAL <span class="token keyword">FROM</span> DUAL<span class="token punctuation">;</span>
+<span class="token keyword">ALTER</span> SEQUENCE SEQ_X INCREMENT <span class="token keyword">BY</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+
+<span class="token comment">-- 7만 8만 건이 넘어 갈 경우 하단의 sequence 성능이 더 좋음</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> TABLE1 <span class="token punctuation">(</span>
+	  SEQ
+	<span class="token punctuation">,</span> INST_DTM
+<span class="token punctuation">)</span>
+<span class="token keyword">VALUES</span> <span class="token punctuation">(</span>
+	  <span class="token punctuation">(</span><span class="token keyword">SELECT</span> NVL<span class="token punctuation">(</span><span class="token function">MAX</span><span class="token punctuation">(</span>TO_NUMBER<span class="token punctuation">(</span>SEQ<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token keyword">AS</span> SEQ <span class="token keyword">FROM</span> TABLE1<span class="token punctuation">)</span>
+	<span class="token punctuation">,</span> SYSDATE
+<span class="token punctuation">)</span>
+
+<span class="token comment">-- 연도 추가후 NEXTVAL</span>
+TO_CHAR<span class="token punctuation">(</span>SYSDATE<span class="token punctuation">,</span><span class="token string">'YYYY'</span><span class="token punctuation">)</span> <span class="token operator">||</span> LPAD<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">SELECT</span> NVL<span class="token punctuation">(</span>TO_NUMBER<span class="token punctuation">(</span> SUBSTR<span class="token punctuation">(</span><span class="token function">MAX</span><span class="token punctuation">(</span>SEQ<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token keyword">AS</span> SEQ <span class="token keyword">FROM</span> TABLE1<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span><span class="token string">'0'</span><span class="token punctuation">)</span>
+
+
+<span class="token operator">&lt;</span>selectKey resultType<span class="token operator">=</span><span class="token string">&quot;java.lang.String&quot;</span> keyProperty<span class="token operator">=</span><span class="token string">&quot;SEQ&quot;</span> <span class="token keyword">order</span><span class="token operator">=</span><span class="token string">&quot;BEFORE&quot;</span><span class="token operator">&gt;</span>
+	<span class="token keyword">SELECT</span> SQ_ID<span class="token punctuation">.</span>NEXTVAL <span class="token keyword">AS</span> SEQ <span class="token keyword">FROM</span> DUAL
+<span class="token operator">&lt;</span><span class="token operator">/</span>selectKey<span class="token operator">&gt;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> TABLE1 <span class="token punctuation">(</span>
+	SEQ
+	<span class="token punctuation">,</span> INST_DTM
+
+<span class="token punctuation">)</span>
+<span class="token keyword">VALUES</span> <span class="token punctuation">(</span>
+	<span class="token comment">#{SEQ}</span>
+	<span class="token punctuation">,</span> SYSDATE
+<span class="token punctuation">)</span>
+
+</code></pre></div><h4 id="날짜관련"><a href="#날짜관련" class="header-anchor">#</a> 날짜관련</h4> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SELECT</span>
+	TO_DATE<span class="token punctuation">(</span><span class="token string">'20220901'</span><span class="token operator">||</span><span class="token string">'235959'</span><span class="token punctuation">,</span> <span class="token string">'YYYYMMDDHH24MISS'</span><span class="token punctuation">)</span>
+	<span class="token punctuation">,</span> TO_DATE<span class="token punctuation">(</span><span class="token string">'20220901'</span><span class="token punctuation">,</span> <span class="token string">'YYYYMMDD'</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">0.99999</span>
+	<span class="token punctuation">,</span> TO_DATE<span class="token punctuation">(</span><span class="token string">'20220901'</span><span class="token punctuation">,</span> <span class="token string">'YYYYMMDD'</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">0.00001</span>
+	<span class="token punctuation">,</span> TO_DATE<span class="token punctuation">(</span><span class="token string">'20220901'</span><span class="token punctuation">,</span> <span class="token string">'YYYYMMDD'</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">0.99999</span>
+	<span class="token punctuation">,</span> TO_DATE<span class="token punctuation">(</span><span class="token string">'20220901'</span><span class="token punctuation">,</span> <span class="token string">'YYYYMMDD'</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">0.00001</span>
+<span class="token keyword">FROM</span> DUAL
+
+<span class="token comment">-- 컬럼이 DATE인 데이터를 확인할 때는 235959까지 확인하도록 진행해야함</span>
+<span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token operator">AND</span> REGISTER_DATE <span class="token operator">BETWEEN</span> TO_DATE<span class="token punctuation">(</span><span class="token string">'20220901'</span><span class="token punctuation">,</span> <span class="token string">'YYYYMMDD'</span><span class="token punctuation">)</span> <span class="token operator">AND</span> TO_DATE<span class="token punctuation">(</span><span class="token string">'20220901'</span><span class="token punctuation">,</span> <span class="token string">'YYYYMMDD'</span><span class="token punctuation">)</span>
+<span class="token punctuation">(</span>o<span class="token punctuation">)</span> <span class="token operator">AND</span> REGISTER_DATE <span class="token operator">BETWEEN</span> TO_DATE<span class="token punctuation">(</span><span class="token string">'20220901'</span><span class="token operator">||</span><span class="token string">'000000'</span><span class="token punctuation">,</span> <span class="token string">'YYYYMMDDHH24MISS'</span><span class="token punctuation">)</span> <span class="token operator">AND</span> TO_DATE<span class="token punctuation">(</span><span class="token string">'20220901'</span><span class="token operator">||</span><span class="token string">'235959'</span><span class="token punctuation">,</span> <span class="token string">'YYYYMMDDHH24MISS'</span><span class="token punctuation">)</span>
+</code></pre></div><h4 id="권한관련"><a href="#권한관련" class="header-anchor">#</a> 권한관련</h4> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SELECT</span> <span class="token operator">*</span>
+<span class="token keyword">FROM</span> DBA_TAB_PRIVS
+<span class="token keyword">WHERE</span> <span class="token number">1</span> <span class="token operator">=</span> <span class="token number">1</span>
+ <span class="token operator">AND</span> GRANTEE <span class="token operator">=</span> <span class="token string">'TEST'</span>
+</code></pre></div><h4 id="rownum-역순"><a href="#rownum-역순" class="header-anchor">#</a> ROWNUM 역순</h4> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SELECT</span>  NUM
+  <span class="token keyword">FROM</span> <span class="token punctuation">(</span>
+	<span class="token keyword">SELECT</span> ROW_NUMBER<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">OVER</span> <span class="token punctuation">(</span><span class="token keyword">ORDER</span> <span class="token keyword">BY</span> PK_KEY <span class="token keyword">DESC</span><span class="token punctuation">)</span> <span class="token keyword">AS</span> NUM
+	<span class="token keyword">FROM</span> <span class="token keyword">TEMP</span>
+<span class="token punctuation">)</span>
+<span class="token keyword">WHERE</span> <span class="token number">1</span> <span class="token operator">=</span> <span class="token number">1</span>
+ <span class="token operator">AND</span> NUM <span class="token operator">&lt;=</span> <span class="token number">1</span>
+</code></pre></div><h4 id="oracle-function"><a href="#oracle-function" class="header-anchor">#</a> oracle function</h4> <p>PLS-00306: 'TEST_OBJ' 호출 시 인수의 갯수나 유형이 잘못되었습니다
+function에서 object의 값을 추가할때 types에 선언된 object의 값을 같이 추가해줘야함</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">CREATE</span> <span class="token operator">OR</span> <span class="token keyword">REPLACE</span> <span class="token keyword">TYPE</span> TEST_OBJ <span class="token keyword">AS</span> OBJECT
+<span class="token punctuation">(</span>
+    TEST_A VARCHAR2<span class="token punctuation">(</span><span class="token number">15</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    TEST_B VARCHAR2<span class="token punctuation">(</span><span class="token number">7</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre></div><h4 id="oracle-package"><a href="#oracle-package" class="header-anchor">#</a> oracle package</h4> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">CREATE</span> <span class="token operator">OR</span> <span class="token keyword">REPLACE</span> PACKAGE TEST<span class="token punctuation">.</span>PACKAGE_TEST
+<span class="token keyword">AS</span>
+	<span class="token comment">-- 패키지에 들어올 프로시저, 함수 정의</span>
+	<span class="token keyword">PROCEDURE</span> PROC_TEST<span class="token punctuation">;</span>
+
+	<span class="token keyword">PROCEDURE</span> PROC_TEST2<span class="token punctuation">(</span>NAME <span class="token operator">IN</span> VARCHAR2<span class="token punctuation">,</span> AGE <span class="token operator">IN</span> NUMBER<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">FUNCTION</span> examFunc<span class="token punctuation">(</span>getGender <span class="token operator">IN</span> VARCHAR2<span class="token punctuation">)</span> <span class="token keyword">RETURN</span> VARCHAR2<span class="token punctuation">;</span>
+
+<span class="token keyword">END</span> PACKAGE_TEST<span class="token punctuation">;</span>
+
+
+
+
+
+
+
+<span class="token comment">-- 패키지 바디 부분</span>
+<span class="token keyword">CREATE</span> <span class="token operator">OR</span> <span class="token keyword">REPLACE</span> PACKAGE BODY TEST<span class="token punctuation">.</span>PACKAGE_TEST
+<span class="token keyword">AS</span>
+	 <span class="token comment">-- 패키지 내 프로시저, 함수 내용 정의</span>
+     <span class="token keyword">PROCEDURE</span> PROC_TEST
+	 <span class="token operator">IS</span>
+	 <span class="token keyword">BEGIN</span>
+	 	 <span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> TABLE_TEST<span class="token punctuation">(</span>COL1<span class="token punctuation">,</span>COL2<span class="token punctuation">)</span> <span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token string">'TEST'</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+     <span class="token keyword">END</span> PROC_TEST<span class="token punctuation">;</span>
+
+     <span class="token keyword">PROCEDURE</span> PROC_TEST2<span class="token punctuation">(</span>NAME <span class="token operator">IN</span> VARCHAR2<span class="token punctuation">,</span> AGE <span class="token operator">IN</span> NUMBER<span class="token punctuation">)</span>
+	 <span class="token operator">IS</span>
+	 <span class="token keyword">BEGIN</span>
+	 	 <span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> TABLE_TEST<span class="token punctuation">(</span>COL1<span class="token punctuation">,</span>COL2<span class="token punctuation">)</span> <span class="token keyword">VALUES</span><span class="token punctuation">(</span>NAME<span class="token punctuation">,</span> AGE<span class="token punctuation">)</span><span class="token punctuation">;</span>
+     <span class="token keyword">END</span> PROC_TEST2<span class="token punctuation">;</span>
+
+	 <span class="token keyword">FUNCTION</span> examFunc <span class="token comment">-- 함수명</span>
+	 <span class="token punctuation">(</span>getGender <span class="token operator">IN</span> VARCHAR2<span class="token punctuation">)</span> <span class="token comment">-- 함수 호출시 받아올 파라미터 정의</span>
+	 <span class="token keyword">RETURN</span> VARCHAR2 <span class="token comment">-- 함수 수행 시 반환할 데이터 타입</span>
+	 <span class="token operator">IS</span> <span class="token comment">-- 사용할 변수 정의</span>
+	 	setGender VARCHAR2<span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	 <span class="token keyword">BEGIN</span> <span class="token comment">-- 변수를 가지고 함수 수행</span>
+	     <span class="token keyword">IF</span> getGender <span class="token operator">=</span> <span class="token string">'남'</span> <span class="token keyword">THEN</span> setGender :<span class="token operator">=</span> <span class="token string">'남자'</span><span class="token punctuation">;</span>
+	     ELSIF getGender <span class="token operator">=</span> <span class="token string">'여'</span> <span class="token keyword">THEN</span> setGender :<span class="token operator">=</span> <span class="token string">'여자'</span><span class="token punctuation">;</span>
+	     <span class="token keyword">ELSE</span> setGender :<span class="token operator">=</span> <span class="token string">'오류'</span><span class="token punctuation">;</span>
+	     <span class="token keyword">END</span> <span class="token keyword">IF</span><span class="token punctuation">;</span>
+	 <span class="token keyword">RETURN</span> setGender<span class="token punctuation">;</span> <span class="token comment">-- 반환</span>
+	 <span class="token keyword">END</span> examFunc<span class="token punctuation">;</span>
+
+<span class="token keyword">END</span> PACKAGE_TEST<span class="token punctuation">;</span>
+</code></pre></div><h4 id="oracle-procedure"><a href="#oracle-procedure" class="header-anchor">#</a> oracle procedure</h4> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token comment">-- IN 변수만 있는경우 실행</span>
+<span class="token keyword">EXEC</span> TEST_PROC<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">EXEC</span> TEST_PROC<span class="token punctuation">(</span><span class="token number">213</span><span class="token punctuation">,</span> <span class="token string">'DDOL'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- OUT 변수 있는경우 실행</span>
+<span class="token keyword">DECLARE</span>
+    param1 varchar2<span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    param2 varchar2<span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">BEGIN</span>
+    TEST_PROC<span class="token punctuation">(</span><span class="token string">'123'</span><span class="token punctuation">,</span> param1<span class="token punctuation">,</span> param2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">END</span><span class="token punctuation">;</span>
+
+<span class="token comment"># https://studyingazae.tistory.com/59</span>
+</code></pre></div><h4 id="테이블-컬럼찾기"><a href="#테이블-컬럼찾기" class="header-anchor">#</a> 테이블 컬럼찾기</h4> <p>/<em>테이블 내 컬럼 찾기</em>/
+SELECT * FROM USER_TAB_COLUMNS WHERE COLUMN_NAME LIKE '%ATT_FL_GRP_ID%';</p> <h4 id="오라클"><a href="#오라클" class="header-anchor">#</a> 오라클</h4> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> DBA_OBJECTS <span class="token keyword">WHERE</span> OWNER <span class="token operator">=</span> <span class="token string">'CCIP'</span> <span class="token operator">AND</span> OBJECT_TYPE <span class="token operator">=</span> <span class="token string">'TABLE'</span> <span class="token operator">AND</span> OBJECT_NAME <span class="token operator">LIKE</span> <span class="token string">'%MBSH%'</span><span class="token punctuation">;</span>
+</code></pre></div><h4 id="oracle-charset-to-java"><a href="#oracle-charset-to-java" class="header-anchor">#</a> oracle charset to java</h4> <div class="language- extra-class"><pre class="language-text"><code>
+SELECT LENGTHB(LTRIM(RTRIM('똠방각하햬썊'))) AS A11
+  FROM DUAL
+;
+
+SELECT *
+FROM NLS_DATABASE_PARAMETERS
+WHERE PARAMETER = 'NLS_CHARACTERSET'
+;
+
+
+import java.io.UnsupportedEncodingException;
+
+public class TestCode {
+
+    public static void main(String[] args) throws UnsupportedEncodingException{
+
+        String charset;
+        String test;
+        int length;
+
+        test = &quot;[ 30%할인! ]셀티아라 프리스틴 앰플 수분크림, 안티에이징, 보습 탄력, 줄기세포 배양액 화장품 (50ml X 1ea)&quot;;
+
+        charset = &quot;MS949&quot;;
+        length = test.getBytes(charset).length;
+        System.out.println(charset + &quot; length : &quot; + length + &quot; Bytes&quot;);
+
+        charset = &quot;UTF-8&quot;;
+        length = test.getBytes(charset).length;
+        System.out.println(charset + &quot; length : &quot; + length + &quot; Bytes&quot;);
+
+        charset = &quot;euc-kr&quot;;
+        length = test.getBytes(charset).length;
+        System.out.println(charset +&quot; length : &quot; + length + &quot; Bytes&quot;);
+
+        test = &quot;똠방각하햬썊&quot;;
+
+        charset = &quot;MS949&quot;;
+        length = test.getBytes(charset).length;
+        System.out.println(charset + &quot; length : &quot; + length + &quot; Bytes&quot;);
+
+        charset = &quot;UTF-8&quot;;
+        length = test.getBytes(charset).length;
+        System.out.println(charset + &quot; length : &quot; + length + &quot; Bytes&quot;);
+
+        charset = &quot;euc-kr&quot;;
+        length = test.getBytes(charset).length;
+        System.out.println(charset + &quot; length : &quot; + length + &quot; Bytes&quot;);
+    }
+}
+</code></pre></div><h3 id="oracle-merge문-관련"><a href="#oracle-merge문-관련" class="header-anchor">#</a> oracle merge문 관련</h3> <p>데이터가 null인경우 성립하지 않음 이 경우 NVL 처리로 null이 아니도록 변경
+t.DTL_ADDR = s.DTL_ADDR =&gt; and nvl(t.DTL_ADDR, '1') = nvl(s.DTL_ADDR, '1')</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">MERGE</span> <span class="token keyword">INTO</span> TABLE1 T
+<span class="token keyword">USING</span> <span class="token punctuation">(</span>
+	<span class="token keyword">SELECT</span>  ALLN_ORD_MST_ID
+		  <span class="token punctuation">,</span> ALLN_ORD_ID
+	<span class="token keyword">FROM</span> TEMP1
+	<span class="token keyword">WHERE</span> INST_ID <span class="token operator">=</span> I_INTG_MEM_ID
+	<span class="token operator">AND</span> ALLN_ORD_MST_ID <span class="token operator">=</span> I_ALLN_ORD_MST_ID
+<span class="token punctuation">)</span> S
+<span class="token keyword">ON</span> <span class="token punctuation">(</span>    T<span class="token punctuation">.</span>ALLN_ORD_MST_ID <span class="token operator">=</span> S<span class="token punctuation">.</span>ALLN_ORD_MST_ID
+	<span class="token operator">AND</span> NVL<span class="token punctuation">(</span>T<span class="token punctuation">.</span>DTL_ADDR<span class="token punctuation">,</span> <span class="token string">'1'</span><span class="token punctuation">)</span> <span class="token operator">=</span> NVL<span class="token punctuation">(</span>S<span class="token punctuation">.</span>DTL_ADDR<span class="token punctuation">,</span> <span class="token string">'1'</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span>
+<span class="token keyword">WHEN</span> <span class="token keyword">MATCHED</span> <span class="token keyword">THEN</span>
+<span class="token keyword">UPDATE</span>
+<span class="token keyword">SET</span>   T<span class="token punctuation">.</span>MDF_DTM <span class="token operator">=</span> SYSDATE
+	<span class="token punctuation">,</span> T<span class="token punctuation">.</span>MDF_ID <span class="token operator">=</span> S<span class="token punctuation">.</span>INST_ID
+<span class="token keyword">WHERE</span> T<span class="token punctuation">.</span>FAIL_RSN <span class="token operator">IS</span> <span class="token boolean">NULL</span>
+</code></pre></div><h3 id="oracle"><a href="#oracle" class="header-anchor">#</a> oracle</h3> <div class="language-sql extra-class"><pre class="language-sql"><code>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span>
+  <span class="token keyword">FROM</span> TABLE1
+<span class="token keyword">START</span> <span class="token keyword">WITH</span> UPR_GRP_ID <span class="token operator">IS</span> <span class="token boolean">NULL</span>
+<span class="token keyword">CONNECT</span> <span class="token keyword">BY</span> PRIOR UPR_GRP_ID <span class="token operator">=</span> GRP_ID
+
+
+
+<span class="token keyword">SELECT</span> <span class="token operator">*</span>
+  <span class="token keyword">FROM</span> TABLE1
+<span class="token keyword">START</span> <span class="token keyword">WITH</span> UPR_GRP_ID <span class="token operator">IS</span> <span class="token boolean">NULL</span>
+<span class="token keyword">CONNECT</span> <span class="token keyword">BY</span> PRIOR GRP_ID <span class="token operator">=</span> UPR_GRP_ID
+</code></pre></div><h3 id="declare-begin-end"><a href="#declare-begin-end" class="header-anchor">#</a> declare begin end</h3> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token comment">-- 1. declare begin end - PL/SQL 기본으로 쿼리, 문법을 실행할 수 있습니다</span>
+<span class="token comment">-- 2. declare [선언부] - 변수, 상수를 선언할 수 있습니다</span>
+<span class="token comment">-- 3. begin [실행부] - 제어, 반복문, 함수 등 다양한 로직 기술을 실행합니다</span>
+<span class="token comment">-- 4. end [종료부] - 실행된 로직의 종료를 선언합니다</span>
+<span class="token comment">-- 5. 실행한 결과는 DBMS_OUTPUT에서 확인할 수 있습니다</span>
+<span class="token keyword">DECLARE</span>
+    TEST_NAME VARCHAR2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">--초기 변수 선언</span>
+    <span class="token keyword">BEGIN</span>
+       TEST_NAME :<span class="token operator">=</span> <span class="token string">'테스트'</span><span class="token punctuation">;</span> <span class="token comment">--변수에 값 대입 실시</span>
+       DBMS_OUTPUT<span class="token punctuation">.</span>PUT_LINE<span class="token punctuation">(</span><span class="token string">'TEST_NAME : '</span> <span class="token operator">||</span> TEST_NAME<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">-- 결과 출력</span>
+    <span class="token keyword">END</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="oracle-tablespace"><a href="#oracle-tablespace" class="header-anchor">#</a> oracle tablespace</h3> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token comment">-- Error updating database.  Cause: java.sql.SQLException: ORA-01653: TEST.TB_TEST1 테이블을 128(으)로 TEST_DATA2 테이블스페이스에서 확장할 수 없습니다</span>
+<span class="token comment">-- 테이블 스페이스 확인</span>
+<span class="token keyword">SELECT</span> TABLE_NAME<span class="token punctuation">,</span>TABLESPACE_NAME
+  <span class="token keyword">FROM</span> DBA_TABLES
+ <span class="token keyword">WHERE</span> OWNER<span class="token operator">=</span><span class="token string">'TEST'</span> <span class="token operator">AND</span> TABLE_NAME<span class="token operator">=</span><span class="token string">'TB_TEST1'</span><span class="token punctuation">;</span>
+ 
+ <span class="token comment">-- 테이블 스페이스의 정보 확인</span>
+ <span class="token keyword">SELECT</span> TABLESPACE_NAME<span class="token punctuation">,</span> FILE_NAME<span class="token punctuation">,</span> BYTES<span class="token punctuation">,</span> AUTOEXTENSIBLE
+  <span class="token keyword">FROM</span> DBA_DATA_FILES
+ <span class="token keyword">WHERE</span> TABLESPACE_NAME<span class="token operator">=</span><span class="token string">'TEST_DATA2'</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 가용용량 확인</span>
+<span class="token keyword">SELECT</span> DF<span class="token punctuation">.</span>FILE_NAME <span class="token string">&quot;파일명&quot;</span>
+	<span class="token punctuation">,</span> DF<span class="token punctuation">.</span>TABLESPACE_NAME <span class="token string">&quot;테이블 스페이스명&quot;</span>
+	<span class="token punctuation">,</span> TO_CHAR<span class="token punctuation">(</span><span class="token punctuation">(</span>DF<span class="token punctuation">.</span>BYTES <span class="token operator">/</span> <span class="token number">1024</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">'999,990,999'</span><span class="token punctuation">)</span> <span class="token string">&quot;총 (KB)&quot;</span>
+	<span class="token punctuation">,</span> TO_CHAR<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">(</span>DF<span class="token punctuation">.</span>BYTES <span class="token operator">-</span> <span class="token function">SUM</span><span class="token punctuation">(</span>NVL<span class="token punctuation">(</span>FS<span class="token punctuation">.</span>BYTES<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">1024</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">'999,990,999'</span><span class="token punctuation">)</span> <span class="token string">&quot;사용(KB)&quot;</span>
+	<span class="token punctuation">,</span> TO_CHAR<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token function">SUM</span><span class="token punctuation">(</span>NVL<span class="token punctuation">(</span>FS<span class="token punctuation">.</span>BYTES<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">1024</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">'999,990,999'</span><span class="token punctuation">)</span> <span class="token string">&quot;가용(KB)&quot;</span>
+	<span class="token punctuation">,</span> TRUNC<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token function">SUM</span><span class="token punctuation">(</span>NVL<span class="token punctuation">(</span>FS<span class="token punctuation">.</span>BYTES<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token punctuation">(</span>DF<span class="token punctuation">.</span>BYTES<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token string">&quot;가용 %&quot;</span>
+<span class="token keyword">FROM</span> DBA_FREE_SPACE FS
+<span class="token keyword">RIGHT</span> <span class="token keyword">JOIN</span> DBA_DATA_FILES DF <span class="token keyword">ON</span> FS<span class="token punctuation">.</span>FILE_ID <span class="token operator">=</span> DF<span class="token punctuation">.</span>FILE_ID
+<span class="token keyword">WHERE</span> <span class="token number">1</span> <span class="token operator">=</span> <span class="token number">1</span>
+<span class="token comment">-- AND DF.TABLESPACE_NAME = 'TEST_DATA2'</span>
+<span class="token keyword">GROUP</span> <span class="token keyword">BY</span> DF<span class="token punctuation">.</span>TABLESPACE_NAME<span class="token punctuation">,</span> DF<span class="token punctuation">.</span>FILE_NAME<span class="token punctuation">,</span> DF<span class="token punctuation">.</span>BYTES
+<span class="token keyword">ORDER</span> <span class="token keyword">BY</span> DF<span class="token punctuation">.</span>TABLESPACE_NAME<span class="token punctuation">;</span>
+</code></pre></div><h2 id="reference"><a href="#reference" class="header-anchor">#</a> Reference</h2> <p>https://m.cafe.daum.net/oraclesqltuning/8ACn/28
+https://lawmin.tistory.com/58</p> <p>ORA-01000최대 열기 커서 수를 초과했습니다.
+https://serendipity.tistory.com/65</p> <p>oracle package: https://wakestand.tistory.com/173</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">10/7/2024, 11:33:14 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/cs/cs.html" class="prev">
+        cs
+      </a></span> <span class="next"><a href="/deploy/heroku.html">
+        heroku
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.d1976609.js" defer></script><script src="/assets/js/20.082c4b95.js" defer></script><script src="/assets/js/2.9ab96aca.js" defer></script><script src="/assets/js/1.cd1be094.js" defer></script><script src="/assets/js/41.39eb7776.js" defer></script><script src="/assets/js/21.4ecdae8a.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>WinServer2012R2원격데스크톱연결 | github.io</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/images/logo.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="description" content="Description">
+    
+    <link rel="preload" href="/assets/css/0.styles.6b5f79b2.css" as="style"><link rel="preload" href="/assets/js/app.d1976609.js" as="script"><link rel="preload" href="/assets/js/20.082c4b95.js" as="script"><link rel="preload" href="/assets/js/2.9ab96aca.js" as="script"><link rel="preload" href="/assets/js/1.cd1be094.js" as="script"><link rel="preload" href="/assets/js/79.aceb7fee.js" as="script"><link rel="preload" href="/assets/js/21.4ecdae8a.js" as="script"><link rel="prefetch" href="/assets/js/10.e06d6cb0.js"><link rel="prefetch" href="/assets/js/100.799b6d01.js"><link rel="prefetch" href="/assets/js/101.512f25e8.js"><link rel="prefetch" href="/assets/js/102.c81312e6.js"><link rel="prefetch" href="/assets/js/103.17640882.js"><link rel="prefetch" href="/assets/js/104.e09b6d3c.js"><link rel="prefetch" href="/assets/js/105.ae9cc38f.js"><link rel="prefetch" href="/assets/js/106.21a49a7c.js"><link rel="prefetch" href="/assets/js/107.12bc4840.js"><link rel="prefetch" href="/assets/js/108.db8bb410.js"><link rel="prefetch" href="/assets/js/109.c9af00fb.js"><link rel="prefetch" href="/assets/js/11.8e2820cd.js"><link rel="prefetch" href="/assets/js/110.29c2b72d.js"><link rel="prefetch" href="/assets/js/111.e835f900.js"><link rel="prefetch" href="/assets/js/112.5c80798a.js"><link rel="prefetch" href="/assets/js/113.da2fbe9d.js"><link rel="prefetch" href="/assets/js/114.05d9ad94.js"><link rel="prefetch" href="/assets/js/115.11754dca.js"><link rel="prefetch" href="/assets/js/116.29b54438.js"><link rel="prefetch" href="/assets/js/117.497de446.js"><link rel="prefetch" href="/assets/js/118.fda3f847.js"><link rel="prefetch" href="/assets/js/119.bc9cc0f0.js"><link rel="prefetch" href="/assets/js/12.edc499f4.js"><link rel="prefetch" href="/assets/js/120.6be5d894.js"><link rel="prefetch" href="/assets/js/121.6dd2bce2.js"><link rel="prefetch" href="/assets/js/122.b54603f7.js"><link rel="prefetch" href="/assets/js/123.67966b4b.js"><link rel="prefetch" href="/assets/js/124.bf6ba67d.js"><link rel="prefetch" href="/assets/js/125.d5f9ec85.js"><link rel="prefetch" href="/assets/js/126.bec54cf7.js"><link rel="prefetch" href="/assets/js/127.f72780da.js"><link rel="prefetch" href="/assets/js/128.eab193dc.js"><link rel="prefetch" href="/assets/js/129.41f7b514.js"><link rel="prefetch" href="/assets/js/13.f3683ba3.js"><link rel="prefetch" href="/assets/js/130.282bc3e9.js"><link rel="prefetch" href="/assets/js/131.b14fce8a.js"><link rel="prefetch" href="/assets/js/132.2e56b792.js"><link rel="prefetch" href="/assets/js/133.694bf2a9.js"><link rel="prefetch" href="/assets/js/134.13e6069b.js"><link rel="prefetch" href="/assets/js/135.8672602c.js"><link rel="prefetch" href="/assets/js/14.6eade5a2.js"><link rel="prefetch" href="/assets/js/15.7dfe9f7c.js"><link rel="prefetch" href="/assets/js/16.7750d38e.js"><link rel="prefetch" href="/assets/js/17.2edda520.js"><link rel="prefetch" href="/assets/js/18.8d50ab20.js"><link rel="prefetch" href="/assets/js/19.bb8ff7e1.js"><link rel="prefetch" href="/assets/js/22.f4714518.js"><link rel="prefetch" href="/assets/js/23.b2fe7383.js"><link rel="prefetch" href="/assets/js/24.c1374ce8.js"><link rel="prefetch" href="/assets/js/25.c15fd52a.js"><link rel="prefetch" href="/assets/js/26.62e757bc.js"><link rel="prefetch" href="/assets/js/27.f43d25b1.js"><link rel="prefetch" href="/assets/js/28.eaa66a30.js"><link rel="prefetch" href="/assets/js/29.563d63ff.js"><link rel="prefetch" href="/assets/js/3.50dc3479.js"><link rel="prefetch" href="/assets/js/30.8a6fa97e.js"><link rel="prefetch" href="/assets/js/31.e5ded6fa.js"><link rel="prefetch" href="/assets/js/32.3b165ecb.js"><link rel="prefetch" href="/assets/js/33.7adaf42a.js"><link rel="prefetch" href="/assets/js/34.35cac927.js"><link rel="prefetch" href="/assets/js/35.3a9164e7.js"><link rel="prefetch" href="/assets/js/36.e1880931.js"><link rel="prefetch" href="/assets/js/37.0af861f2.js"><link rel="prefetch" href="/assets/js/38.1ddfdb8d.js"><link rel="prefetch" href="/assets/js/39.29d1b91e.js"><link rel="prefetch" href="/assets/js/4.7c332f88.js"><link rel="prefetch" href="/assets/js/40.a3d4295f.js"><link rel="prefetch" href="/assets/js/41.39eb7776.js"><link rel="prefetch" href="/assets/js/42.e55e8ae9.js"><link rel="prefetch" href="/assets/js/43.c1c8e780.js"><link rel="prefetch" href="/assets/js/44.56400efa.js"><link rel="prefetch" href="/assets/js/45.8fbf584e.js"><link rel="prefetch" href="/assets/js/46.c4e813c9.js"><link rel="prefetch" href="/assets/js/47.1defe09f.js"><link rel="prefetch" href="/assets/js/48.4a3adf4c.js"><link rel="prefetch" href="/assets/js/49.bc57ecd0.js"><link rel="prefetch" href="/assets/js/5.5a74b1f3.js"><link rel="prefetch" href="/assets/js/50.e5249bad.js"><link rel="prefetch" href="/assets/js/51.2426c406.js"><link rel="prefetch" href="/assets/js/52.51a9793b.js"><link rel="prefetch" href="/assets/js/53.3d571b76.js"><link rel="prefetch" href="/assets/js/54.2fce2aa5.js"><link rel="prefetch" href="/assets/js/55.3dc09200.js"><link rel="prefetch" href="/assets/js/56.430434d4.js"><link rel="prefetch" href="/assets/js/57.6d515eea.js"><link rel="prefetch" href="/assets/js/58.d93fdfc4.js"><link rel="prefetch" href="/assets/js/59.e24cd2dc.js"><link rel="prefetch" href="/assets/js/6.08cf40a8.js"><link rel="prefetch" href="/assets/js/60.b8c1c839.js"><link rel="prefetch" href="/assets/js/61.bacc177a.js"><link rel="prefetch" href="/assets/js/62.3faffb30.js"><link rel="prefetch" href="/assets/js/63.e5fdc614.js"><link rel="prefetch" href="/assets/js/64.4fd3c4f0.js"><link rel="prefetch" href="/assets/js/65.5ca239bb.js"><link rel="prefetch" href="/assets/js/66.99691ce7.js"><link rel="prefetch" href="/assets/js/67.a08a19e6.js"><link rel="prefetch" href="/assets/js/68.afc12570.js"><link rel="prefetch" href="/assets/js/69.7164c014.js"><link rel="prefetch" href="/assets/js/7.92d79a17.js"><link rel="prefetch" href="/assets/js/70.66b97d65.js"><link rel="prefetch" href="/assets/js/71.6ebadf8a.js"><link rel="prefetch" href="/assets/js/72.5c95375e.js"><link rel="prefetch" href="/assets/js/73.a1851be0.js"><link rel="prefetch" href="/assets/js/74.baf28081.js"><link rel="prefetch" href="/assets/js/75.9c7fad15.js"><link rel="prefetch" href="/assets/js/76.8eddd9cb.js"><link rel="prefetch" href="/assets/js/77.ae17ce20.js"><link rel="prefetch" href="/assets/js/78.74883433.js"><link rel="prefetch" href="/assets/js/80.cabb9935.js"><link rel="prefetch" href="/assets/js/81.16d64f7b.js"><link rel="prefetch" href="/assets/js/82.86a512b8.js"><link rel="prefetch" href="/assets/js/83.5d360f70.js"><link rel="prefetch" href="/assets/js/84.6bf622f9.js"><link rel="prefetch" href="/assets/js/85.cd0a3fe7.js"><link rel="prefetch" href="/assets/js/86.af7c787e.js"><link rel="prefetch" href="/assets/js/87.ae6e9664.js"><link rel="prefetch" href="/assets/js/88.8784278f.js"><link rel="prefetch" href="/assets/js/89.9a6f1c34.js"><link rel="prefetch" href="/assets/js/90.90af989d.js"><link rel="prefetch" href="/assets/js/91.92952a34.js"><link rel="prefetch" href="/assets/js/92.712d5e1b.js"><link rel="prefetch" href="/assets/js/93.2cc2ee0b.js"><link rel="prefetch" href="/assets/js/94.db6dea85.js"><link rel="prefetch" href="/assets/js/95.a907efa3.js"><link rel="prefetch" href="/assets/js/96.5e3155d7.js"><link rel="prefetch" href="/assets/js/97.1a40fe99.js"><link rel="prefetch" href="/assets/js/98.dc9dfe48.js"><link rel="prefetch" href="/assets/js/99.8cff8b89.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.bd3cdb54.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6b5f79b2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">github.io</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://oseongryu.github.io/" target="_self" class="nav-link external">
+  Home
+  <!----></a></div><div class="nav-item"><a href="https://github.com/oseongryu/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://oseongryu.github.io/" target="_self" class="nav-link external">
+  Home
+  <!----></a></div><div class="nav-item"><a href="https://github.com/oseongryu/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>os</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/os/mac.html" class="sidebar-link">mac</a></li><li><a href="/os/windows.html" aria-current="page" class="active sidebar-link">windows</a></li><li><a href="/os/ubuntu.html" class="sidebar-link">ubuntu</a></li><li><a href="/os/centos.html" class="sidebar-link">centos</a></li><li><a href="/os/wsl.html" class="sidebar-link">wsl</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>docker</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docker/docker-1_setup.html" class="sidebar-link">docker-1_setup</a></li><li><a href="/docker/docker-2_using.html" class="sidebar-link">docker-2_using</a></li><li><a href="/docker/docker-centos.html" class="sidebar-link">docker-centos</a></li><li><a href="/docker/docker-env.html" class="sidebar-link">docker-env</a></li><li><a href="/docker/docker-jekyll.html" class="sidebar-link">docker-jekyll</a></li><li><a href="/docker/docker-mac-m1.html" class="sidebar-link">docker-mac-m1</a></li><li><a href="/docker/docker-mariadb.html" class="sidebar-link">docker-mariadb</a></li><li><a href="/docker/docker.html" class="sidebar-link">docker</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>jenkins</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>asp</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>aws</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>cs</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>dbms</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>deploy</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>domain</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>education</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>etc</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>flutter</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>hadoop</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>java</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>javascript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>project</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>python</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>react</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>rn</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>software</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>springboot</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>vue</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="winserver2012r2원격데스크톱연결"><a href="#winserver2012r2원격데스크톱연결" class="header-anchor">#</a> WinServer2012R2원격데스크톱연결</h3> <div class="language- extra-class"><pre class="language-text"><code>*윈 서버2012 원격 데스크톱 활성화 및 포트 변경
+http://t2t2tt.tistory.com/12
+* Windows 원격 데스크톱 설정방법
+http://gloria1004.tistory.com/145
+http://iptime.com/iptime/?pageid=1&amp;page_id=67&amp;mod=document&amp;keyword=%EC%9B%90%EA%B2%A9&amp;uid=7398
+
+*원격으로 공유기 접속관리 설정방법
+ http://iptime.com/iptime/?pageid=1&amp;page_id=67&amp;mod=document&amp;keyword=%EC%9B%90%EA%B2%A9&amp;uid=7384
+</code></pre></div><h3 id="iis-서버-로깅"><a href="#iis-서버-로깅" class="header-anchor">#</a> IIS 서버 로깅</h3> <div class="language- extra-class"><pre class="language-text"><code>https://technet.microsoft.com/ko-kr/library/hh831775(v=ws.11).aspx
+
+
+</code></pre></div><h3 id="win10-evaluation-center"><a href="#win10-evaluation-center" class="header-anchor">#</a> Win10 Evaluation Center</h3> <div class="language- extra-class"><pre class="language-text"><code>https://www.microsoft.com/ko-kr/evalcenter/evaluate-windows-10-enterprise
+</code></pre></div><h3 id="hyper-v가-실행이-안될경우"><a href="#hyper-v가-실행이-안될경우" class="header-anchor">#</a> Hyper-V가 실행이 안될경우</h3> <div class="language- extra-class"><pre class="language-text"><code>bcdedit /set hypervisorlaunchtype auto
+</code></pre></div><h3 id="psexec-사용"><a href="#psexec-사용" class="header-anchor">#</a> psexec 사용</h3> <div class="language- extra-class"><pre class="language-text"><code>psexec \\joker21.iptime.org -u &lt;uesr&gt; -p &lt;pass&gt; /c notepad
+psexec \\112.186.198.40 -u administrator cmd.exe
+netsh advfirewall firewall add rule name=&quot;tcp_445&quot; dir= in action=allow protocol=tcp localport=445
+powershell사용
+Enable-PSRemoting
+</code></pre></div><h3 id="윈도우-서비스-등록-삭제"><a href="#윈도우-서비스-등록-삭제" class="header-anchor">#</a> 윈도우 서비스 등록,삭제</h3> <div class="language- extra-class"><pre class="language-text"><code>https://openeidos.tistory.com/3912
+
+sc create MyPlayer3 binpath=&quot;C:\DEV\MyPlayer\Test.bat&quot; type=share start=auto
+
+sc create [Service Name] binpath=[Service file full path]
+-&gt; sc create MyService binpath=c:\MyService.exe
+
+
+sc create
+
+sc create 서비스명 Displayname=&quot;표시이름&quot; binpath=&quot;프로그램 경로&quot; type=share start=auto
+
+sc delete [Service Name]
+-&gt; sc delete MyService
+
+
+시작 : sc start [Service Name]
+종료 : sc stop [Service Name]
+</code></pre></div><h3 id="로컬-컴퓨터-에서-서비스-를-시작-하지-못했습니다-오류-1053"><a href="#로컬-컴퓨터-에서-서비스-를-시작-하지-못했습니다-오류-1053" class="header-anchor">#</a> 로컬 컴퓨터 에서 서비스 를 시작 하지 못했습니다 오류 1053</h3> <p>https://skql.tistory.com/518
+http://urhelper.com/zb41_urhelper/zb_urhelper.php?id=cho_computers_progs&amp;no=103</p> <h3 id="c-윈도우-서비스-만들기"><a href="#c-윈도우-서비스-만들기" class="header-anchor">#</a> C# 윈도우 서비스 만들기</h3> <div class="language- extra-class"><pre class="language-text"><code>https://nowprogramming.tistory.com/34
+</code></pre></div><h3 id="장치추가-제거"><a href="#장치추가-제거" class="header-anchor">#</a> 장치추가 제거</h3> <div class="language- extra-class"><pre class="language-text"><code>http://forensic-proof.com/archives/5945
+
+
+%SystemRoot%\System32\winevt\Logs\Microsoft-Windows-DeviceSetupManager%4Admin.evtx
+</code></pre></div><h3 id="windows-단축키"><a href="#windows-단축키" class="header-anchor">#</a> Windows 단축키</h3> <div class="language- extra-class"><pre class="language-text"><code>시작-실행  윈 + R
+
+2.2.1. 기본 명령어
+notepad : 메모장
+regedit : 레지스트리 편집기
+calc : 계산기
+mspaint : 그림판
+clipbrd : 클립북 뷰어
+cmd : 도스창
+dxdiag : 다이렉트X 진단도구
+iexplore : 익스플로러
+mstsc : 원격 데스크탑
+osk : 화상 키보드
+winword : MS Office 워드
+powerpnt : MS Office 파워포인트
+excel : MS Office 엑셀
+outlook : MS Office 아웃룩
+wordpad : 워드패드
+winmine : 지뢰찾기
+sndvol : 볼륨조절
+rstrui : 시스템 복원
+msconfig : 시작프로그램 제어 등 시스템 상태 기초 환경설정
+sysedit : 시스템구성편집기 (autoexec.bat , config.sys ,win.ini, system.ini)
+
+2.2.2. 제어판 명령어
+control : 제어판
+Access.cpl : 내게 필요한 옵션
+appwiz.cpl : 프로그램 추가/제거
+bthprops.cpl : 블루투스장치설정
+desk.cpl : 디스플레이 등록정보
+firewall.cpl : Windows방화벽
+hdwwiz.cpl : 새하드웨어추가마법사
+inetcpl.cpl : 인터넷등록정보
+intl.cpl : 국가및언어옵션
+irprops.cpl : 적외선포트 설정
+joy.cpl : 게임컨트롤러
+main.cpl : 마우스등록정보
+mmsys.cpl : 사운드및 오디오장치등록정보
+ncpa.cpl : 네트워크연결
+netsetup.cpl : 네트워크설정마법사
+nusrmgr.cpl : 사용자계정
+nwc.cpl : 네트워크 게이트웨이
+odbccp32.cpl : ODBC데이터원본 관리자
+powercfg.cpl :  전원옵션 등록정보
+sysdm.cpl : 시스템등록정보
+telephon.cpl : 전화및모뎀 옵션
+timedate.cpl : 날짜 및 시간 등록정보
+wscui.cpl : Windows보안센터
+wuaucpl.cpl : 자동업데이트
+Sapi.cpl : 텍스트 음성 변환설정
+control admintools : 관리도구
+control folders : 폴더옵션
+control userpasswords : 사용자 계정
+
+2.2.3. 관리콘솔 명령어
+certmgr.msc : 인증서
+ciadv.msc : 인덱싱서비스
+ntmsmgr.msc : 이동식저장소
+ntmsoprq.msc : 이동식저장소 운영자 요청
+secpol.msc : 로컬보안정책
+wmimgmt.msc : WMI(Windows Management Infrastructure)
+compmgmt.msc : 컴퓨터 관리
+devmgmt.msc : 장치관리자
+diskmgmt.msc : 디스크 관리
+dfrg.msc : 디스크 조각모음
+eventvwr.msc : 이벤트 뷰어
+fsmgmt.msc : 공유폴더
+gpedit.msc : 로컬 컴퓨터 정책
+lusrmgr.msc : 로컬 사용자 및 그룹
+perfmon.msc : 성능모니터뷰
+rsop.msc : 정책의 결과와 집합
+secpol.msc : 로컬 보안설정
+services.msc : 서비스
+C:\WINDOWS\system32\Com\comexp.msc : 구성요소서비스
+C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\mscorcfg.msc : .NET Configuration 1.1
+</code></pre></div><h3 id="단축키"><a href="#단축키" class="header-anchor">#</a> 단축키</h3> <div class="language- extra-class"><pre class="language-text"><code>로컬보안정책 명령어 https://www.snoopybox.co.kr/1561
+단축키 https://www.clien.net/service/board/lecture/13621530?od=T31&amp;po=0&amp;category=&amp;groupCd=
+탐색기에서 동일한 창 띄우기 ctrl + n
+탐색기 외에도 익스플로러나 다른 지원되는 프로그램에서도 ctrl + N 누르시면 동일 창 혹은 새로운 창 열려요!!
+윈도우 작업표시줄 왼쪽에 있는 아이콘은 WIN+1 , 2, 3 으로 실행할수 있습니다.
+다른 팁이지만 그냥 탐색기 창을 띄울려면 window 키+ e를 누르시면 됩니다.
+또 하나의 팁을드리자면 윈도우10부터 Shift+마우스 오른쪽 '이 위치에서 명령프롬프트열기' 기능이 없어졌는데 아주 간단하게 상단 경로에 cmd치면 현재위치에서  명령프롬프트가 열립니다.
+Shift + 마우스 오른쪽 -&gt; 여기에 Powershell 창 열기 -&gt; cmd 입력후 엔터하는 방법도 있습니다.
+윈도우키 + 방향키로 창 크기를 마음대로 조절할수 있어요!
+창닫기는 ctrl w
+왼손 쉬프트키 누르고 탐색기아이콘 왼쪽 클릭하시면 탐색기창이 새로 열려요. (아이콘을 휠 버튼으로 눌러도 똑같이 됩니다)
+컨트롤 + 쉬프트 + 엔 = 새폴더 만들기
+&lt;Win7단축키&gt;
+win+r service.msc
+     msconfig
+     regedit
+     recent
+     mstsc
+diskmgmt.msc
+regedit
+
+appwiz.cpl
+notepad
+mspaint
+calc
+control userpasswords2
+http://127.0.0.1
+%appdata%
+</code></pre></div><h3 id="windows-원격접속이-안될-떄-오라클-수정암호화"><a href="#windows-원격접속이-안될-떄-오라클-수정암호화" class="header-anchor">#</a> Windows 원격접속이 안될 떄 (오라클 수정암호화)</h3> <div class="language- extra-class"><pre class="language-text"><code>http://prolite.tistory.com/743
+
+microsoft.com/fwlink/?linkid=866660
+</code></pre></div><h3 id="ip-공격"><a href="#ip-공격" class="header-anchor">#</a> IP 공격</h3> <h3 id="windows-wifi-비밀번호-확인"><a href="#windows-wifi-비밀번호-확인" class="header-anchor">#</a> Windows Wifi 비밀번호 확인</h3> <div class="language-bash extra-class"><pre class="language-bash"><code>netsh wlan show profile
+netsh wlan show profile <span class="token string">&quot;profile이름&quot;</span> <span class="token assign-left variable">key</span><span class="token operator">=</span>clear
+
+키 콘텐츠의 값이 비밀번호
+</code></pre></div><h3 id="네트워크-경로추적"><a href="#네트워크-경로추적" class="header-anchor">#</a> 네트워크 경로추적</h3> <div class="language- extra-class"><pre class="language-text"><code>Windows: tracert 8.8.8.8
+Linux: traceroute 8.8.8.8
+CentOS:
+sudo yum install traceroute
+sudo yum install bind-utils
+traceroute  8.8.8.8
+</code></pre></div><h3 id="windows-telnet"><a href="#windows-telnet" class="header-anchor">#</a> Windows telnet</h3> <div class="language- extra-class"><pre class="language-text"><code>cmd &gt; appwiz.cpl &gt; Windows 기능 켜기/끄기 &gt; 텔넷 클라이언트 체크
+telnet IP PORT
+telnet 127.0.0.1 8080
+</code></pre></div><h3 id="cmd"><a href="#cmd" class="header-anchor">#</a> cmd</h3> <div class="language- extra-class"><pre class="language-text"><code>ipconfig /?
+
+
+F1 : 마지막으로 사용 된 문자 당 붙여 넣기 명령
+F2 : 마지막으로 사용한 명령을 지정된 명령 문자에만 붙여 넣습니다.
+F3 : 붙여 넣기 마지막으로 사용한 명령
+F4 : 지정된 명령 문자로만 명령 삭제
+F5 : 사이클링없이 마지막으로 사용한 명령 붙여 넣기
+F6 : 붙여 넣기 ^ Z
+F7 : 이미 사용 된 명령 목록을 제공합니다 (선택 가능).
+F : 8 사이클 가능 명령 붙여 넣기
+F9 : 최근에 사용한 명령 목록에서 명령을 붙여 넣을 수있게합니다.
+
+
+ipconfig &gt; ./test.txt
+
+nslookup www.google.com
+
+ipconfig &amp;&amp; dir
+
+assoc
+
+driverquery
+
+sfc / scannow
+
+</code></pre></div><h3 id="dir-list"><a href="#dir-list" class="header-anchor">#</a> dir list</h3> <div class="language- extra-class"><pre class="language-text"><code>dir/b &gt; list.txt
+</code></pre></div><h3 id="windows-10-ubuntu"><a href="#windows-10-ubuntu" class="header-anchor">#</a> Windows 10 Ubuntu</h3> <div class="language-bash extra-class"><pre class="language-bash"><code>appwiz.cpl <span class="token operator">&gt;</span> Windows 기능 켜기/끄기 <span class="token operator">&gt;</span> Linux용 Windows 하위 시스템 <span class="token punctuation">(</span>체크<span class="token punctuation">)</span>
+Microsoft Store <span class="token operator">&gt;</span> ubuntu 검색 <span class="token operator">&gt;</span> 설치 <span class="token operator">&gt;</span> 실행
+new UNIX username: osryu
+password: <span class="token number">1234</span>
+
+<span class="token comment"># 업데이트 검사 명령 실행</span>
+<span class="token function">sudo</span> <span class="token function">apt-get</span> update
+
+<span class="token comment"># 업그레이드 명령</span>
+<span class="token function">sudo</span> <span class="token function">apt-get</span> upgrade
+
+---
+윈10에서 우분투 리눅스 디렉토리 접근
+C:<span class="token punctuation">\</span>Users<span class="token punctuation">\</span><span class="token punctuation">{</span>user<span class="token punctuation">}</span><span class="token punctuation">\</span>AppData<span class="token punctuation">\</span>Local<span class="token punctuation">\</span>Packages<span class="token punctuation">\</span>CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc<span class="token punctuation">\</span>LocalState
+
+우분투 리눅스에서 윈10 디렉토리 접근
+<span class="token builtin class-name">cd</span> /mnt/c
+---
+</code></pre></div><h3 id="windows-font-설치"><a href="#windows-font-설치" class="header-anchor">#</a> Windows Font 설치</h3> <div class="language- extra-class"><pre class="language-text"><code>C:\Windows\Fonts에 설치할 폰트 넣기
+</code></pre></div><h3 id="윈도우-색인기능"><a href="#윈도우-색인기능" class="header-anchor">#</a> 윈도우 색인기능</h3> <div class="language- extra-class"><pre><code> 파일 우측에 파란색 표시가 색인기능이 적용된 부분
+ 드라이브 &gt; 속성
+ 이 드라이브를 압축하여 디스크 공간 절약 체크해제
+ 이 드라이브의 파일 속성 및 내용 색인 허용 체크해제
+</code></pre></div> <h3 id="이미지-파일-우클릭-시-오른쪽으로-회전-왼쪽으로-회전-삭제-및-복구"><a href="#이미지-파일-우클릭-시-오른쪽으로-회전-왼쪽으로-회전-삭제-및-복구" class="header-anchor">#</a> 이미지 파일 우클릭 시 오른쪽으로 회전, 왼쪽으로 회전 삭제 및 복구</h3> <div class="language- extra-class"><pre><code> RemoveRotateImageContextMenuWin10.reg
+ RestoreRotateImageContextMenuWin10.reg
+</code></pre></div><h3 id="user-password-변경"><a href="#user-password-변경" class="header-anchor">#</a> user password 변경</h3> <div class="language- extra-class"><pre class="language-text"><code>net user
+net user {username} password
+</code></pre></div><h3 id="네트워크-재설정"><a href="#네트워크-재설정" class="header-anchor">#</a> 네트워크 재설정</h3> <div class="language- extra-class"><pre class="language-text"><code>netsh winsock reset
+netsh int ip reset
+ipconfig /release
+ipconfig /renew
+ipconfig /flushdns
+</code></pre></div><h3 id="일부는-조직에서-숨겼거나-관리합니다-조직설정-모바일-핫스팟"><a href="#일부는-조직에서-숨겼거나-관리합니다-조직설정-모바일-핫스팟" class="header-anchor">#</a> 일부는 조직에서 숨겼거나 관리합니다, 조직설정 (모바일 핫스팟)</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># https://answers.microsoft.com/ko-kr/windows/forum/all/%EC%9D%BC%EB%B6%80-%EC%84%A4%EC%A0%95%EC%9D%80/c5adc018-4321-4e34-acca-fdc75ea50f11</span>
+reg delete <span class="token string">&quot;HKLM\Software\Microsoft\Windows\CurrentVersion\Policies&quot;</span> /f
+reg delete <span class="token string">&quot;HKLM\Software\Microsoft\WindowsSelfHost&quot;</span> /f
+reg delete <span class="token string">&quot;HKLM\Software\Policies&quot;</span> /f
+reg delete <span class="token string">&quot;HKLM\Software\WOW6432Node\Microsoft\Policies&quot;</span> /f
+reg delete <span class="token string">&quot;HKLM\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Policies&quot;</span> /f
+reg delete <span class="token string">&quot;HKLM\SOFTWARE\Policies\Microsoft\Windows Defender&quot;</span> /v DisableAntiSpyware
+reg delete <span class="token string">&quot;HKCU\Software\Microsoft\Windows\CurrentVersion\Policies&quot;</span> /f
+reg delete <span class="token string">&quot;HKCU\Software\Microsoft\WindowsSelfHost&quot;</span> /f
+reg delete <span class="token string">&quot;HKCU\Software\Policies&quot;</span> /f
+reg delete <span class="token string">&quot;HKLM\Software\Microsoft\Policies&quot;</span> /f
+
+<span class="token comment"># https://ko.tinystm.org/fix-we-can-t-set-up-mobile-hotspot-windows-10-settings</span>
+<span class="token comment"># https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=a81d90ac-aa75-4cf8-b14c-58bf348528fe&amp;redirect_uri=https%3A%2F%2Fanswers.microsoft.com&amp;response_type=code%20id_token&amp;scope=openid%20profile&amp;state=OpenIdConnect.AuthenticationProperties%3DckL5YEpuS2dCecFD8RozM8HGAnwKhKLyqQUOn7B_kP8WhzGCLr0pvwZB1IJAeGsVS6FRvxX2cp8DpaapybTf6dXbwoqQodCmydjQqoehwZ8S5WipMgfEIZ0NnVJBNlDl90-tVqx-8ICNXJbSqTSZBs_DzZmmDYvpxiSrJyxSdePKa74EmS01-TMg3wINngGOg7Yad8CsudN0q2G90hfNw88zA6JKmJONvCBykY-_Sa_qi1VNGDdPDvWDSIkVoTk1S24t9JWo87XCNx9B0CJDjHYgQiieVQTNBWA01kNeyJu7WynLKRx0dG0KiDzzsw9bKhBi76WnVyLiRKOtPz_ridqk4dd8fFLDtoGslaUiP0s&amp;response_mode=form_post&amp;nonce=638331180530453333.N2ZiN2ZmNWUtODYzMS00OTU1LWExMzMtZTNlZWQwZTQ3ZjZhY2M3NWUxODQtOTRmMy00NzY4LWJiZjQtOWU3MzA1M2E3MGQ5&amp;nopa=2&amp;prompt=none&amp;x-client-SKU=ID_NET472&amp;x-client-ver=6.17.0.0</span>
+
+</code></pre></div><h3 id="proxy"><a href="#proxy" class="header-anchor">#</a> proxy</h3> <div class="language- extra-class"><pre class="language-text"><code>netsh winhttp set proxy proxy-server=&quot;http=192.0.0.5:8000;https=192.0.0.5:8000&quot; bypass-list=&quot;*.local&quot;
+netsh winhttp reset proxy
+
+</code></pre></div><h3 id="windows-explorer"><a href="#windows-explorer" class="header-anchor">#</a> windows explorer</h3> <div class="language- extra-class"><pre class="language-text"><code>explorer &gt; ctrl + l &gt; cmd
+</code></pre></div><h3 id="windows-tasklist-taskkill"><a href="#windows-tasklist-taskkill" class="header-anchor">#</a> windows tasklist, taskkill</h3> <div class="language-bash extra-class"><pre class="language-bash"><code>tasklist
+
+taskkill /im <span class="token string">&quot;com.docker.build.exe&quot;</span> /t /f
+taskkill /im <span class="token string">&quot;com.docker.backend.exe&quot;</span> /t /f
+taskkill /im <span class="token string">&quot;com.docker.dev-envs.exe&quot;</span> /t /f
+taskkill /im <span class="token string">&quot;com.docker.extensions.exe&quot;</span> /t /f
+taskkill /im <span class="token string">&quot;docker.exe&quot;</span> /t /f
+taskkill /im <span class="token string">&quot;Docker Desktop.exe&quot;</span> /t /f
+</code></pre></div><h3 id="microsoft-powertoys"><a href="#microsoft-powertoys" class="header-anchor">#</a> Microsoft PowerToys</h3> <div class="language- extra-class"><pre class="language-text"><code>Color Picker
+Keyboard Manager
+lmage Reslzer
+Markdown file explorer preview pane
+always on top
+</code></pre></div><h3 id="win-bash"><a href="#win-bash" class="header-anchor">#</a> win-bash</h3> <div class="language- extra-class"><pre class="language-text"><code>sourceforge.net/projects/win-bash/files/shell-complete/latest/shell.w32-ix86.zip/download
+환경변수 설정 후 사용
+</code></pre></div><h3 id="references"><a href="#references" class="header-anchor">#</a> References</h3> <div class="language- extra-class"><pre class="language-text"><code>https://ko.gadget-info.com/90803-18-useful-command-prompt-tricks-you-might-not-know
+
+</code></pre></div><h3 id="iphlpsvc의-포트-포워딩이-설정되서-특정-포트가-binding안되는-경우"><a href="#iphlpsvc의-포트-포워딩이-설정되서-특정-포트가-binding안되는-경우" class="header-anchor">#</a> iphlpsvc의 포트 포워딩이 설정되서 특정 포트가 binding안되는 경우</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># https://blog.naver.com/webpioneer/220677150747</span>
+<span class="token function">netstat</span> <span class="token parameter variable">-ano</span> <span class="token operator">|</span> findstr :8089
+<span class="token function">netstat</span> <span class="token parameter variable">-ano</span> <span class="token operator">|</span> findstr PID
+tasklist /svc /FI <span class="token string">&quot;PID eq 4886&quot;</span>
+tasklist /SVC
+
+<span class="token comment"># https://m.blog.naver.com/toruin84/222143445312</span>
+iphlpsvc
+net start iphlpsvc
+net stop iphlpsvc
+
+
+<span class="token comment"># https://www.sysnet.pe.kr/2/0/1480</span>
+netsh interface portproxy reset
+</code></pre></div><h3 id="windows-defender"><a href="#windows-defender" class="header-anchor">#</a> windows defender</h3> <div class="language-bash extra-class"><pre class="language-bash"><code>윈도우 defender가 보이지 않거나 보이지 않게하고 싶은경우
+https://www.sordum.org/9480/defender-control-v2-1/
+
+shell:startup
+
+<span class="token comment"># regedit 수정</span>
+<span class="token comment"># 컴퓨터\HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\TrayNotify</span>
+<span class="token comment"># IconStreams, PstIconsStream 삭제</span>
+
+taskkill /im explorer.exe /f
+reg delete <span class="token string">&quot;HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\TrayNotify&quot;</span> /v IconStreams /f
+reg delete <span class="token string">&quot;HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\TrayNotify&quot;</span> /v PastIconsStream /f
+explorer.exe
+
+C:<span class="token punctuation">\</span>ProgramData<span class="token punctuation">\</span>Microsoft<span class="token punctuation">\</span>Windows<span class="token punctuation">\</span>Start Menu
+C:<span class="token punctuation">\</span>Users<span class="token punctuation">\</span><span class="token punctuation">{</span><span class="token environment constant">USER</span><span class="token punctuation">}</span><span class="token punctuation">\</span>AppData<span class="token punctuation">\</span>Roaming<span class="token punctuation">\</span>Microsoft<span class="token punctuation">\</span>Windows<span class="token punctuation">\</span>Start Menu<span class="token punctuation">\</span>Programs<span class="token punctuation">\</span>Startup
+</code></pre></div><h3 id="windows10-검색시-이미지-안보임"><a href="#windows10-검색시-이미지-안보임" class="header-anchor">#</a> windows10 검색시 이미지 안보임</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># https://comformation.tistory.com/27</span>
+<span class="token builtin class-name">cd</span> /d %userprofile%<span class="token punctuation">\</span>AppData<span class="token punctuation">\</span>Local<span class="token punctuation">\</span>Microsoft<span class="token punctuation">\</span>Windows<span class="token punctuation">\</span>Explorer
+attrib –h thumbcache_*.db
+del thumbcache_*.db start explorer
+</code></pre></div><h3 id="environment-variables"><a href="#environment-variables" class="header-anchor">#</a> environment variables</h3> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[Environment]</span>::GetEnvironmentVariable<span class="token punctuation">(</span><span class="token string">'DOCKER_HOST'</span><span class="token punctuation">,</span> <span class="token string">'Machine'</span><span class="token punctuation">)</span>
+<span class="token namespace">[Environment]</span>::SetEnvironmentVariable<span class="token punctuation">(</span><span class="token string">'DOCKER_HOST'</span><span class="token punctuation">,</span> <span class="token string">'tcp://localhost:2375'</span><span class="token punctuation">,</span> <span class="token string">'Machine'</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 환경변수를 추가하면 %%가 사라짐 .vba를 사용해서 등록하는 형태로 진행</span>
+<span class="token comment"># https://wednesday1304.tistory.com/entry/Windows-사용자환경변수에-관하여-UserProfile-AppData-LocalAppData-등</span>
+<span class="token comment"># https://blog.naver.com/PostView.naver?blogId=21centmen&amp;logNo=223173965426</span>
+<span class="token comment"># https://wednesday1304.tistory.com/entry/Windows-레지스트리-경로시스템-환경변수-사용자-환경변수</span>
+<span class="token comment"># https://itenium.be/blog/dev-setup/environment-variables-management-with-powershell/</span>
+<span class="token function">Get-ChildItem</span> Env: <span class="token punctuation">|</span> <span class="token function">Format-Table</span> <span class="token operator">-</span>Wrap
+<span class="token function">Get-ChildItem</span> Env: <span class="token punctuation">|</span> <span class="token function">Format-Table</span> <span class="token operator">-</span>Wrap &gt; Desktop\variables<span class="token punctuation">.</span>txt
+
+<span class="token variable">$value</span> = <span class="token function">Get-ItemProperty</span> <span class="token operator">-</span>Path HKCU:\Environment <span class="token operator">-</span>Name Path
+<span class="token variable">$newpath</span> = <span class="token variable">$value</span><span class="token punctuation">.</span>Path <span class="token operator">+=</span> <span class="token string">&quot;;C:\src\bin\&quot;</span>
+<span class="token function">Set-ItemProperty</span> <span class="token operator">-</span>Path HKCU:\Environment <span class="token operator">-</span>Name Path <span class="token operator">-</span>Value <span class="token variable">$newpath</span>
+
+<span class="token comment"># use regedit</span>
+<span class="token comment"># HKCU:\Environment</span>
+<span class="token comment"># HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Environment</span>
+<span class="token comment"># reg add HKCU\Environment /v JAVA_HOME /d E:\j2ee\j2sdk1.4.2_10</span>
+<span class="token comment"># REG QUERY HHKCU\Environment /s</span>
+</code></pre></div><h3 id="표시언어-설치-또는-제거"><a href="#표시언어-설치-또는-제거" class="header-anchor">#</a> 표시언어 설치 또는 제거</h3> <div class="language-bash extra-class"><pre class="language-bash"><code>cmd + r  <span class="token operator">&gt;</span> LPKSETUP
+</code></pre></div><h4 id="네트워크-드라이브-연결"><a href="#네트워크-드라이브-연결" class="header-anchor">#</a> 네트워크 드라이브 연결</h4> <div class="language-bash extra-class"><pre class="language-bash"><code>cmdkey /add:192.168.0.1 /user:networkuser /pass:1234
+<span class="token function">pushd</span> <span class="token punctuation">\</span><span class="token punctuation">\</span><span class="token number">192.168</span>.0.1<span class="token punctuation">\</span>outunion
+
+<span class="token comment"># 지정된 네트워크 암호가 맞지 않습니다</span>
+자격 증명 관리자 <span class="token operator">&gt;</span> Windows 자격 증명 <span class="token operator">&gt;</span> Windows 자격 증명 추가
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">10/7/2024, 11:33:14 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/os/mac.html" class="prev">
+        mac
+      </a></span> <span class="next"><a href="/os/ubuntu.html">
+        ubuntu
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.d1976609.js" defer></script><script src="/assets/js/20.082c4b95.js" defer></script><script src="/assets/js/2.9ab96aca.js" defer></script><script src="/assets/js/1.cd1be094.js" defer></script><script src="/assets/js/79.aceb7fee.js" defer></script><script src="/assets/js/21.4ecdae8a.js" defer></script>
+  </body>
+</html>
