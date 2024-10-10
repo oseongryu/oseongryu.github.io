@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'github.io',
+  title: 'oseongryu.github.io',
   description: 'Description',
   email: 'oseongryu@gmail.com',
   base: '',
