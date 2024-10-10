@@ -7,7 +7,7 @@
     <br />
 
     <div class="contents">
-      <div style="font-weight: bold; font-size: 2.2em; line-height: 1.2em">Blog</div>
+      <div style="font-weight: bold; font-size: 2.2em; line-height: 1.2em"></div>
       <br />
       <a href="https://github.com/oseongryu/til/watchers"><img src="https://img.shields.io/github/watchers/oseongryu/til.svg?style=social" /></a>
       <a href="https://github.com/oseongryu/til/stargazers"><img src="https://img.shields.io/github/stars/oseongryu/til.svg?style=social" /></a>
