@@ -8,12 +8,23 @@ module.exports = {
     ['link', { rel: 'manifest', href: '/manifest.json' }],
   ],
   plugins: [
-    '@vuepress/back-to-top',
+    ['@vuepress/back-to-top'],
+    ['reading-progress'],  
     [
       '@vuepress/pwa',
       {
         serviceWorker: false,
         updatePopup: false,
+      },
+    ],
+    [
+      'vuepress-plugin-code-copy',
+      {
+          backgroundColor: '#42b883',
+          color: '#42b883',
+          backgroundTransition: true,
+          successText: 'copied!',
+          staticIcon: false,
       },
     ],
   ],
