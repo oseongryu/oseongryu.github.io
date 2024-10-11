@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ubuntu architecture | oseongryu.github.io</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/images/logo.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="description" content="Description">
+    
+    <link rel="preload" href="/assets/css/0.styles.244d6c99.css" as="style"><link rel="preload" href="/assets/js/app.0a014be0.js" as="script"><link rel="preload" href="/assets/js/20.0ea8b2d3.js" as="script"><link rel="preload" href="/assets/js/2.74c7269a.js" as="script"><link rel="preload" href="/assets/js/1.df3e92d6.js" as="script"><link rel="preload" href="/assets/js/77.c9ce0875.js" as="script"><link rel="prefetch" href="/assets/js/10.3ff48aea.js"><link rel="prefetch" href="/assets/js/100.d8b742ed.js"><link rel="prefetch" href="/assets/js/101.e8aab26a.js"><link rel="prefetch" href="/assets/js/102.af19031a.js"><link rel="prefetch" href="/assets/js/103.25519899.js"><link rel="prefetch" href="/assets/js/104.8a7d471e.js"><link rel="prefetch" href="/assets/js/105.902a0438.js"><link rel="prefetch" href="/assets/js/106.fbf2844d.js"><link rel="prefetch" href="/assets/js/107.a2665f07.js"><link rel="prefetch" href="/assets/js/108.d082f976.js"><link rel="prefetch" href="/assets/js/109.d5e7ce27.js"><link rel="prefetch" href="/assets/js/11.096cdfd3.js"><link rel="prefetch" href="/assets/js/110.effb8a6e.js"><link rel="prefetch" href="/assets/js/111.f5171afd.js"><link rel="prefetch" href="/assets/js/112.3e5bac1d.js"><link rel="prefetch" href="/assets/js/113.205cb1e9.js"><link rel="prefetch" href="/assets/js/114.54f8fff4.js"><link rel="prefetch" href="/assets/js/115.436d3dc5.js"><link rel="prefetch" href="/assets/js/116.2e507212.js"><link rel="prefetch" href="/assets/js/117.692ff24b.js"><link rel="prefetch" href="/assets/js/118.6ff3984e.js"><link rel="prefetch" href="/assets/js/119.7838b7b3.js"><link rel="prefetch" href="/assets/js/12.2b655602.js"><link rel="prefetch" href="/assets/js/120.a6e5d067.js"><link rel="prefetch" href="/assets/js/121.8eb36d65.js"><link rel="prefetch" href="/assets/js/122.69053957.js"><link rel="prefetch" href="/assets/js/123.9c2fcde4.js"><link rel="prefetch" href="/assets/js/124.9c316e4f.js"><link rel="prefetch" href="/assets/js/125.21ed09de.js"><link rel="prefetch" href="/assets/js/126.afc5e790.js"><link rel="prefetch" href="/assets/js/127.f2e33ca4.js"><link rel="prefetch" href="/assets/js/128.6af8ffd0.js"><link rel="prefetch" href="/assets/js/129.8bf2113d.js"><link rel="prefetch" href="/assets/js/13.a13de619.js"><link rel="prefetch" href="/assets/js/130.0a1cc8f7.js"><link rel="prefetch" href="/assets/js/131.20b36125.js"><link rel="prefetch" href="/assets/js/132.82a50c4b.js"><link rel="prefetch" href="/assets/js/133.611b3261.js"><link rel="prefetch" href="/assets/js/134.67defbba.js"><link rel="prefetch" href="/assets/js/14.067ec631.js"><link rel="prefetch" href="/assets/js/15.362ba3cd.js"><link rel="prefetch" href="/assets/js/16.d7a072cb.js"><link rel="prefetch" href="/assets/js/17.2b4a5555.js"><link rel="prefetch" href="/assets/js/18.7a45a425.js"><link rel="prefetch" href="/assets/js/19.48c2a444.js"><link rel="prefetch" href="/assets/js/21.fd8de9f3.js"><link rel="prefetch" href="/assets/js/22.3dc57861.js"><link rel="prefetch" href="/assets/js/23.f5c14998.js"><link rel="prefetch" href="/assets/js/24.1ba7a6fd.js"><link rel="prefetch" href="/assets/js/25.2bf80023.js"><link rel="prefetch" href="/assets/js/26.60f4a3ea.js"><link rel="prefetch" href="/assets/js/27.d92eb014.js"><link rel="prefetch" href="/assets/js/28.ffb88f99.js"><link rel="prefetch" href="/assets/js/29.d003edcb.js"><link rel="prefetch" href="/assets/js/3.7923e9dc.js"><link rel="prefetch" href="/assets/js/30.8a6c85e2.js"><link rel="prefetch" href="/assets/js/31.773966ce.js"><link rel="prefetch" href="/assets/js/32.e42a26df.js"><link rel="prefetch" href="/assets/js/33.32769783.js"><link rel="prefetch" href="/assets/js/34.92647fe6.js"><link rel="prefetch" href="/assets/js/35.6ae5a992.js"><link rel="prefetch" href="/assets/js/36.9d1e7462.js"><link rel="prefetch" href="/assets/js/37.838884d3.js"><link rel="prefetch" href="/assets/js/38.c9c79806.js"><link rel="prefetch" href="/assets/js/39.76849c6e.js"><link rel="prefetch" href="/assets/js/4.087cc5bd.js"><link rel="prefetch" href="/assets/js/40.0df92a95.js"><link rel="prefetch" href="/assets/js/41.35dc5844.js"><link rel="prefetch" href="/assets/js/42.2c6a13d9.js"><link rel="prefetch" href="/assets/js/43.915b2e6f.js"><link rel="prefetch" href="/assets/js/44.b1e20c9a.js"><link rel="prefetch" href="/assets/js/45.c6512fae.js"><link rel="prefetch" href="/assets/js/46.5cbd2d69.js"><link rel="prefetch" href="/assets/js/47.430f18d5.js"><link rel="prefetch" href="/assets/js/48.be2486bb.js"><link rel="prefetch" href="/assets/js/49.3f72db96.js"><link rel="prefetch" href="/assets/js/5.ba1ad949.js"><link rel="prefetch" href="/assets/js/50.63a0f759.js"><link rel="prefetch" href="/assets/js/51.07807722.js"><link rel="prefetch" href="/assets/js/52.8b8f8044.js"><link rel="prefetch" href="/assets/js/53.d8b63df4.js"><link rel="prefetch" href="/assets/js/54.7a6663cc.js"><link rel="prefetch" href="/assets/js/55.0257b250.js"><link rel="prefetch" href="/assets/js/56.ee6431df.js"><link rel="prefetch" href="/assets/js/57.f36e3e4b.js"><link rel="prefetch" href="/assets/js/58.f4727b05.js"><link rel="prefetch" href="/assets/js/59.53686157.js"><link rel="prefetch" href="/assets/js/6.c9dda9c9.js"><link rel="prefetch" href="/assets/js/60.9af951b3.js"><link rel="prefetch" href="/assets/js/61.0c155286.js"><link rel="prefetch" href="/assets/js/62.ed9b85a4.js"><link rel="prefetch" href="/assets/js/63.a38de16a.js"><link rel="prefetch" href="/assets/js/64.a37bc93c.js"><link rel="prefetch" href="/assets/js/65.5d8d0a4b.js"><link rel="prefetch" href="/assets/js/66.d2392183.js"><link rel="prefetch" href="/assets/js/67.06c03020.js"><link rel="prefetch" href="/assets/js/68.4213fa2b.js"><link rel="prefetch" href="/assets/js/69.ef624cf4.js"><link rel="prefetch" href="/assets/js/7.4fcd7cd0.js"><link rel="prefetch" href="/assets/js/70.e77f56b0.js"><link rel="prefetch" href="/assets/js/71.4d21c6a2.js"><link rel="prefetch" href="/assets/js/72.999220a9.js"><link rel="prefetch" href="/assets/js/73.ce67af2e.js"><link rel="prefetch" href="/assets/js/74.033f6b08.js"><link rel="prefetch" href="/assets/js/75.c5aee937.js"><link rel="prefetch" href="/assets/js/76.a8eef970.js"><link rel="prefetch" href="/assets/js/78.f2c2c1c4.js"><link rel="prefetch" href="/assets/js/79.aa558b78.js"><link rel="prefetch" href="/assets/js/80.5c893b19.js"><link rel="prefetch" href="/assets/js/81.be3f83da.js"><link rel="prefetch" href="/assets/js/82.7c9dc889.js"><link rel="prefetch" href="/assets/js/83.af3174fc.js"><link rel="prefetch" href="/assets/js/84.09de8716.js"><link rel="prefetch" href="/assets/js/85.97bd4cdb.js"><link rel="prefetch" href="/assets/js/86.17b2bd24.js"><link rel="prefetch" href="/assets/js/87.f4a68f28.js"><link rel="prefetch" href="/assets/js/88.c1f268ea.js"><link rel="prefetch" href="/assets/js/89.8219a6d6.js"><link rel="prefetch" href="/assets/js/90.e4f78885.js"><link rel="prefetch" href="/assets/js/91.964661cf.js"><link rel="prefetch" href="/assets/js/92.f0382a49.js"><link rel="prefetch" href="/assets/js/93.ae23b968.js"><link rel="prefetch" href="/assets/js/94.d6fb3e53.js"><link rel="prefetch" href="/assets/js/95.63ce1041.js"><link rel="prefetch" href="/assets/js/96.03fcb78c.js"><link rel="prefetch" href="/assets/js/97.736ce872.js"><link rel="prefetch" href="/assets/js/98.2c4a8aeb.js"><link rel="prefetch" href="/assets/js/99.92336c8a.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.b873aa2e.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.244d6c99.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">oseongryu.github.io</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://oseongryu.github.io/" target="_self" class="nav-link external">
+  Home
+  <!----></a></div><div class="nav-item"><a href="https://github.com/oseongryu/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://oseongryu.github.io/" target="_self" class="nav-link external">
+  Home
+  <!----></a></div><div class="nav-item"><a href="https://github.com/oseongryu/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>📕 os</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/os/azure.html" class="sidebar-link">- azure</a></li><li><a href="/os/bat-client_deploy.html" class="sidebar-link">- bat-client_deploy</a></li><li><a href="/os/centos.html" class="sidebar-link">- centos</a></li><li><a href="/os/centos-docker.html" class="sidebar-link">- centos-docker</a></li><li><a href="/os/centos-error.html" class="sidebar-link">- centos-error</a></li><li><a href="/os/centos-nginx.html" class="sidebar-link">- centos-nginx</a></li><li><a href="/os/mac.html" class="sidebar-link">- mac</a></li><li><a href="/os/powershell.html" class="sidebar-link">- powershell</a></li><li><a href="/os/shell.html" class="sidebar-link">- shell</a></li><li><a href="/os/ubuntu.html" aria-current="page" class="active sidebar-link">- ubuntu</a></li><li><a href="/os/windows.html" class="sidebar-link">- windows</a></li><li><a href="/os/wsl.html" class="sidebar-link">- wsl</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>📕 docker</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docker/docker.html" class="sidebar-link">- docker</a></li><li><a href="/docker/docker-1_setup.html" class="sidebar-link">- docker-1_setup</a></li><li><a href="/docker/docker-2_using.html" class="sidebar-link">- docker-2_using</a></li><li><a href="/docker/docker-centos.html" class="sidebar-link">- docker-centos</a></li><li><a href="/docker/docker-env.html" class="sidebar-link">- docker-env</a></li><li><a href="/docker/docker-jekyll.html" class="sidebar-link">- docker-jekyll</a></li><li><a href="/docker/docker-mac-m1.html" class="sidebar-link">- docker-mac-m1</a></li><li><a href="/docker/docker-mariadb.html" class="sidebar-link">- docker-mariadb</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>📕 software</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/software/3dprinter-meshmixer.html" class="sidebar-link">- 3dprinter-meshmixer</a></li><li><a href="/software/activemq.html" class="sidebar-link">- activemq</a></li><li><a href="/software/appium.html" class="sidebar-link">- appium</a></li><li><a href="/software/chocolatey.html" class="sidebar-link">- chocolatey</a></li><li><a href="/software/chrome.html" class="sidebar-link">- chrome</a></li><li><a href="/software/dbeaver.html" class="sidebar-link">- dbeaver</a></li><li><a href="/software/eclipse.html" class="sidebar-link">- eclipse</a></li><li><a href="/software/edge.html" class="sidebar-link">- edge</a></li><li><a href="/software/fiddler.html" class="sidebar-link">- fiddler</a></li><li><a href="/software/git.html" class="sidebar-link">- git</a></li><li><a href="/software/github-action.html" class="sidebar-link">- github-action</a></li><li><a href="/software/github-slack.html" class="sidebar-link">- github-slack</a></li><li><a href="/software/googlesheet.html" class="sidebar-link">- googlesheet</a></li><li><a href="/software/httpie.html" class="sidebar-link">- httpie</a></li><li><a href="/software/intellij.html" class="sidebar-link">- intellij</a></li><li><a href="/software/jekyll.html" class="sidebar-link">- jekyll</a></li><li><a href="/software/kstudio-edu.html" class="sidebar-link">- kstudio-edu</a></li><li><a href="/software/mobaxterm.html" class="sidebar-link">- mobaxterm</a></li><li><a href="/software/mysqlworkbench.html" class="sidebar-link">- mysqlworkbench</a></li><li><a href="/software/n8n.html" class="sidebar-link">- n8n</a></li><li><a href="/software/notepad++.html" class="sidebar-link">- notepad++</a></li><li><a href="/software/notion.html" class="sidebar-link">- notion</a></li><li><a href="/software/office.html" class="sidebar-link">- office</a></li><li><a href="/software/pi.html" class="sidebar-link">- pi</a></li><li><a href="/software/proxy.html" class="sidebar-link">- proxy</a></li><li><a href="/software/quartz.html" class="sidebar-link">- quartz</a></li><li><a href="/software/software.html" class="sidebar-link">- software</a></li><li><a href="/software/sqlserver2017.html" class="sidebar-link">- sqlserver2017</a></li><li><a href="/software/userland.html" class="sidebar-link">- userland</a></li><li><a href="/software/vba.html" class="sidebar-link">- vba</a></li><li><a href="/software/visualstudio.html" class="sidebar-link">- visualstudio</a></li><li><a href="/software/vscode.html" class="sidebar-link">- vscode</a></li><li><a href="/software/vscode-setting.html" class="sidebar-link">- vscode-setting</a></li><li><a href="/software/zebra.html" class="sidebar-link">- zebra</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>📕 hadoop</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>📕 dbms</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>📕 springboot</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>📕 jenkins</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>📕 deploy</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>📕 aws</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>📕 flutter</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>📕 rn</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>📕 javascript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>📕 react</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>📕 vue</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>📕 python</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>📕 java</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>📕 cs</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>📕 asp</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>📕 education</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>📕 etc</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>📕 project</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>📕 domain</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="ubuntu-architecture"><a href="#ubuntu-architecture" class="header-anchor">#</a> ubuntu architecture</h3> <div class="language-bash extra-class"><pre class="language-bash"><code>dpkg --print-architecture
+</code></pre></div><h3 id="ubuntu-gui"><a href="#ubuntu-gui" class="header-anchor">#</a> ubuntu GUI</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># https://freetome.tistory.com/517</span>
+<span class="token comment"># https://guiyomi.tistory.com/113</span>
+<span class="token comment"># https://hermeslog.tistory.com/498</span>
+<span class="token comment"># https://mungiyo.tistory.com/22</span>
+<span class="token comment"># https://learn.microsoft.com/ko-kr/azure/virtual-machines/linux/use-remote-desktop?tabs=azure-cli</span>
+
+<span class="token comment"># gui</span>
+<span class="token function">sudo</span> <span class="token function">apt</span> update <span class="token operator">&amp;&amp;</span> <span class="token function">sudo</span> <span class="token function">apt</span> <span class="token parameter variable">-y</span> upgrade
+<span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> <span class="token parameter variable">-y</span> ubuntu-desktop
+
+<span class="token comment"># xfce4 xrdp</span>
+<span class="token function">sudo</span> <span class="token assign-left variable">DEBIAN_FRONTEND</span><span class="token operator">=</span>noninteractive <span class="token function">apt</span> <span class="token parameter variable">-y</span> <span class="token function">install</span> xfce4 <span class="token comment"># gdm3, lightdm (lightdm 선택)</span>
+sudp <span class="token function">apt</span> <span class="token function">install</span> <span class="token parameter variable">-y</span> xfce4-session xfce-goodies
+<span class="token comment">#area: 6, 69, display mamger: lightdm</span>
+
+<span class="token function">sudo</span> <span class="token function">apt</span> <span class="token parameter variable">-y</span> <span class="token function">install</span> xrdp
+systecmctl <span class="token builtin class-name">enable</span> xrdp
+
+<span class="token function">sudo</span> <span class="token function">cp</span> /etc/xrdp/xrdp.ini /etc/xrdp/xrdp.ini.bak
+<span class="token function">sudo</span> <span class="token function">sed</span> <span class="token parameter variable">-i</span> <span class="token string">'s/3389/13389/g'</span> /etc/xrdp/xrdp.ini
+<span class="token function">sudo</span> <span class="token function">sed</span> <span class="token parameter variable">-i</span> <span class="token string">'s/max_bpp=32/#max_bpp=32nmax_bpp=128/g'</span> /etc/xrdp/xrdp.ini
+<span class="token function">sudo</span> <span class="token function">sed</span> <span class="token parameter variable">-i</span> <span class="token string">'s/xserverbpp=24/#xserverbpp=24nxserverbpp=128/g'</span> /etc/xrdp/xrdp.ini
+
+<span class="token comment"># xrdp 변경 확인</span>
+<span class="token function">vi</span> /etc/xrdp/xrdp.ini
+
+<span class="token comment"># xrdp 활성화</span>
+<span class="token function">sudo</span> /etc/init.d/xrdp start
+<span class="token function">sudo</span> <span class="token function">passwd</span> <span class="token punctuation">[</span>username<span class="token punctuation">]</span>
+
+<span class="token function">sudo</span> <span class="token function">reboot</span>
+
+<span class="token comment"># xrdp 상태 확인</span>
+<span class="token function">service</span> xrdp status
+
+<span class="token comment"># 오류시 로그 확인</span>
+<span class="token function">tail</span> <span class="token parameter variable">-f</span> /var/log/syslog
+
+<span class="token comment"># xrdp 오류 해결</span>
+<span class="token function">sudo</span> <span class="token function">vi</span> /etc/xrdp/startwm.sh
+
+----
+<span class="token builtin class-name">unset</span> <span class="token environment constant">DBUS_SESSION_BUS_ADDRESS</span>
+<span class="token builtin class-name">unset</span> <span class="token environment constant">XDG_RUNTIME_DIR</span>
+----
+
+<span class="token function">sudo</span> systemctl restart xrdp
+
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;xfce4-session&quot;</span> <span class="token operator">&gt;</span> ~/.xsession
+<span class="token function">cat</span> ~/.xsession <span class="token comment"># 정상변경여부 확인</span>
+
+<span class="token comment"># ubuntu is not in the sudoers file.  This incident will be reported</span>
+<span class="token function">sudo</span> <span class="token function">bash</span>
+chattr <span class="token parameter variable">-i</span> /etc/sudoers
+<span class="token function">chmod</span> u+w /etc/sudoers
+
+<span class="token function">vi</span> /etc/sudoers
+---
+ubuntu <span class="token assign-left variable">ALL</span><span class="token operator">=</span><span class="token punctuation">(</span>ALL:ALL<span class="token punctuation">)</span> ALL
+---
+<span class="token comment"># # Starting xrdp (via systemctl): xrdp.service Failed to connect to bus: Connection refused</span>
+<span class="token comment"># # https://superuser.com/questions/1628546/wsl2-run-xrdp-service-from-windows</span>
+<span class="token comment"># # https://askubuntu.com/questions/234856/unable-to-do-remote-desktop-using-xrdp</span>
+<span class="token comment"># wsl bash -c &quot;sudo service xrdp start |cat&quot;</span>
+<span class="token comment"># wsl sudo &quot;/etc/init.d/xrdp start&quot;</span>
+<span class="token comment"># sudo /etc/init.d/xrdp start</span>
+
+<span class="token comment"># # xrdp error</span>
+<span class="token comment"># # echo xfce4-session &gt; ~/.xsession</span>
+<span class="token comment"># sudo update-alternatives --config x-session-manager</span>
+</code></pre></div><h3 id="novnc"><a href="#novnc" class="header-anchor">#</a> novnc</h3> <div class="language-bash extra-class"><pre class="language-bash"><code>lsb_release <span class="token parameter variable">-cd</span>  <span class="token punctuation">;</span> getconf LONG_BIT <span class="token punctuation">;</span> <span class="token function">hostname</span> <span class="token punctuation">;</span> <span class="token function">hostname</span> <span class="token parameter variable">-I</span>
+
+<span class="token comment"># https://www.youtube.com/watch?v=BWe2bnL0Nl8</span>
+Offcial Wesbite :https://novnc.com/info.html GitHub -https://github.com/novnc/noVNC
+<span class="token comment">#</span>
+<span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> xfce4 xfce4-goodies tightvncserver novnc websockify python3-numpy build-essential net-tools <span class="token function">curl</span> <span class="token function">git</span> software-properties-common <span class="token parameter variable">-y</span>
+vncserver
+vncserver <span class="token parameter variable">-kill</span> :1
+<span class="token function">mv</span> ~/.vnc/xstartup ~/.vnc/xstartup.bak
+<span class="token function">vim</span> ~/.vnc/xstartup
+----
+<span class="token comment">#!/bin/bash</span>
+xrdb <span class="token environment constant">$HOME</span>/.Xresources
+startxfce4 <span class="token operator">&amp;</span>
+---
+<span class="token function">chmod</span> +x ~/.vnc/xstartup
+vncserver
+vncpasswd  <span class="token punctuation">[</span> StrongPassword <span class="token punctuation">]</span>
+
+<span class="token function">sudo</span> adduser ubuntu
+<span class="token builtin class-name">echo</span> ubuntu <span class="token assign-left variable">ALL</span><span class="token operator">=</span><span class="token punctuation">\</span><span class="token punctuation">(</span>root<span class="token punctuation">\</span><span class="token punctuation">)</span> NOPASSWD:ALL <span class="token operator">&gt;</span> /etc/sudoers.d/ubuntu <span class="token punctuation">\</span>
+    <span class="token operator">&amp;&amp;</span> <span class="token function">chmod</span> 0440 /etc/sudoers.d/ubuntu
+
+<span class="token builtin class-name">cd</span> /etc/ssl <span class="token punctuation">;</span> openssl req <span class="token parameter variable">-x509</span> <span class="token parameter variable">-nodes</span> <span class="token parameter variable">-newkey</span> rsa:2048 <span class="token parameter variable">-keyout</span> novnc.pem <span class="token parameter variable">-out</span> novnc.pem <span class="token parameter variable">-days</span> <span class="token number">365</span>
+<span class="token function">chmod</span> <span class="token number">644</span> novnc.pem
+websockify <span class="token parameter variable">-D</span> <span class="token parameter variable">--web</span><span class="token operator">=</span>/usr/share/novnc/ <span class="token parameter variable">--cert</span><span class="token operator">=</span>/etc/ssl/novnc.pem <span class="token number">6080</span> localhost:5901
+https://localhost:6080/vnc.html
+</code></pre></div><h3 id="ubuntu-korean"><a href="#ubuntu-korean" class="header-anchor">#</a> ubuntu korean</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># https://shanepark.tistory.com/231</span>
+<span class="token comment"># 한글 언어 팩</span>
+<span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> <span class="token parameter variable">-y</span> language-pack-ko
+
+<span class="token comment">#Locale 설치</span>
+<span class="token function">sudo</span> locale-gen ko_KR.EUC-KR
+
+<span class="token comment">#LANG 설정 업데이트</span>
+<span class="token function">sudo</span> update-locale <span class="token assign-left variable"><span class="token environment constant">LANG</span></span><span class="token operator">=</span>ko_KR.UTF-8 <span class="token assign-left variable">LC_MESSAGES</span><span class="token operator">=</span>POSIX
+
+<span class="token comment">#한글 입력기 ibus 설치</span>
+<span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> <span class="token parameter variable">-y</span> ibus-hangul
+
+<span class="token comment"># 한글 폰트 설치 #나눔 글꼴 설치</span>
+<span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> <span class="token parameter variable">-y</span> fonts-nanum<span class="token punctuation">\</span>*
+
+<span class="token comment">#윈도우에 적응된 인간이므로, 파일 관리툴 MC 도 설치</span>
+<span class="token function">apt-get</span> <span class="token function">install</span> <span class="token function">mc</span>
+
+<span class="token number">2</span> fcitx 설치시작
+
+<span class="token comment">#설치</span>
+<span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> fcitx fcitx-hangul fonts-noto-cjk dbus-x11
+
+<span class="token comment">#입력기 설정 -&gt; fictx 선택 #첨부 이미지는 이미 한글 설정이 되어, 한글로 출력 중</span>
+im-config
+
+<span class="token comment">#fcitx.sh 추가</span>
+<span class="token function">sudo</span> <span class="token function">vim</span> /etc/profile.d/fcitx.sh
+
+<span class="token comment">#!/bin/bash</span>
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">QT_IM_MODULE</span><span class="token operator">=</span>fcitx
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">GTK_IM_MODULE</span><span class="token operator">=</span>fcitx
+<span class="token builtin class-name">export</span> <span class="token assign-left variable"><span class="token environment constant">XMODIFIERS</span></span><span class="token operator">=</span>@im<span class="token operator">=</span>fcitx
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">DefaultIMModule</span><span class="token operator">=</span>fcitx
+
+<span class="token comment">#optional</span>
+fcitx-autostart <span class="token operator">&amp;&gt;</span>/dev/null
+
+<span class="token comment">#아래 명령어 실행해서 한글 입력기 추가 되어 있는 지 확인</span>
+fcitx-config-gtk3
+</code></pre></div><h3 id="wine"><a href="#wine" class="header-anchor">#</a> wine</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># https://itlearningcenter.tistory.com/entry/【Ubuntu-2004-LTS】카카오톡-설치</span>
+<span class="token comment"># sed -i 's#mirror.yuki.net.uk#ports.ubuntu.com#g' /etc/apt/sources.list;</span>
+
+<span class="token function">sudo</span> dpkg --add-architecture i386
+<span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> <span class="token parameter variable">-y</span> <span class="token function">wget</span>
+
+<span class="token function">sudo</span> <span class="token function">mkdir</span> <span class="token parameter variable">-pm755</span> /etc/apt/keyrings
+<span class="token function">sudo</span> <span class="token function">wget</span> <span class="token parameter variable">-O</span> /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key
+
+<span class="token function">sudo</span> <span class="token function">wget</span> <span class="token parameter variable">-NP</span> /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/jammy/winehq-jammy.sources
+
+<span class="token function">sudo</span> <span class="token function">apt-get</span> update
+<span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> <span class="token parameter variable">-y</span> --install-recommends winehq-stable
+winecfg
+</code></pre></div><h3 id="google-cloud-ubuntu-20-04"><a href="#google-cloud-ubuntu-20-04" class="header-anchor">#</a> google cloud ubuntu 20.04</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">sudo</span> <span class="token function">apt</span> update
+<span class="token function">sudo</span> <span class="token function">apt</span> upgrade
+<span class="token comment"># sudo apt install -y ubuntu-desktop</span>
+<span class="token comment"># sudo apt install slim</span>
+<span class="token comment"># sudo reboot</span>
+<span class="token comment"># sudo service slim start</span>
+<span class="token comment"># sudo cp /etc/xrdp/xrdp.ini /etc/xrdp/xrdp.ini.bak</span>
+<span class="token comment"># sudo apt-get install xrdp</span>
+<span class="token comment"># sudo cp /etc/xrdp/xrdp.ini /etc/xrdp/xrdp.ini.bak</span>
+<span class="token comment"># sudo sed -i 's/3389/3389/g' /etc/xrdp/xrdp.ini</span>
+<span class="token comment"># sudo sed -i 's/max_bpp=32/#max_bpp=32nmax_bpp=128/g' /etc/xrdp/xrdp.ini</span>
+<span class="token comment"># sudo sed -i 's/xserverbpp=24/#xserverbpp=24nxserverbpp=128/g' /etc/xrdp/xrdp.ini</span>
+<span class="token comment"># sudo /etc/init.d/xrdp start</span>
+<span class="token function">sudo</span> <span class="token function">passwd</span> oseongryu
+<span class="token function">sudo</span> <span class="token function">passwd</span> ubuntu
+<span class="token function">sudo</span> <span class="token function">passwd</span> root
+<span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> net-tools
+<span class="token function">netstat</span> <span class="token parameter variable">-tnlp</span>
+</code></pre></div><h3 id="ubuntu-chrome-remote-desktop"><a href="#ubuntu-chrome-remote-desktop" class="header-anchor">#</a> ubuntu chrome-remote-desktop</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># https://medium.com/@selvamraju007/install-and-launch-ubuntu-22-04-desktop-on-google-cloud-1fba8c0f9585</span>
+<span class="token function">wget</span> https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
+<span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> --assume-yes ./chrome-remote-desktop_current_amd64.deb
+<span class="token function">sudo</span> <span class="token function">apt</span> update <span class="token operator">&amp;&amp;</span> <span class="token function">sudo</span> <span class="token function">apt</span> upgrade
+<span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> slim
+<span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> ubuntu-desktop
+<span class="token function">sudo</span> <span class="token function">reboot</span>
+<span class="token function">sudo</span> <span class="token function">service</span> slim start
+
+<span class="token function">sudo</span> <span class="token function">passwd</span>
+
+<span class="token comment"># 3389 설정</span>
+<span class="token comment"># sudo apt update</span>
+<span class="token comment"># sudo apt install xrdp -y</span>
+
+<span class="token comment"># sudo systemctl status xrdp</span>
+
+<span class="token comment"># sudo nano /etc/xrdp/xrdp.ini</span>
+<span class="token comment"># port=49952</span>
+<span class="token comment"># sudo systemctl restart xrdp</span>
+
+<span class="token comment"># sudo ufw status</span>
+<span class="token comment"># sudo ufw enable</span>
+<span class="token comment"># sudo ufw allow 49952/tcp</span>
+<span class="token comment"># sudo ufw reload</span>
+</code></pre></div><h3 id="ubuntu-scp"><a href="#ubuntu-scp" class="header-anchor">#</a> ubuntu scp</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">scp</span> <span class="token parameter variable">-P</span> <span class="token number">22</span> ~/.ssh/id_rsa gcp-root:/home/oseongryu/.ssh
+<span class="token function">scp</span> <span class="token parameter variable">-P</span> <span class="token number">22</span> ~/.ssh/id_rsa.pub gcp-root:/home/oseongryu/.ssh
+<span class="token function">scp</span> <span class="token parameter variable">-P</span> <span class="token number">22</span> ~/.ssh/drawing-app.war gcp-root:/home/oseongryu/.ssh
+<span class="token function">nohup</span> <span class="token function">java</span> <span class="token parameter variable">-jar</span> /home/oseongryu/.ssh/drawing-app.war <span class="token operator"><span class="token file-descriptor important">1</span>&gt;</span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span><span class="token file-descriptor important">&amp;1</span>
+</code></pre></div><h3 id="ubuntu-python-setting"><a href="#ubuntu-python-setting" class="header-anchor">#</a> ubuntu python setting</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">sudo</span> <span class="token function">apt-get</span> update
+<span class="token function">sudo</span> <span class="token function">apt-get</span> upgrade python3
+
+<span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> python3-pip
+
+<span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> python3-tk python3-dev
+pip <span class="token function">install</span> selenium
+pip <span class="token function">install</span> webdriver_manager
+pip <span class="token function">install</span> pyautogui
+<span class="token comment"># error The confidence keyword argument is only available if OpenCV is installed</span>
+pip <span class="token function">install</span> opencv-python
+
+pip <span class="token function">install</span> <span class="token parameter variable">-r</span> requirements.txt
+
+<span class="token comment"># https://stackoverflow.com/questions/73830524/attributeerror-module-lib-has-no-attribute-x509-v-flag-cb-issuer-check</span>
+<span class="token function">sudo</span> <span class="token function">apt</span> remove python3-pip
+<span class="token function">wget</span> https://bootstrap.pypa.io/get-pip.py
+<span class="token function">sudo</span> python3 get-pip.py
+<span class="token function">sudo</span> <span class="token function">reboot</span>
+pip <span class="token function">install</span> pyopenssl <span class="token parameter variable">--upgrade</span>
+
+pip <span class="token function">install</span> python-xlib
+<span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> python-tk
+
+<span class="token comment"># ubuntu cli에서 pyautogui 사용방법</span>
+<span class="token comment"># https://linuxhint.com/install-xvfb-ubuntu/</span>
+<span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> xvfb
+<span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> scrot
+
+<span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> fonts-indic
+<span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> font-noto
+<span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> fonts-noto-cjk
+
+<span class="token function">sudo</span> timedatectl set-timezone Asia/Seoul
+</code></pre></div><h3 id="ubuntu-java-gradle-setting"><a href="#ubuntu-java-gradle-setting" class="header-anchor">#</a> ubuntu java gradle setting</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> openjdk-8-jdk
+<span class="token function">chmod</span> +x gradlew
+./gradlew bootWar
+</code></pre></div><h3 id="ubuntu-setting"><a href="#ubuntu-setting" class="header-anchor">#</a> ubuntu setting</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># GUI</span>
+Ctrl + h
+</code></pre></div><h3 id="chrome-chromium"><a href="#chrome-chromium" class="header-anchor">#</a> chrome, chromium</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># amd 64</span>
+<span class="token function">wget</span> https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+<span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> ./google-chrome-stable_current_amd64.deb
+/usr/bin/google-chrome-stable
+
+<span class="token comment"># arm</span>
+<span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> chromium-browser
+
+<span class="token comment"># chromium browser 실행안될경우 (no-sandbox 옵션추가)</span>
+<span class="token comment"># https://answers.launchpad.net/ubuntu/+question/707831</span>
+<span class="token function">vi</span> /usr/bin/chromium-browser
+
+---
+<span class="token builtin class-name">exec</span> /snap/bin/chromium <span class="token string">&quot;<span class="token variable">$@</span>&quot;</span>
+<span class="token builtin class-name">exec</span> /snap/bin/chromium --no-sandbox <span class="token string">&quot;<span class="token variable">$@</span>&quot;</span>
+----
+
+<span class="token comment"># old</span>
+<span class="token function">vi</span> /usr/share/applications/chromium-browser.desktop
+<span class="token comment"># new</span>
+<span class="token function">vi</span> /var/lib/snapd/desktop/applications/chromium_chromium.desktop
+
+---
+<span class="token assign-left variable">Exec</span><span class="token operator">=</span>env <span class="token assign-left variable">BAMF_DESKTOP_FILE_HINT</span><span class="token operator">=</span>/var/lib/snapd/desktop/applications/chromium_chromium.desktop /snap/bin/chromium %U
+<span class="token assign-left variable">Exec</span><span class="token operator">=</span>env <span class="token assign-left variable">BAMF_DESKTOP_FILE_HINT</span><span class="token operator">=</span>/var/lib/snapd/desktop/applications/chromium_chromium.desktop /snap/bin/chromium %U --no-sandbox
+--service-sandbox-type<span class="token operator">=</span>none
+--service-sandbox-type<span class="token operator">=</span>utility
+---
+
+
+</code></pre></div><h3 id="chrome-update"><a href="#chrome-update" class="header-anchor">#</a> chrome update</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">cat</span> /etc/apt/sources.list.d/google-chrome.list
+<span class="token comment"># ### THIS FILE IS AUTOMATICALLY CONFIGURED ###</span>
+<span class="token comment"># # You may comment out this entry, but any other modifications may be lost.</span>
+<span class="token comment"># deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main</span>
+</code></pre></div><h3 id="ubuntu-vscode-amd64"><a href="#ubuntu-vscode-amd64" class="header-anchor">#</a> ubuntu vscode (amd64)</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">sudo</span> snap <span class="token function">install</span> <span class="token parameter variable">--classic</span> code
+code <span class="token parameter variable">--version</span>
+
+<span class="token comment"># sudo apt update</span>
+<span class="token comment"># wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -</span>
+<span class="token comment"># sudo add-apt-repository &quot;deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main&quot;</span>
+<span class="token comment"># sudo apt install code</span>
+
+
+<span class="token comment"># https://code-designer.tistory.com/8</span>
+<span class="token comment"># https://code.visualstudio.com/</span>
+
+<span class="token comment"># cd Downloads</span>
+<span class="token comment"># sudo apt install ./code_1.84.2-1699528352_amd64.deb</span>
+
+<span class="token comment"># sudo apt remove code</span>
+</code></pre></div><h3 id="ubuntu-vscode-arm"><a href="#ubuntu-vscode-arm" class="header-anchor">#</a> ubuntu vscode (arm)</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># linux</span>
+<span class="token comment"># https://rottk.tistory.com/entry/VSCode-%EC%84%A4%EC%B9%98%EB%90%9C-VSCode-Portable-%EB%B2%84%EC%A0%84%EC%9C%BC%EB%A1%9C-%EC%A0%84%ED%99%98%ED%95%98%EA%B8%B0</span>
+<span class="token builtin class-name">cd</span> ~
+<span class="token function">wget</span> https://update.code.visualstudio.com/1.56.2/linux-x64/stable <span class="token parameter variable">-O</span> code-stable-x64-1620838810.tar.gz
+
+<span class="token function">tar</span> <span class="token parameter variable">-xvf</span> code-stable-x64-1620838810.tar.gz
+<span class="token function">rm</span> code-stable-x64-1620838810.tar.gz
+
+<span class="token comment"># vscode  portable mode</span>
+<span class="token builtin class-name">cd</span> VSCode-linux-x64
+<span class="token function">mkdir</span> data
+
+<span class="token comment"># 사용자 설정 파일을 복사합니다.</span>
+<span class="token function">sudo</span> <span class="token function">cp</span> ~/.config/Code ./data <span class="token parameter variable">-r</span>
+<span class="token function">mv</span> data/Code ./data/user-data
+
+<span class="token comment"># 설치했던 확장팩을 복사합니다.</span>
+<span class="token function">sudo</span> <span class="token function">cp</span> ~/.vscode/extensions/ ./data <span class="token parameter variable">-r</span>
+
+<span class="token comment"># 생성한 폴더의 사용권한을 부여합니다.</span>
+<span class="token function">sudo</span> <span class="token function">chmod</span> o+wx data
+<span class="token function">sudo</span> <span class="token function">chown</span> <span class="token parameter variable">-R</span> osryu:google-sudoers data
+
+<span class="token comment"># # 사용자 환경 폴더</span>
+<span class="token comment"># Windows %APPDATA%\Code</span>
+<span class="token comment"># macOS $HOME/Library/Application Support/Code</span>
+<span class="token comment"># Linux $HOME/.config/Code</span>
+<span class="token comment"># # 확장팩이 설치된 폴더의 위치는 다음과 같습니다.</span>
+<span class="token comment"># Windows %USERPROFILE%\.vscode\extensions</span>
+<span class="token comment"># macOS ~/.vscode/extensions</span>
+<span class="token comment"># Linux ~/.vscode/extensions</span>
+</code></pre></div><h3 id="ubuntu-docker"><a href="#ubuntu-docker" class="header-anchor">#</a> ubuntu docker</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># https://stackoverflow.com/questions/40658095/how-to-open-ubuntu-gui-inside-a-docker-image</span>
+<span class="token comment"># https://shanepark.tistory.com/237</span>
+
+<span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> ca-certificates <span class="token function">curl</span> gnupg lsb-release
+
+<span class="token function">curl</span> <span class="token parameter variable">-fsSL</span> https://download.docker.com/linux/ubuntu/gpg <span class="token operator">|</span> <span class="token function">sudo</span> gpg <span class="token parameter variable">--dearmor</span> <span class="token parameter variable">-o</span> /usr/share/keyrings/docker-archive-keyring.gpg
+
+<span class="token builtin class-name">echo</span> <span class="token punctuation">\</span>
+ <span class="token string">&quot;deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+ <span class="token variable"><span class="token variable">$(</span>lsb_release <span class="token parameter variable">-cs</span><span class="token variable">)</span></span> stable&quot;</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> /etc/apt/sources.list.d/docker.list <span class="token operator">&gt;</span> /dev/null
+
+<span class="token function">sudo</span> <span class="token function">apt</span> update
+<span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> docker-ce docker-ce-cli containerd.io
+</code></pre></div><h3 id="ubuntu-docker-compose"><a href="#ubuntu-docker-compose" class="header-anchor">#</a> ubuntu docker-compose</h3> <div class="language-ps1 extra-class"><pre class="language-text"><code># windows
+# https://docs.docker.com/compose/install/standalone/
+Start-BitsTransfer -Source &quot;https://github.com/docker/compose/releases/download/v2.26.1/docker-compose-windows-x86_64.exe&quot; -Destination $Env:ProgramFiles\Docker\docker-compose.exe
+
+# wsl ubuntu
+sudo curl -L &quot;https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)&quot; -o /usr/local/bin/docker-compose
+sudo apt install -y docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+docker-compose --version
+</code></pre></div><h3 id="customize-dock-panel"><a href="#customize-dock-panel" class="header-anchor">#</a> customize dock panel</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> dconf-editor
+
+<span class="token comment"># https://linuxconfig.org/how-to-customize-dock-panel-on-ubuntu-20-04-focal-fossa-linux</span>
+gsettings <span class="token builtin class-name">set</span> org.gnome.shell.extensions.dash-to-dock extend-height <span class="token boolean">false</span>
+gsettings <span class="token builtin class-name">set</span> org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
+gsettings <span class="token builtin class-name">set</span> org.gnome.shell.extensions.dash-to-dock transparency-mode FIXED
+gsettings <span class="token builtin class-name">set</span> org.gnome.shell.extensions.dash-to-dock dash-max-icon-size <span class="token number">64</span>
+gsettings <span class="token builtin class-name">set</span> org.gnome.shell.extensions.dash-to-dock unity-backlit-items <span class="token boolean">true</span>
+</code></pre></div><h3 id="ubuntu-in-mac"><a href="#ubuntu-in-mac" class="header-anchor">#</a> ubuntu in mac</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">docker</span> pull ubuntu:20.04
+<span class="token function">docker</span> run <span class="token parameter variable">-it</span> <span class="token parameter variable">-p</span> <span class="token number">8089</span>:8089 <span class="token parameter variable">--privileged</span> <span class="token parameter variable">--restart</span><span class="token operator">=</span>always <span class="token parameter variable">--name</span> my-ubuntu ubuntu:20.04
+<span class="token function">docker</span> run <span class="token parameter variable">-it</span> <span class="token parameter variable">-p</span> <span class="token number">8081</span>:8089 <span class="token parameter variable">--platform</span> linux/amd64 <span class="token parameter variable">--privileged</span> <span class="token parameter variable">--restart</span><span class="token operator">=</span>always <span class="token parameter variable">--name</span> my-ubuntu ubuntu:20.04
+<span class="token function">docker</span> run <span class="token parameter variable">-it</span> <span class="token parameter variable">-p</span> <span class="token number">8082</span>:8089 <span class="token parameter variable">--privileged</span> <span class="token parameter variable">--restart</span><span class="token operator">=</span>always <span class="token parameter variable">--name</span> my-ubuntu2 ubuntu:20.04
+
+<span class="token function">docker</span> <span class="token builtin class-name">exec</span> <span class="token parameter variable">-it</span> my-ubuntu <span class="token function">bash</span>
+
+<span class="token function">sudo</span> <span class="token function">docker</span> <span class="token function">cp</span> /Users/oseongryu/.ssh/id_rsa my-ubuntu:/root/.ssh/
+<span class="token function">sudo</span> <span class="token function">docker</span> <span class="token function">cp</span> /Users/oseongryu/.ssh/id_rsa.pub my-ubuntu:/root/.ssh/
+
+<span class="token function">apt</span> <span class="token function">install</span> chromium-browser
+<span class="token function">apt-get</span> <span class="token function">install</span> chromium-chromedriver
+<span class="token function">apt-get</span> update
+<span class="token function">apt-get</span> upgrade <span class="token parameter variable">-y</span>
+<span class="token function">apt-get</span> <span class="token function">install</span> build-essential gdb
+<span class="token function">apt</span> <span class="token function">install</span> chromium-shell
+snap <span class="token function">install</span> chromium
+
+systemctl unmask snapd.service
+systemctl <span class="token builtin class-name">enable</span> snapd.service
+systemctl start snapd.service
+/usr/lib/snapd/snapd <span class="token operator">&amp;</span>
+
+<span class="token function">apt-get</span> update
+
+<span class="token function">apt-get</span> upgrade python3
+<span class="token function">apt</span> <span class="token function">install</span> python3-pip
+<span class="token function">apt</span> <span class="token function">install</span> python3-tk python3-dev
+pip <span class="token function">install</span> selenium
+pip <span class="token function">install</span> webdriver_manager
+pip <span class="token function">install</span> pyautogui
+pip <span class="token function">install</span> opencv-python
+<span class="token function">apt</span> remove python3-pip
+<span class="token function">wget</span> https://bootstrap.pypa.io/get-pip.py
+python3 get-pip.py
+<span class="token function">reboot</span>
+pip <span class="token function">install</span> pyopenssl <span class="token parameter variable">--upgrade</span>
+pip <span class="token function">install</span> python-xlib
+
+<span class="token comment"># https://codetryout.com/google-chrome-following-packages-have-unmet-dependencies/</span>
+<span class="token function">apt</span> <span class="token function">install</span> <span class="token function">wget</span>
+<span class="token function">wget</span> https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+<span class="token function">apt</span> <span class="token function">install</span> ./google-chrome-stable_current_amd64.deb
+
+
+<span class="token function">apt</span> <span class="token function">install</span> python-tk
+<span class="token function">apt</span> <span class="token function">install</span> xvfb
+<span class="token function">apt</span> <span class="token function">install</span> scrot
+
+python3 /root/git/python-selenium/selenium/service.py <span class="token number">0</span>
+</code></pre></div><h3 id="ssl-with-springboot"><a href="#ssl-with-springboot" class="header-anchor">#</a> ssl (with springboot)</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># https://velog.io/@jiwon615/Spring-Boot%EC%97%90-Lets-Encrypt-SSL-%EC%A0%81%EC%9A%A9%EA%B8%B0</span>
+<span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> certbot
+<span class="token function">sudo</span> certbot certonly <span class="token parameter variable">--standalone</span>
+<span class="token function">sudo</span> certbot certonly <span class="token parameter variable">--standalone</span> --register-unsafely-without-email
+
+<span class="token comment"># /etc/letsencrypt/live/도메인/ (fullchain.pem, privkey.pen)</span>
+
+<span class="token function">sudo</span> openssl pkcs12 <span class="token parameter variable">-export</span> <span class="token parameter variable">-in</span> fullchain.pem <span class="token parameter variable">-inkey</span> privkey.pem <span class="token parameter variable">-out</span> keystore.p12 <span class="token parameter variable">-name</span> ttp <span class="token parameter variable">-CAfile</span> chain.pem <span class="token parameter variable">-caname</span> root
+
+<span class="token comment"># # 배포 후 root 권한으로 실행하는게 아니면 RFC 규약에 의하여 1024미만 포트는 root만 가능하므로 리다이렉션처리 (nginx 설치후 리다이렉트를 진행하는 방식 추천)</span>
+<span class="token comment"># sudo iptables -t nat -A PREROUTING -p tcp --dport 443 -j REDIRECT --to-port 8089</span>
+
+<span class="token comment"># # 목록</span>
+<span class="token comment"># sudo iptables -t nat -L PREROUTING --line-numbers</span>
+<span class="token comment"># # iptables 삭제 번호</span>
+<span class="token comment"># sudo iptables -t nat -D PREROUTING 3</span>
+
+
+<span class="token comment"># 인증서 자동갱신</span>
+<span class="token comment"># Crontab 보기</span>
+<span class="token function">sudo</span> <span class="token function">crontab</span> <span class="token parameter variable">-l</span>
+<span class="token comment"># Crontab 편집</span>
+<span class="token function">sudo</span> <span class="token function">crontab</span> <span class="token parameter variable">-e</span>
+<span class="token number">0</span> <span class="token number">2</span> <span class="token number">1</span> * * /usr/bin/certbot renew
+
+<span class="token function">sudo</span> certbot certificates
+<span class="token comment"># 재갱신테스트</span>
+<span class="token function">sudo</span> certbot renew --dry-run
+<span class="token comment"># 재갱신진행</span>
+<span class="token function">sudo</span> certbot renew
+
+</code></pre></div><h3 id="ssl-with-nginx"><a href="#ssl-with-nginx" class="header-anchor">#</a> ssl (with nginx)</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># https://velog.io/@gudcks0305/%EC%9A%B0%EB%B6%84%ED%88%AC%EC%97%90%EC%84%9C-Nginx%EB%A1%9C-Reverse-Proxy-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0</span>
+upstream backend <span class="token punctuation">{</span>
+    server <span class="token number">127.0</span>.0.1:8089<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment"># server {</span>
+<span class="token comment">#     listen 80;</span>
+<span class="token comment">#     server_name gptinfo.co.kr;</span>
+<span class="token comment">#     location / {</span>
+<span class="token comment">#         proxy_pass http://backend/;</span>
+<span class="token comment">#     }</span>
+<span class="token comment"># }</span>
+
+server <span class="token punctuation">{</span>
+    listen <span class="token number">80</span><span class="token punctuation">;</span>
+    server_name gptinfo.co.kr<span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$host</span> <span class="token operator">=</span> gptinfo.co.kr<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token builtin class-name">return</span> <span class="token number">301</span> https://<span class="token variable">$host</span><span class="token variable">$request_uri</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token builtin class-name">return</span> <span class="token number">404</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+server <span class="token punctuation">{</span>
+    listen <span class="token number">443</span> ssl<span class="token punctuation">;</span>
+    server_name gptinfo.co.kr<span class="token punctuation">;</span>
+    ssl on<span class="token punctuation">;</span>
+    ssl_certificate /etc/letsencrypt/live/gptinfo.co.kr/fullchain.pem<span class="token punctuation">;</span>
+    ssl_certificate_key /etc/letsencrypt/live/gptinfo.co.kr/privkey.pem<span class="token punctuation">;</span>
+    location / <span class="token punctuation">{</span>
+        proxy_pass http://backend/<span class="token punctuation">;</span>
+        proxy_set_header HOST <span class="token variable">$http_host</span><span class="token punctuation">;</span>
+        proxy_set_header X-Real-IP <span class="token variable">$remote_addr</span><span class="token punctuation">;</span>
+        proxy_set_header X-Forwarded-For <span class="token variable">$proxy_add_x_forwarded_for</span><span class="token punctuation">;</span>
+        proxy_set_header X-Forwarded-Proto <span class="token variable">$scheme</span><span class="token punctuation">;</span>
+        proxy_redirect off<span class="token punctuation">;</span>
+        charset utf-8<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><h3 id="temp"><a href="#temp" class="header-anchor">#</a> temp</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># apt install slim</span>
+<span class="token comment"># cat /etc/X11/default-display-manager</span>
+<span class="token comment"># apt install lightdm</span>
+<span class="token comment"># apt install ubuntu-desktop</span>
+<span class="token comment"># reboot</span>
+<span class="token comment"># # delete GUI diplay manager</span>
+<span class="token comment"># apt remove slim lxde</span>
+<span class="token comment"># # 불필요한 종속성제외</span>
+<span class="token comment"># apt autoremove</span>
+<span class="token comment"># service slim start</span>
+<span class="token comment"># /etc/init.d/xrdp stop</span>
+<span class="token comment"># /etc/init.d/xrdp start</span>
+</code></pre></div><h3 id="error-authentication-is-required-to-create-a-color-managed-device"><a href="#error-authentication-is-required-to-create-a-color-managed-device" class="header-anchor">#</a> [error] authentication is required to create a color managed device</h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token comment"># https://jkim83.tistory.com/142</span>
+<span class="token function">sudo</span> <span class="token function">vi</span> /etc/polkit-1/localauthority/50-local.d/color.pkla
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>[Allow colord for all users]
+Identity=unix-user:*
+Action=org.freedesktop.color-manager.create-device;org.freedesktop.color-manager.create-profile;org.freedesktop.color-manager.delete-device;org.freedesktop.color-manager.delete-profile;org.freedesktop.color-manager.modify-device;org.freedesktop.color-manager.modify-profile
+ResultAny=yes
+ResultInactive=yes
+ResultActive=yes
+</code></pre></div><h3 id="magnet-ubuntu-gui"><a href="#magnet-ubuntu-gui" class="header-anchor">#</a> magnet (ubuntu GUI)</h3> <div class="language- extra-class"><pre class="language-text"><code>sudo apt-get install comizconfig-settings-manager
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">10/10/2024, 8:58:23 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/os/shell.html" class="prev">
+        - shell
+      </a></span> <span class="next"><a href="/os/windows.html">
+        - windows
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.0a014be0.js" defer></script><script src="/assets/js/20.0ea8b2d3.js" defer></script><script src="/assets/js/2.74c7269a.js" defer></script><script src="/assets/js/1.df3e92d6.js" defer></script><script src="/assets/js/77.c9ce0875.js" defer></script>
+  </body>
+</html>
