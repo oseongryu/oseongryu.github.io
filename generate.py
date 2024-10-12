@@ -1,5 +1,6 @@
 import os
 import json
+import re
 
 
 # 원하는 타이틀 순서를 정의합니다.
@@ -48,5 +49,22 @@ json_array = json.dumps(config_array)
 convert_json_array  = json_array.replace(f"#-#", '📕')
 print(convert_json_array)
 
+# 파일을 읽습니다.
+with open('./docs/.vuepress/config.js', 'r') as file:
+    content = file.read()
 
+# sidebar 부분을 찾습니다.
+sidebar_start = content.find('sidebar: [')
+sidebar_end = content.find('sidebarDepth', sidebar_start) -1
+sidebar_content = content[sidebar_start:sidebar_end]
+
+# sidebar 부분을 수정합니다.
+sidebar_data = sidebar_content.replace('sidebar:', '')
+sidebar_content_new = 'sidebar: ' + convert_json_array
+
+
+# 수정된 내용을 파일에 다시 씁니다.
+content_new = content.replace(sidebar_content, sidebar_content_new + ',\n').replace('{"title"', '\n{"title"') 
+with open('./docs/.vuepress/config.js', 'w') as file:
+    file.write(content_new)
 
