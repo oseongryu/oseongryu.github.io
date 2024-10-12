@@ -33,7 +33,7 @@ def generate_config_array(docs_path):
     sorted_config_array = sorted(config_array, key=lambda x: priority_titles.index(x['title']) if x['title'] in priority_titles else len(priority_titles))
     for item in sorted_config_array:
         if 'title' in item:
-            item['title'] = '📕 ' + item['title']
+            item['title'] = '#-# ' + item['title']
         if 'collapsable' in item:
             item['collapsable'] = item['collapsable']
         if 'children' in item:
@@ -43,9 +43,10 @@ def generate_config_array(docs_path):
 
 docs_path = '/Users/oseongryu/git/oseongryu.github.io/docs'  # 'docs' 폴더의 경로를 지정
 config_array = generate_config_array(docs_path)
-print(config_array)
 
-# json_array = json.dumps(config_array)
+json_array = json.dumps(config_array)
+convert_json_array  = json_array.replace(f"#-#", '📕')
+print(convert_json_array)
 
 
 
