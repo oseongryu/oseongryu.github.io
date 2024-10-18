@@ -27,6 +27,15 @@ module.exports = {
           staticIcon: false,
       },
     ],
+    [
+      'vuepress-plugin-image-viewer',
+      {
+        selector: '.theme-default-content',
+         options: {
+          excludeClass: 'no-zoom',
+        },
+      },
+    ],
   ],
   themeConfig: {
     sidebar: [
