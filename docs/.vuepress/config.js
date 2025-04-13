@@ -61,7 +61,7 @@ module.exports = {
 {"title": "📕 etc", "collapsable": false, "children": [["/etc/gpt", "- gpt"], ["/etc/stock", "- stock"]]}, 
 {"title": "📕 project", "collapsable": false, "children": [["/project/project", "- project"], ["/project/project-management", "- project-management"]]}, 
 {"title": "📕 domain", "collapsable": false, "children": [["/domain/spc-controlchart", "- spc-controlchart"], ["/domain/spc-processcapability", "- spc-processcapability"]]}],
- sidebarDepth: 0,
+    sidebarDepth: 0,
     nav: [
       { text: 'Home', link: 'https://oseongryu.github.io/', target: '_self' },
       {

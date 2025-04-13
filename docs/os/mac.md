@@ -17,7 +17,7 @@ Rancher Desktop(Docker Desktop 대체)
 
 ### 맥 사용법
 
-```
+```bash
 ###  0. 기타
 -  동일 프로그램 전환 cmd + `
 
@@ -51,10 +51,16 @@ Rancher Desktop(Docker Desktop 대체)
 
 ###  5. 추가설정
 - 캡쳐시 옵션에서 미리보기썸네일제거
-- 폴더선택후 터미널로 열기
-- 오토마타 사용으로 VSCode로 열기 서비스 만들기
-- 트랙패드 > 포인트 및 클릭 > 탭하여 클릭하기 체크
-- 트랙패드 > 추가 제스처 > 페이지 쓸어넘기기 체크
+- 키보드 단축키 > 서비스 > 파일 및 폴더 : 폴더에서 새로운 터미널 열기 단축키 추가
+- 오토마타 단축키: OpenVSCode, OpenTerminal, MakeNewFile 등
+- 트랙패드: 트랙패드 > 포인트 및 클릭 > 탭하여 클릭하기 체크
+- 트랙패드: 트랙패드 > 추가 제스처 > 페이지 쓸어넘기기 체크
+- Finder 설정(고급):
+[x] 모든 파일 확장자 보기
+[ ] 확장자를 변경하기 전 경고보기
+[x] 폴더 우선 정렬: 윈도우에서(이름순으로 정렬 시)
+[x] 폴더 우선 정렬: 데스크탑에서
+
 
 ###  6. 단축키
 
@@ -97,6 +103,14 @@ Command+, 모든 앱에서 환경 설정 창을 열기
 [space bar] 또는 [command]+[Y] 훑어보기
 [command]+파일 드래그 다른 디스크로 파일을 드래그할 때 복사하지 않고 이동
 [option]+파일 드래그 같은 디스크로 파일을 드래그할 때 이동하지 않고 복사
+
+### Mac Command Line 명령어
+^+U to delete before Cursor
+^+K to delete after Cursor
+^+W to delete just a word.
+^+C to cancel.
+^+A to go to the beginning of the line.
+^+E to go to the end of the line.
 ```
 
 ### 시스템 환경설정
@@ -130,14 +144,17 @@ Command+, 모든 앱에서 환경 설정 창을 열기
 # 등록한 서비스를 확인하는 위치는 ~/Library/services
 
 # 1. Open VSCode
-셀스크립트 열기
+Automator > 빠른 동작 > 셀스크립트 열기
 현재수신하는작업흐름:파일 또는 폴더
 선택항목위치: Finder.app
-통과입력: 변수
+(셀스크립트실행)통과입력: 변수
+
+---
 open -n -b "com.microsoft.VSCode" --args "$*"
+---
 
 # 2. Open Terminal
-AppleScript 실행
+Automator > 빠른 동작 > AppleScript 실행
 작업흐름수신: 입력없음
 선택항목위치: 모든 응용 프로그램
 
@@ -151,27 +168,28 @@ on run {input, parameters}
 end run
 
 # 3. Make NewFile
-Automator > 빠른 동작 > AppleScript DoubleClick
+Automator > 빠른 동작 > AppleScript 실행
+작업흐름수신: 입력없음
 선택항목위치: Finder.app
 
 ---
 tell application "Finder" to make new file at (the target of the front window) as alias
 ---
 
-- Make NewFile (Application 버전)
-Application 선택 > AppleScript
+# 4. Make NewFile (Application 버전)
 
-# 1번
+Automator > 응용프로그램 > AppleScript 실행
+
+## 스크립트1 (스크립트1,2,3중 하나선택)
 ---
 tell application "Finder" to make new file at (the target of the front window) as alias
 ---
-
-# 2번
+## 스크립트2
 ---
 tell application "Finder" to make new file at (the target of the front window) as alias with properties {name:"newfile.txt"}
 ---
 
-# 2번
+## 스크립트3
 ---
 on run {input, parameters}
     tell application "Finder"
@@ -181,10 +199,19 @@ on run {input, parameters}
 end run
 ---
 
-# 4. BlankFile
+## 파일저장
+별도저장: MakeNewFile.app
+위치: /Applications > BlankFile.app
 
-파일저장 > /Applications > BlankFile.app
-cmd를 누른 상태에서 Finder에 Drag&drop
+## Finder에 추가방법
+### 추가
+- cmd를 누른 상태에서 Finder 상단에 Drag&drop으로 추가
+
+### 삭제
+cmd를 누른 상태에서 Finder 상단에 버튼을 Drag&drop으로 제외
+
+## 앱 아이콘 변경
+MakeNewFile.app > 우클릭 >  정보가져오기 > 최상단 왼족 이미지에 새로운이미지를 드래그해서 바꾸기
 
 
 # 5. Change Display
@@ -197,21 +224,66 @@ exit 0;
 ---
 ```
 
-### 기본 단축키
+### mac brew
 
-```
-cmd + c 복사
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-### Mac Command Line 명령어
+### Oh my zsh
 
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+.zshrc에서 ZSH_THEME="robbyrussell" => ZSH_THEME="simple"
 ```
-^+U to delete before Cursor
-^+K to delete after Cursor
-^+W to delete just a word.
-^+C to cancel.
-^+A to go to the beginning of the line.
-^+E to go to the end of the line.
+
+### mac nvm
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+
+nvm install 16.17.1
+nvm use 16.17.1
+nvm alias default 16.17.1
+```
+
+### pyenv
+
+```bash
+# https://dchkang83.tistory.com/199
+brew install pyenv
+
+# 버전목록확인
+pyenv install --list
+pyenv install --l
+# 필요버전설치
+pyenv install 3.10.6
+# 설정(전역)
+pyenv global 3.10.6
+# 설정(현재프로젝트)
+pyenv local 3.10.6
+# 설정(현재shell)
+pyenv shell 3.10.6
+
+# 설치버전목록확인
+pyenv versions
+# 버전
+pyenv version
+
+# python 재설치
+ls -l /usr/local/bin/python*
+ln -s -f /usr/local/bin/python3.10 /usr/local/bin/python
+
+#기존 버전 삭제
+rm -rf /usr/local/bin/python*
+rm -rf /usr/local/bin/pip*
+# 환경변수 삭제 
+brew doctor
+brew cleanup
+
+python -m ensurepip --default-pip
+python -m pip install --upgrade pip
 ```
 
 ### 터미널에서 파인더 열기
@@ -222,25 +294,25 @@ open .
 
 ### Finder 숨김파일 보기
 
-```
+```bash
 shift + cmd + .
 defaults write com.apple.Finder AppleShowAllFiles YES
 killall Finder
-```
-
-### 다시 숨김
-
-```
+# 다시 숨김
 defaults write com.apple.Finder AppleShowAllFiles NO
 killall Finder
 ```
 
 ### macOS Sierra에서 원화(₩) 대신 백 쿼트(`) 입력하기
 
-```
-~/Library 폴더로 이동해서 KeyBindings 폴더를 추가한다.
-~/Library/KeyBindings 폴더에 DefaultkeyBinding.dict 파일을 만든다.
-DefaultkeyBinding.dict 파일에 아래의 코드를 추가한다
+```bash
+#~/Library 폴더로 이동해서 KeyBindings 폴더를 추가한다.
+#~/Library/KeyBindings 폴더에 DefaultkeyBinding.dict 파일을 만든다.
+#DefaultkeyBinding.dict 파일에 아래의 코드를 추가한다
+
+mkdir ~/Library/KeyBindings
+touch ~/Library/KeyBindings/DefaultkeyBinding.dict
+vi ~/Library/KeyBindings/DefaultkeyBinding.dict
 
 {
     "₩" = ("insertText:", "`");
@@ -249,7 +321,7 @@ DefaultkeyBinding.dict 파일에 아래의 코드를 추가한다
 
 ### 한글전환 Shift + space 변경
 
-```
+```bash
 1. 시스템 환경설정 > 키보드 > 단축키 > 입력소스 > 입력 메뉴에서 다음 소스 선택 단축키를 fn + shift + space 로 변경
 (한영 딜레이가 없으려면 입력 메뉴에서 다음 소스 선택)
 
@@ -272,7 +344,8 @@ sudo cat<<: >/Users/Shared/bin/userkeymapping.plist
 <plist version="1.0">
 <dict>
     <key>Label</key>
-    <string>userkeymapping</string>   <key>ProgramArguments</key>
+    <string>userkeymapping</string>
+    <key>ProgramArguments</key>
     <array>
         <string>/Users/Shared/bin/userkeymapping</string>
     </array>
@@ -294,15 +367,6 @@ sudo launchctl load /Library/LaunchAgents/userkeymapping.plist
 sudo launchctl remove userkeymapping
 sudo rm /Library/LaunchAgents/userkeymapping.plist
 sudo rm /Users/Shared/bin/userkeymapping
-
-```
-
-### Oh my zsh
-
-```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-.zshrc에서 ZSH_THEME="robbyrussell" => ZSH_THEME="simple"
 ```
 
 ### Terminal alias
@@ -448,6 +512,11 @@ sudo visudo
 defaults write com.apple.screencapture name "shot"
 killall SystemUIServer
 defaults write com.apple.screencapture name "Screenshot"
+
+# 날짜제외
+defaults write com.apple.screencapture "include-date" 0;killall SystemUIServer
+# 날짜포함
+defaults write com.apple.screencapture "include-date" 1;killall SystemUIServer
 ```
 
 ### mac dock speed
@@ -544,44 +613,6 @@ java    /Users/oseongryu/DEV/java
 sudo chown -R ${USER}:staff /usr/local/Cellar/
 ```
 
-### pyenv
-
-```bash
-# https://dchkang83.tistory.com/199
-brew instlal pyenv
-
-# 버전목록확인
-pyenv install --list
-pyenv install --l
-# 필요버전설치
-pyenv install 3.10.6
-# 설정(전역)
-pyenv global 3.10.6
-# 설정(현재프로젝트)
-pyenv local 3.10.6
-# 설정(현재shell)
-pyenv shell 3.10.6
-
-# 설치버전목록확인
-pyenv versions
-# 버전
-pyenv version
-
-# python 재설치
-ls -l /usr/local/bin/python*
-ln -s -f /usr/local/bin/python3.10 /usr/local/bin/python
-
-#기존 버전 삭제
-rm -rf /usr/local/bin/python*
-rm -rf /usr/local/bin/pip*
-# 환경변수 삭제 
-brew doctor
-brew cleanup
-
-python -m ensurepip --default-pip
-python -m pip install --upgrade pip
-```
-
 ### displayplacer 맥북 듀얼모니터 위치 변경 문제 해결
 
 ```bash
@@ -638,6 +669,129 @@ cat /var/mail/$USER
 sudo rm /var/mail/$USER
 ```
 
+### mac 시작 프로그램, 백그라운드에서 허용
+
+```bash
+# 시스템 설정 > 일반 > 로그인 항목
+# Finder > shift + cmd + G 이동 > .plist 삭제
+~/Library/LaunchAgents
+~/Library/LaunchDaemons
+~/Library/StartupItems
+/Library/LaunchAgents
+/Library/LaunchDaemons
+/Library/StartupItems
+```
+
+### mac 폴더명 현지화
+
+```bash
+/System/Library/CoreServices/SystemFolderLocalizations/ko.lproj/SystemFolderLocalization.strings
+```
+
+### mac 한글파일명 한글 자음모음 분리 현상 해결
+
+```bash
+https://blog.naver.com/daekkai71/223176789304
+
+brew install convmv
+#파일변환
+convmv -f utf8 -t utf8 --nfc --notest 표준근무시간변경안내_20250124.png
+
+for i in "$@"; do
+    convmv -f utf-8 -t utf-8 --nfc --notest "$i"
+done
+```
+
+### mac Finder 설정
+
+```bash
+# Finder는 최대한 기본값 사용으로 설정되도록 하기
+# 환경 설정 초기화 $HOME/Preferences/com.apple.finder(.plist), com.apple.systempreferences(.plist) 파일 2개를 삭제하고 재시동
+# rm -rf $HOME/Library/Preferences/com.apple.finder.plist
+# rm -rf $HOME/Library/Preferences/com.apple.systempreferences.plist
+# 파인더 전체경로로 보기: defaults write com.apple.finder _FXShowPosixPathInTitle YES
+# 파인더 원상태로 보기: defaults write com.apple.finder _FXShowPosixPathInTitle NO
+1. Finder > 보기 > 경로 막대 보기
+1. Finder > 보기 > 상태 막대 보기
+1. 목록보기
+2. 계층보기: 수정일, 크기, 종류
+3. 상대적 날짜 사용 체크해제
+```
+
+### mac .DS_Store
+
+```bash
+# 일괄삭제
+sudo find / -type f -name '\.DS_Store' -print -delete
+# .DS_Store 생성 막기
+defaults write com.apple.desktopservices DSDontWriteNetworkStores ture
+```
+
+### mac brew bundle, cask, mas
+
+```bash
+# brew : cask, mas, wget 등 개발 패키지
+# cask : atom, docker 등 웹사이트에서 다운 받아 설치하는 어플리케이션
+# mas : 카카오톡, wechat 등 앱스토어를 통해 설치하는 어플리케이션
+
+# brew search microsoft
+brew install microsoft-remote-desktop
+brew install keka
+
+
+# cask (deprecated brew install --cask)
+brew install cask
+brew cask install <application>
+brew cask list
+brew cask remove <application>
+
+
+# mas
+brew install mas
+# mas에서 Windows App 검색
+mas search "Windows App"
+mas install 1295203466
+
+# iRightMouse
+# Microsoft To Do
+# Magnet
+# 무비스트
+# Microsoft OneNote
+# 유니콘 HTTPS
+# RunCat
+# 올ㅋ사전
+# Friendly Streaming
+# Translate Tab
+# My Wonderful Days
+
+#brewfile리스트에는 다음 문구를 추가
+mas "Windows App", 1295203466
+mas list
+
+#brewfile 생성
+brew bundle dump
+
+#brewfile 내용 확인
+cat brewfile
+
+#brewfile 실행
+brew bundle
+
+# https://imch.dev/posts/lets-setup-team-development-environment-using-brewfile/
+brew install --cask docker
+# ‘Docker.app’은(는) 인터넷에서 다운로드된 앱입니다. 열겠습니까?
+echo "$pass" | sudo -S xattr -dr com.apple.quarantine /Applications/Docker.app
+# Operation not permitted
+설정 > 개인정보 보호 및 보안 > 전체 디스크 접근권한 허용
+```
+
+### mac direnv
+
+```bash
+# https://www.44bits.io/ko/post/direnv_for_managing_directory_environment
+폴더별 환경관리
+```
+
 ### References
 
 ```
@@ -647,5 +801,4 @@ https://cli.ncloud-docs.com/docs/guide-objectstorage
 https://cli-fin.ncloud-docs.com/docs/guide-objectstorage
 AzureCli: https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-macos
 AzureCli: https://docs.microsoft.com/ko-kr/cli/azure/get-started-with-azure-cli
-
 ```

@@ -15,7 +15,7 @@ git add *
 git commit -m "설명"
 git status
 
-git remote add origin https://github.com/f5074/sample.git
+git remote add origin https://github.com/oseongryu/sample.git
 git push origin main
 ```
 
@@ -277,6 +277,7 @@ git config --global http.sslVerify false
 #### git remote origin
 
 ```bash
+# 1
 git config --local --list
 git remote add origin git@github.com:oseongryu/til.git
 
@@ -286,6 +287,8 @@ git config --local --list
 git remote add origin git@github.com:oseongryu/til.git
 git push -u origin main
 
+# 2
+git remote set-url origin git@github.com:oseongryu/til.git
 ```
 
 #### git merge option
@@ -609,6 +612,55 @@ git config --global alias.co checkout
 # 머지된 브랜치 일괄삭제 (.gitconfig)
 [alias]
     cleanbranch = "!git branch -d $(git branch --merged | grep -v '\\<master\\>')"
+```
+
+### git .gitattributes
+
+```bash
+# https://git-scm.com/book/ko/v2/Git맞춤-Git-Attributes
+* text eol=lf
+*.png binary
+*.gif binary
+*.woff binary
+*.woff2 binary
+*.otf binary
+*.zip binary
+
+
+* linguist-vendored
+*.py linguist-vendored=false
+
+# *.js linguist-detectable=false
+# *.html linguist-detectable=false
+# *.css linguist-detectable=false
+# *.scss linguist-detectable=false
+```
+
+### git proxy (ssh, http)
+
+```bash
+# 1.ssh (git clone git@github.com:kubernetes/kubernetes.git)
+# add ProxyCommand in ~/.ssh/config
+ Host github.com
+    HostName github.com
+    Port 22
+    IdentityFile ~/.ssh/id_rsa
+    User oseongryu
+    ProxyCommand nc -x 192.0.0.4:8000 -X connect %h %p #mac
+    # ProxyCommand connect -S 192.0.0.4:8000 %h %p # ServerAliveInterval 10 #Windows
+
+# only cli
+git -c "http.proxy=192.0.0.4:8000" clone git@github.com:oseongryu/docker-composes.git
+
+
+
+# 2.http (git clone https://github.com/kubernetes/kubernetes.git)
+# add config in "~/.gitconfig"
+git config --global http.proxy http://192.0.0.4:8000
+git config --global https.proxy https://192.0.0.4:8000
+
+git config --global http.proxy 'socks5://192.0.0.4:8000'
+git config --global https.proxy 'socks5://192.0.0.4:8000'
 ```
 
 #### References
