@@ -29,7 +29,7 @@ export default withMermaid(
       ['meta', { property: 'og:type', content: 'gptinfo' }],
       ['meta', { property: 'og:title', content: 'gptinfo' }],
       ['meta', { property: 'og:description', content: 'gptinfo' }],
-      ['meta', { property: 'og:image', content: 'https://gptinfo.co.kr/ogimage.jpg' }],
+      ['meta', { property: 'og:image', content: 'https://gptinfo.co.kr/ogimage.png' }],
       ['meta', { property: 'og:url', content: 'https://gptinfo.co.kr' }],
       ['meta', { name: 'twitter:card', content: 'gptinfo' }],
       ['meta', { name: 'twitter:title', content: 'gptinfo' }],
