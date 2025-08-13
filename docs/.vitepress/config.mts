@@ -15,7 +15,7 @@ export default withMermaid(
     title: "가이드",
     description: "설명",
     sitemap: {
-      hostname: 'http://localhost:5173',
+      hostname: 'https://oseongryu.github.io',
     },
     head: [
       ['link', { rel: 'icon', href: '/favicon.ico', type: 'image/x-icon' }],
@@ -24,7 +24,6 @@ export default withMermaid(
       ['meta', { name: 'author', content: 'gptinfo' }],
       ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
       ['meta', { name: 'naver-site-verification', content: '9136c9826ed6d77f9dfd834e26f534c34b885f9a' }],
-    // base가 있다면: href: '/base-path/favicon.ico'
     ],
     themeConfig: {
       logo: {
