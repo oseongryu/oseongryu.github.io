@@ -23,8 +23,21 @@ export default withMermaid(
       ['meta', { name: 'keywords', content: 'gptinfo' }],
       ['meta', { name: 'author', content: 'gptinfo' }],
       ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
+      ['meta', { name: 'robots', content: 'index,follow' }],
       ['meta', { name: 'naver-site-verification', content: '9136c9826ed6d77f9dfd834e26f534c34b885f9a' }],
       ['meta', { name: 'google-adsense-account', content: 'ca-pub-9121212535131272' }],
+      ['meta', { property: 'og:type', content: 'gptinfo' }],
+      ['meta', { property: 'og:title', content: 'gptinfo' }],
+      ['meta', { property: 'og:description', content: 'gptinfo' }],
+      ['meta', { property: 'og:image', content: 'https://gptinfo.co.kr/ogimage.jpg' }],
+      ['meta', { property: 'og:url', content: 'https://gptinfo.co.kr' }],
+      ['meta', { name: 'twitter:card', content: 'gptinfo' }],
+      ['meta', { name: 'twitter:title', content: 'gptinfo' }],
+      ['meta', { name: 'twitter:description', content: 'gptinfo' }],
+      ['meta', { name: 'twitter:image', content: 'https://gptinfo.co.kr' }],
+      ['meta', { name: 'twitter:domain', content: 'gptinfo' }],
+
+
     ],
     themeConfig: {
       logo: {
