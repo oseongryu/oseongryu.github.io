@@ -1,3 +1,0 @@
-import{_ as a,c as s,o,j as e,a as r}from"./chunks/framework.BaYfB92R.js";const k=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"etc/stock.md","filePath":"etc/stock.md","lastUpdated":1746595356000}'),n={name:"etc/stock.md"};function c(d,t,i,l,p,m){return o(),s("div",null,t[0]||(t[0]=[e("h2",{id:"주식-비극의-역사",tabindex:"-1"},[r("주식 비극의 역사 "),e("a",{class:"header-anchor",href:"#주식-비극의-역사","aria-label":'Permalink to "주식 비극의 역사"'},"​")],-1),e("pre",null,[e("code",null,`엔론 (https://namu.wiki/w/%EC%97%94%EB%A1%A0)
-월드컴 (https://namu.wiki/w/%EC%9B%94%EB%93%9Cs%EC%BB%B4)
-`)],-1)]))}const u=a(n,[["render",c]]);export{k as __pageData,u as default};
