@@ -24,6 +24,7 @@ export default withMermaid(
       ['meta', { name: 'author', content: 'gptinfo' }],
       ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
       ['meta', { name: 'naver-site-verification', content: '9136c9826ed6d77f9dfd834e26f534c34b885f9a' }],
+      ['meta', { name: 'google-adsense-account', content: 'ca-pub-9121212535131272' }],
     ],
     themeConfig: {
       logo: {
