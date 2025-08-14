@@ -1,0 +1,277 @@
+import{_ as s,c as a,o as p,a4 as e}from"./chunks/framework.C2Gk6cJW.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"rn/rn-mac.md","filePath":"rn/rn-mac.md","lastUpdated":1755149145000}'),l={name:"rn/rn-mac.md"};function i(t,n,o,c,r,u){return p(),a("div",null,n[0]||(n[0]=[e(`<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>## Setting</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>\`\`\`</span></span>
+<span class="line"><span>xcode-select —install</span></span>
+<span class="line"><span>brew install git</span></span>
+<span class="line"><span>brew install watchman</span></span>
+<span class="line"><span>npm install -g react-native-cli</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>cd /users/\${USERS}/desktop/dev/workspace/</span></span>
+<span class="line"><span>git clone ~~</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>cd {$USERS}</span></span>
+<span class="line"><span>npm install</span></span>
+<span class="line"><span>brew tap AdoptOpenJDK/openjdk</span></span>
+<span class="line"><span>brew install —-cask adoptopenjdk8</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>예전 brew 설치로 에러 발생</span></span>
+<span class="line"><span>rm -fr $(brew --repo homebrew/core)</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>/Users/\${USER}/Library/Android/sdk</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>### export ANDROID_HOME=$HOME/Library/Android/sdk</span></span>
+<span class="line"><span>export ANDROID_HOME=자신의 안드로이드SDK 위치/Android/sdk</span></span>
+<span class="line"><span>export PATH=$PATH:$ANDROID_HOME/emulator</span></span>
+<span class="line"><span>export PATH=$PATH:$ANDROID_HOME/tools</span></span>
+<span class="line"><span>export PATH=$PATH:$ANDROID_HOME/tools/bin</span></span>
+<span class="line"><span>export PATH=$PATH:$ANDROID_HOME/platform-tools</span></span>
+<span class="line"><span>\`\`\`</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>## ERESOLVE unable to resolve dependency tree</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>\`\`\`</span></span>
+<span class="line"><span>npm install react-project —save —legacy-peer-deps</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>\`\`\`</span></span>
+<span class="line"><span>## Error: spawn ./gradlew ACCESS</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>\`\`\`</span></span>
+<span class="line"><span>chmod 755 android/gradlew</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>cd /users/\${USER}/desktop/dev/workspace</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>\`\`\`</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>## local.properties</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>\`\`\`</span></span>
+<span class="line"><span>sdk.dir = /users/\${USER}/Library/Android/sdk</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>\`\`\`</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>## Clear</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>\`\`\`</span></span>
+<span class="line"><span>watchman watch-del-all</span></span>
+<span class="line"><span>rm -rf $TMPDIR/react-native-packager-cache-_</span></span>
+<span class="line"><span>rm -rf $TMPDIR/metro-bundler-cache-_</span></span>
+<span class="line"><span>rm -rf node_modules/</span></span>
+<span class="line"><span>npm cache clean --force</span></span>
+<span class="line"><span>npm install</span></span>
+<span class="line"><span>npm start -- --reset-cache</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>cd android</span></span>
+<span class="line"><span>./gradlew cleanBuildCache</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>1. Clear watchman watches: watchman watch-del-all</span></span>
+<span class="line"><span>2. Delete node_modules and run yarn install</span></span>
+<span class="line"><span>3. Reset Metro&#39;s cache: yarn start --reset-cache</span></span>
+<span class="line"><span>4. Remove the cache: rm -rf /tmp/metro-\\*</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>rm -rf node_modules</span></span>
+<span class="line"><span>watchman wathch-del-all</span></span>
+<span class="line"><span>npm start --reset-cache</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>- error: Error: Unable to resolve module @babel/runtime/helpers/interopRequireDefault from ~~</span></span>
+<span class="line"><span>  npm add @babel/runtime</span></span>
+<span class="line"><span>\`\`\`</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>## React-Native IOS 실기계 연결</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>\`\`\`</span></span>
+<span class="line"><span>- 안되는 경우 XCode에서 설정</span></span>
+<span class="line"><span>npm install -g ios-deploy</span></span>
+<span class="line"><span>react-native run-ios --device &#39;DELL의 iPhone&#39; --configuration Release</span></span>
+<span class="line"><span>react-native run-ios --scheme &quot;happytoseeyou&quot; --device &#39;oseongryu의 iPhone&#39;</span></span>
+<span class="line"><span>\`\`\`</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>## service kill</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>\`\`\`</span></span>
+<span class="line"><span>lsof -i :19090</span></span>
+<span class="line"><span>kill -9 18731</span></span>
+<span class="line"><span>\`\`\`</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>## vscode Prettier settings.json</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>\`\`\`</span></span>
+<span class="line"><span>Windows Path:</span></span>
+<span class="line"><span>./data/user-data/User (Portable)</span></span>
+<span class="line"><span>%AppData%/Roaming/Code/User/settings.json (Excute)</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Mac Path:</span></span>
+<span class="line"><span>~/Library/Application Support/Code/User/settings.json (Excute)</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>-- default</span></span>
+<span class="line"><span>{</span></span>
+<span class="line"><span>  &quot;workbench.startupEditor&quot;: &quot;none&quot;,</span></span>
+<span class="line"><span>  &quot;editor.minimap.enabled&quot;: false,</span></span>
+<span class="line"><span>  &quot;diffEditor.ignoreTrimWhitespace&quot;: false,</span></span>
+<span class="line"><span>  &quot;workbench.iconTheme&quot;: &quot;material-icon-theme&quot;,</span></span>
+<span class="line"><span>  &quot;terminal.integrated.defaultProfile.windows&quot;: &quot;Git Bash&quot;</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>-- custom</span></span>
+<span class="line"><span>{</span></span>
+<span class="line"><span>  &quot;workbench.colorTheme&quot;: &quot;Material Theme Darker&quot;,</span></span>
+<span class="line"><span>  &quot;editor.formatOnSave&quot;: true,</span></span>
+<span class="line"><span>  &quot;prettier.jsxSingleQuote&quot;: true,</span></span>
+<span class="line"><span>  &quot;prettier.singleQuote&quot;: true,</span></span>
+<span class="line"><span>  &quot;javascript.preferences.quoteStyle&quot;: &quot;single&quot;,</span></span>
+<span class="line"><span>  &quot;typescript.preferences.quoteStyle&quot;: &quot;single&quot;,</span></span>
+<span class="line"><span>  &quot;editor.tokenColorCustomizations&quot;: {</span></span>
+<span class="line"><span>    &quot;comments&quot;: &quot;#fdc1d5&quot;</span></span>
+<span class="line"><span>  },</span></span>
+<span class="line"><span>  &quot;launch&quot;: {</span></span>
+<span class="line"><span>    &quot;configurations&quot;: [],</span></span>
+<span class="line"><span>    &quot;compounds&quot;: []</span></span>
+<span class="line"><span>  },</span></span>
+<span class="line"><span>  &quot;editor.defaultFormatter&quot;: &quot;esbenp.prettier-vscode&quot;,</span></span>
+<span class="line"><span>  &quot;code-runner.runInTerminal&quot;: true,</span></span>
+<span class="line"><span>  &quot;[json]&quot;: {</span></span>
+<span class="line"><span>    &quot;editor.quickSuggestions&quot;: {</span></span>
+<span class="line"><span>      &quot;strings&quot;: true</span></span>
+<span class="line"><span>    },</span></span>
+<span class="line"><span>    &quot;editor.suggest.insertMode&quot;: &quot;replace&quot;,</span></span>
+<span class="line"><span>    &quot;gitlens.codeLens.scopes&quot;: [&quot;document&quot;]</span></span>
+<span class="line"><span>  },</span></span>
+<span class="line"><span>  &quot;code-runner.executorMap&quot;: {</span></span>
+<span class="line"><span>    &quot;cpp&quot;: &quot;cd $dir &amp;&amp; clang++ -std=c++17 $fileName -o $fileNameWithoutExt &amp;&amp; $dir$fileNameWithoutExt&quot;</span></span>
+<span class="line"><span>  }</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span>\`\`\`</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>###</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>code-insiders-portable-data</span></span>
+<span class="line"><span>code-portable-data</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>sudo npm uninstall npm -g</span></span>
+<span class="line"><span>sudo rm -rf /usr/local/lib/node</span></span>
+<span class="line"><span>sudo rm -rf /usr/local/lib/node_modules</span></span>
+<span class="line"><span>sudo rm -rf /var/db/receipts/org.nodejs.*</span></span>
+<span class="line"><span>sudo rm -rf /usr/local/include/node</span></span>
+<span class="line"><span>sudo rm -rf /Users/oseongryu/.npm</span></span>
+<span class="line"><span>sudo rm /usr/local/bin/node</span></span>
+<span class="line"><span>sudo rm /usr/local/share/man/man1/node.1</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>brew uninstall node</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>### 2023.11.10. 재설치</span></span>
+<span class="line"><span>\`\`\`bash</span></span>
+<span class="line"><span>curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash</span></span>
+<span class="line"><span>wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>export NVM_DIR=&quot;$HOME/.nvm&quot;</span></span>
+<span class="line"><span>[ -s &quot;$NVM_DIR/nvm.sh&quot; ] &amp;&amp; \\. &quot;$NVM_DIR/nvm.sh&quot;  # This loads nvm</span></span>
+<span class="line"><span>[ -s &quot;$NVM_DIR/bash_completion&quot; ] &amp;&amp; \\. &quot;$NVM_DIR/bash_completion&quot;  # This loads nvm bash_completion</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>npm install --global yarn</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>export ANDROID_HOME=$HOME/Library/Android/sdk</span></span>
+<span class="line"><span>export PATH=$PATH:$ANDROID_HOME/emulator</span></span>
+<span class="line"><span>export PATH=$PATH:$ANDROID_HOME/tools</span></span>
+<span class="line"><span>export PATH=$PATH:$ANDROID_HOME/tools/bin</span></span>
+<span class="line"><span>export PATH=$PATH:$ANDROID_HOME/platform-tools</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>brew install cocoapods</span></span>
+<span class="line"><span>npx react-native init LearnReactNative</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># 백업</span></span>
+<span class="line"><span># export NODE_OPTIONS=--openssl-legacy-provider</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># export NVM_DIR=~/.nvm</span></span>
+<span class="line"><span># source $(brew --prefix nvm)/nvm.sh</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># export ANDROID_HOME=&quot;/Users/oseongryu/Library/Android/sdk&quot;</span></span>
+<span class="line"><span># export PATH=&quot;$PATH:$ANDROID_HOME/platform-tools/&quot;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># alias python=/opt/homebrew/bin/python3</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># eval &quot;$(/opt/homebrew/bin/brew shellenv)&quot;</span></span>
+<span class="line"><span># [[ -d ~/.rbenv  ]] &amp;&amp; \\</span></span>
+<span class="line"><span># export PATH=\${HOME}/.rbenv/bin:\${PATH} &amp;&amp; \\</span></span>
+<span class="line"><span># eval &quot;$(rbenv init -)&quot;</span></span>
+<span class="line"><span># [ -s &quot;$NVM_DIR/bash_completion&quot; ] &amp;&amp; \\. &quot;$NVM_DIR/bash_completion&quot;  # This loads nvm bash_completion</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># /usr/libexec/java_home -V</span></span>
+<span class="line"><span>\`\`\`</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>### node_modules/react-native/scripts/find-node.sh</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>\`\`\`bash</span></span>
+<span class="line"><span>nvm unalias default</span></span>
+<span class="line"><span>rm -rf ./Pods &amp;&amp; pod install</span></span>
+<span class="line"><span>npx react-native run-ios --simulator=&quot;iPhone 15 Pro&quot;</span></span>
+<span class="line"><span>cd ios &amp;&amp; RCT_NEW_ARCH_ENABLED=1 pod install</span></span>
+<span class="line"><span>RCT_NEW_ARCH_ENABLED=1 pod install</span></span>
+<span class="line"><span>watchman watch-del &#39;/Users/oseongryu/git/rn-shorts&#39; ; watchman watch-project &#39;/Users/oseongryu/git/rn-shorts&#39;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># https://velog.io/@somangoi/React-Native-%EB%B9%8C%EB%93%9C-%EC%8B%9C-PhaseScriptExecution-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0</span></span>
+<span class="line"><span># Define NVM_DIR and source the nvm.sh setup script</span></span>
+<span class="line"><span>[ -z &quot;$NVM_DIR&quot; ] &amp;&amp; export NVM_DIR=&quot;$HOME/.nvm&quot;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>if [[ -s &quot;$HOME/.nvm/nvm.sh&quot; ]]; then</span></span>
+<span class="line"><span>  . &quot;$HOME/.nvm/nvm.sh&quot;</span></span>
+<span class="line"><span>elif [[ -x &quot;$(command -v brew)&quot; &amp;&amp; -s &quot;$(brew --prefix nvm)/nvm.sh&quot; ]]; then</span></span>
+<span class="line"><span>  . &quot;$(brew --prefix nvm)/nvm.sh&quot;</span></span>
+<span class="line"><span>fi</span></span>
+<span class="line"><span>\`\`\`</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>### mac rbenv</span></span>
+<span class="line"><span>\`\`\`bash</span></span>
+<span class="line"><span>brew install rbenv</span></span>
+<span class="line"><span>rbenv install 2.7.6.</span></span>
+<span class="line"><span>rbenv versions</span></span>
+<span class="line"><span>rbenv global 2.7.6</span></span>
+<span class="line"><span>rbenv versions</span></span>
+<span class="line"><span>ruby --version</span></span>
+<span class="line"><span>gem install bundler</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>sudo gem install ffi</span></span>
+<span class="line"><span>sudo gem install cocoapods</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>\`\`\`</span></span>
+<span class="line"><span>### 2024.03.14. error</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>\`\`\`bash</span></span>
+<span class="line"><span>✔ Initializing Git repository</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  Run instructions for Android:</span></span>
+<span class="line"><span>    • Have an Android emulator running (quickest way to get started), or a device connected.</span></span>
+<span class="line"><span>    • cd &quot;/Users/oseongryu/git/rnshorts&quot; &amp;&amp; npx react-native run-android</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  Run instructions for iOS:</span></span>
+<span class="line"><span>    • cd &quot;/Users/oseongryu/git/rnshorts/ios&quot;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    • Install Cocoapods</span></span>
+<span class="line"><span>      • bundle install # you need to run this only once in your project.</span></span>
+<span class="line"><span>      • bundle exec pod install</span></span>
+<span class="line"><span>      • cd ..</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    • npx react-native run-ios</span></span>
+<span class="line"><span>    - or -</span></span>
+<span class="line"><span>    • Open rnshorts/ios/rnshorts.xcodeproj in Xcode or run &quot;xed -b ios&quot;</span></span>
+<span class="line"><span>    • Hit the Run button</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  Run instructions for macOS:</span></span>
+<span class="line"><span>    • See https://aka.ms/ReactNativeGuideMacOS for the latest up-to-date instructions.</span></span>
+<span class="line"><span>\`\`\`</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>nvm use --delete-prefix v16.1.0</span></span>
+<span class="line"><span>unset PREFIX</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>/Users/oseongryu/git/rnshorts/node_modules/.bin/launchPackager.command ; exit;</span></span>
+<span class="line"><span>nvm is not compatible with the &quot;PREFIX&quot; environment variable: currently set to &quot;/opt/homebrew&quot;</span></span>
+<span class="line"><span>Run \`unset PREFIX\` to unset it.</span></span>
+<span class="line"><span>~ /Users/oseongryu/git/rnshorts/node_modules/.bin/launchPackager.command ; exit;</span></span>
+<span class="line"><span>env: node: No such file or directory</span></span>
+<span class="line"><span>Process terminated. Press &lt;enter&gt; to close the window</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>error Failed to install the app. Looks like your Android environment is not properly set. Please go to https://reactnative.dev/docs/0.73/environment-setup?os=macos&amp;platform=android&amp;guide=native#jdk-studio and follow the React Native CLI QuickStart guide to install the compatible version of JDK.</span></span></code></pre></div>`,1)]))}const q=s(l,[["render",i]]);export{m as __pageData,q as default};
