@@ -1,0 +1,26 @@
+import{_ as s,c as e,o as n,a4 as p}from"./chunks/framework.C2Gk6cJW.js";const k=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"docker/docker-1_setup.md","filePath":"docker/docker-1_setup.md","lastUpdated":1755149806000}'),t={name:"docker/docker-1_setup.md"};function i(o,a,c,l,r,d){return n(),e("div",null,a[0]||(a[0]=[p(`<h2 id="docker-설치" tabindex="-1">Docker 설치 <a class="header-anchor" href="#docker-설치" aria-label="Permalink to &quot;Docker 설치&quot;">​</a></h2><h3 id="_1-windows-docker-설치" tabindex="-1">(1) Windows Docker 설치 <a class="header-anchor" href="#_1-windows-docker-설치" aria-label="Permalink to &quot;(1) Windows Docker 설치&quot;">​</a></h3><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>1. cmd &gt; taskmgr &gt; 성능탭 &gt;가상화 사용함인지 확인( 안되어 있을 경우 BIOS에서 사용으로 설정 변경)</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>2. cmd &gt; appwiz.cpl &gt; Windomws 기능 켜기/끄기 &gt; Hyper-V 체크 &gt; Windows 재부팅</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>3. [Docker사이트](https://hub.docker.com/editions/community/docker-ce-desktop-windows/) &gt; 설치파일 다운로드(Get Docker 클릭)</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>4. 설치파일 &gt; Configuration OK 클릭 &gt; 설치 완료 후 Close and Restart &gt; Windows 재부팅</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>5. [커널업데이트 패키지 사이트](https://aka.ms/wsl2kernel) &gt; x64 머신용 최신 WSL2 Linux 커널 업데이트 패키지 클릭 &gt; 설치파일 설치</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>6. trayIcon &gt; Docker 오른쪽 마우스 클릭 &gt; Restart Docker 클릭</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>7. cmd &gt; docker -v로 설정 확인</span></span></code></pre></div><h3 id="_2-docker-회원가입" tabindex="-1">(2) Docker 회원가입 <a class="header-anchor" href="#_2-docker-회원가입" aria-label="Permalink to &quot;(2) Docker 회원가입&quot;">​</a></h3><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>1. [Docker 사이트](https://hub.docker.com/) &gt; Sign Up &gt; 가입완료</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>2. Choose a Plan 에서 Continue with/Free &gt; 이메일인증 완료</span></span></code></pre></div><h3 id="_3-docker-tutorial" tabindex="-1">(3) Docker Tutorial <a class="header-anchor" href="#_3-docker-tutorial" aria-label="Permalink to &quot;(3) Docker Tutorial&quot;">​</a></h3><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>1. Downloads</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>2. Clone</span></span>
+<span class="line"><span>    git clone https://github.com/docker/doodle.git</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>3. Build</span></span>
+<span class="line"><span>    cd doodle\\cheers2019 ; docker build -t f5074/cheers2019 .</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>4. Run</span></span>
+<span class="line"><span>    docker run -it --rm f5074/cheers2019</span></span>
+<span class="line"><span>5. Ship</span></span>
+<span class="line"><span>    docker login ; docker push f5074/cheers2019</span></span></code></pre></div><h3 id="_4-my-repositories" tabindex="-1">(4) My Repositories <a class="header-anchor" href="#_4-my-repositories" aria-label="Permalink to &quot;(4) My Repositories&quot;">​</a></h3><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>https://hub.docker.com/repositories</span></span></code></pre></div><h3 id="_5-gui용-docker-kitematic" tabindex="-1">(5) GUI용 Docker (Kitematic) <a class="header-anchor" href="#_5-gui용-docker-kitematic" aria-label="Permalink to &quot;(5) GUI용 Docker (Kitematic)&quot;">​</a></h3><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>www.github.com/docker/kitematic/releases</span></span></code></pre></div><h3 id="reference" tabindex="-1">Reference <a class="header-anchor" href="#reference" aria-label="Permalink to &quot;Reference&quot;">​</a></h3><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>[갓대희의 작은공간](https://goddaehee.tistory.com/251)</span></span></code></pre></div>`,13)]))}const u=s(t,[["render",i]]);export{k as __pageData,u as default};
