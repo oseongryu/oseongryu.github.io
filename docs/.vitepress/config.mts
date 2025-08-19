@@ -15,7 +15,7 @@ export default withMermaid(
     title: "가이드",
     description: "설명",
     sitemap: {
-      hostname: 'https://oseongryu.github.io',
+      hostname: 'https://gptinfo.co.kr',
     },
     head: [
       ['link', { rel: 'icon', href: '/favicon.ico', type: 'image/x-icon' }],
@@ -36,8 +36,6 @@ export default withMermaid(
       ['meta', { name: 'twitter:description', content: 'gptinfo' }],
       ['meta', { name: 'twitter:image', content: 'https://gptinfo.co.kr' }],
       ['meta', { name: 'twitter:domain', content: 'gptinfo' }],
-
-
     ],
     themeConfig: {
       logo: {
