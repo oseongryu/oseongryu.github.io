@@ -327,6 +327,39 @@ Exec=env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/chromium_chr
 
 ```
 
+### chromium-browser
+
+```bash
+apt install -y chromium-browser
+
+/usr/share/applications/chromium-browser.desktop
+
+# mac m1 (snap은 복사가 되지 않으므로 복제해서 사용)
+sudo vi /snap/chromium/current/bin/chromium.desktop
+
+```
+
+## pulseaudio
+
+```bash
+# mac
+# https://formulae.brew.sh/formula/pulseaudio 설치
+# brew install pulseaudio
+# 여서ㄴ됨
+# pulseaudio --start
+# pulseaudio -vvv
+# ls /run/user/$(id -u)/pulse/
+
+
+# 이건 됨
+# pulseaudio --load=module-native-protocol-tcp --exit-idle-time=-1 --daemon
+# pulseaudio --load="module-native-protocol-tcp" --exit-idle-time=-1 --daemon
+#docker run -it -e PULSE_SERVER=docker.for.mac.localhost -v ~/.config/pulse:/home/pulseaudio/.config/pulse --entrypoint speaker-test --rm jess/pulseaudio -c 2 -l 1 -t wav
+
+RUN apt-get update && apt-get install -y pulseaudio
+# paplay /usr/share/sounds/alsa/Front_Center.wav
+```
+
 ### chrome update
 
 ```bash
@@ -610,4 +643,100 @@ ResultActive=yes
 
 ```
 sudo apt-get install comizconfig-settings-manager
+```
+
+
+### ubuntu chrome
+
+```bash
+
+# /usr/bin/google-chrome-stable  --headless --no-sandbox --single-process --disable-dev-shm-usage
+# https://study-grow.tistory.com/entry/DevToolsActivePort-file-doesnt-exist-error-%ED%95%B4%EA%B2%B0%EB%B2%95
+# chrome_options.add_argument('--headless')
+# chrome_options.add_argument('--no-sandbox')
+# chrome_options.add_argument("--single-process")
+# chrome_options.add_argument("--disable-dev-shm-usage")
+
+vi /opt/google/chrome/google-chrome
+
+which google-chrome
+cd /usr/bin/google-chrome
+
+# ubuntu desktop에 설치한한
+vi /usr/share/applications/com.google.Chrome.desktop
+
+Exec=/usr/bin/google-chrome-stable --no-sandbox --single-process --disable-dev-shm-usage %U
+```
+
+
+## rc.local 부팅시 스크립트 자동실행
+
+```bash
+# rc.local 파일은 리눅스 시스템에서 부팅 과정 중 마지막에 실행되는 스크립트 파일
+sudo vi /etc/rc.local
+sudo chmod +x /etc/rc.local
+
+# 동작하지 않도록 되어있는 설정을 실행하도록 수정
+sudo vi /lib/systemd/system/rc-local.service
+
+# 자동으로 시작
+sudo systemctl enable rc-local.service
+sudo systemctl start rc-local.service
+```
+
+### 1.1. rc.local (before)
+
+```
+#!/bin/bash
+
+
+exit 0
+```
+
+### 1.2. rc.local (수정내용)
+
+```
+#!/bin/bash
+
+# 부팅 시 실행하고 싶은 명령어 or 스크립트 작성 (스크립트의경우도 스크립트의 권한 chmod +x 실행하기)
+sh /home/root/app/start_script.sh
+
+exit 0
+```
+
+### 2.1. rc-local.service (before)
+
+```
+[Unit]
+Description=/etc/rc.local Compatibility
+Documentation=man:systemd-rc-local-generator(8)
+ConditionFileIsExecutable=/etc/rc.local
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/etc/rc.local start
+TimeoutSec=0
+RemainAfterExit=yes
+GuessMainPID=no
+```
+
+### 2.2. rc-local.service (after)
+
+```
+[Unit]
+Description=/etc/rc.local Compatibility
+Documentation=man:systemd-rc-local-generator(8)
+ConditionFileIsExecutable=/etc/rc.local
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/etc/rc.local start
+TimeoutSec=0
+RemainAfterExit=yes
+GuessMainPID=no
+
+[Install]
+WantedBy=multi-user.target
 ```

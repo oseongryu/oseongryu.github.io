@@ -13,6 +13,9 @@ TaskBar(윈도우같은 taskbar)
 Whale(hwp 문서 볼수 있음)
 UTM
 Rancher Desktop(Docker Desktop 대체)
+turbo boost switcher (발열 팬소음)
+Macfancontrol (팬속도조절)
+MenubarX (메뉴바 브라우저)
 ```
 
 ### 맥 사용법
@@ -270,6 +273,9 @@ pyenv shell 3.10.6
 pyenv versions
 # 버전
 pyenv version
+
+# 미사용 버전 제거
+pyenv uninstall 3.10.6
 
 # python 재설치
 ls -l /usr/local/bin/python*
@@ -584,6 +590,13 @@ sudo vi /etc/synthetic.conf
 
 ---
 data    /Users/doo/data
+app     /Users/oseongryu/app
+logs    /Users/oseongryu/app/logs
+tomcat  /Users/oseongryu/app/tools/tomcat
+java    /Users/oseongryu/app/tools/java
+maven   /Users/oseongryu/app/tools/maven
+hyp     /Users/oseongryu/hyp
+hy_fredit       /Users/oseongryu/hy_fredit
 ---
 
 ```
@@ -790,6 +803,57 @@ echo "$pass" | sudo -S xattr -dr com.apple.quarantine /Applications/Docker.app
 ```bash
 # https://www.44bits.io/ko/post/direnv_for_managing_directory_environment
 폴더별 환경관리
+```
+
+### mac Keyboard (home, end) with Karabier-elements
+
+```
+Karabiner-elements 설치
+Complex Modifications > Add predefined rule > Import more rules form th Internet > PC-Style Shortcuts 검색
+
+Home key to the beginning of the sentence (Command + Left)  > Enable
+End key to the end of the sentence (Command + Right) > Enable
+
+# Webbrowser에서 space (PageDown)와 shift + space (Page up)
+```
+
+### mac Keyboard (home end)
+
+```bash
+# https://gist.github.com/trusktr/1e5e516df4e8032cbc3d
+mkdir -p ~/Library/KeyBindings ; cd ~/Library/KeyBindings
+vim DefaultKeyBinding.dict
+
+{
+    /* Remap Home / End keys */
+    /* Home Button*/
+    "\UF729" = "moveToBeginningOfLine:";
+    /* End Button */
+    "\UF72B" = "moveToEndOfLine:";
+    /* Shift + Home Button */
+    "$\UF729" = "moveToBeginningOfLineAndModifySelection:";
+    /* Shift + End Button */
+    "$\UF72B" = "moveToEndOfLineAndModifySelection:";
+    /* Ctrl + Home Button */
+    "^\UF729" = "moveToBeginningOfDocument:";
+    /* Ctrl + End Button */
+    "^\UF72B" = "moveToEndOfDocument:";
+    /* Shift + Ctrl + Home Button */
+    "$^\UF729" = "moveToBeginningOfDocumentAndModifySelection:";
+    /* Shift + Ctrl + End Button*/
+    "$^\UF72B" = "moveToEndOfDocumentAndModifySelection:";
+}
+```
+
+### mac dbeaver (Keyboard)
+
+```
+home과 end를 변경하려는 이유중 하나가 맥의 DBeaver에서 home을 습관적으로 누르면 최상단으로 가는 문제
+Menu > Window > Preferences > User Interface > Keys >
+행 시작 (Line Start) - Home
+행 시작 선택 (Select Line Start) - Shift + Home
+행 끝 (Line End) - End
+행 끝 선택 (Select Line End) - Shift + End
 ```
 
 ### References
