@@ -2,6 +2,6 @@ User-agent: *
 
 Allow: /
 
-Sitemap: https://gptinfo.co.kr/sitemap.xml
+Sitemap: https://oseongryu.github.io/sitemap.xml
 
 #DaumWebMasterTool:f9cf48fb328d57cce2bfee45c514c4ad4b04dd18a97be82d4df1ef6735dcdb4f:QcrEeBz9NlA7CF6V4Udk2w==
