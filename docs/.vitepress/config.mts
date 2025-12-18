@@ -15,7 +15,7 @@ export default withMermaid(
     title: "가이드",
     description: "설명",
     sitemap: {
-      hostname: 'https://gptinfo.co.kr',
+      hostname: 'https://oseongryu.github.io',
     },
     head: [
       ['link', { rel: 'icon', href: '/favicon.ico', type: 'image/x-icon' }],
@@ -29,12 +29,12 @@ export default withMermaid(
       ['meta', { property: 'og:type', content: 'gptinfo' }],
       ['meta', { property: 'og:title', content: 'gptinfo' }],
       ['meta', { property: 'og:description', content: 'gptinfo' }],
-      ['meta', { property: 'og:image', content: 'https://gptinfo.co.kr/ogimage.png' }],
-      ['meta', { property: 'og:url', content: 'https://gptinfo.co.kr' }],
+      ['meta', { property: 'og:image', content: 'https://oseongryu.github.io/ogimage.png' }],
+      ['meta', { property: 'og:url', content: 'https://oseongryu.github.io' }],
       ['meta', { name: 'twitter:card', content: 'gptinfo' }],
       ['meta', { name: 'twitter:title', content: 'gptinfo' }],
       ['meta', { name: 'twitter:description', content: 'gptinfo' }],
-      ['meta', { name: 'twitter:image', content: 'https://gptinfo.co.kr' }],
+      ['meta', { name: 'twitter:image', content: 'https://oseongryu.github.io' }],
       ['meta', { name: 'twitter:domain', content: 'gptinfo' }],
     ],
     themeConfig: {
@@ -158,6 +158,10 @@ export default withMermaid(
       {
         "text": "- appium",
         "link": "/software/appium"
+      },
+      {
+        "text": "- appsheet",
+        "link": "/software/appsheet"
       },
       {
         "text": "- chocolatey",
@@ -412,6 +416,10 @@ export default withMermaid(
         "link": "/rn/rn"
       },
       {
+        "text": "- rn-0.76",
+        "link": "/rn/rn-0.76"
+      },
+      {
         "text": "- rn-expo",
         "link": "/rn/rn-expo"
       },
@@ -582,8 +590,20 @@ export default withMermaid(
     "collapsed": false,
     "items": [
       {
+        "text": "- firebase-studio",
+        "link": "/etc/firebase-studio"
+      },
+      {
         "text": "- gpt",
         "link": "/etc/gpt"
+      },
+      {
+        "text": "- gpt-oss-120b",
+        "link": "/etc/gpt-oss-120b"
+      },
+      {
+        "text": "- gpt300",
+        "link": "/etc/gpt300"
       },
       {
         "text": "- stock",
