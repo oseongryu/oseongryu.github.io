@@ -80,18 +80,6 @@ export default withMermaid(
         "link": "/os/centos"
       },
       {
-        "text": "- centos-docker",
-        "link": "/os/centos-docker"
-      },
-      {
-        "text": "- centos-error",
-        "link": "/os/centos-error"
-      },
-      {
-        "text": "- centos-nginx",
-        "link": "/os/centos-nginx"
-      },
-      {
         "text": "- mac",
         "link": "/os/mac"
       },
@@ -514,10 +502,6 @@ export default withMermaid(
       {
         "text": "- python",
         "link": "/python/python"
-      },
-      {
-        "text": "- python-pyinstaller",
-        "link": "/python/python-pyinstaller"
       },
       {
         "text": "- python-selenium",
