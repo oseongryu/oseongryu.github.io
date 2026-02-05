@@ -216,10 +216,6 @@ export default withMermaid(
         "link": "/software/jekyll"
       },
       {
-        "text": "- kstudio-edu",
-        "link": "/software/kstudio-edu"
-      },
-      {
         "text": "- mobaxterm",
         "link": "/software/mobaxterm"
       },
