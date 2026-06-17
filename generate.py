@@ -4,24 +4,16 @@ import re
 
 
 priority_title_mapping = [
-    {"key": "os", "title": "OS"},
-    {"key": "docker", "title": "Docker"},
-    {"key": "software", "title": "Software"},
-    {"key": "hadoop", "title": "Hadoop"},
-    {"key": "dbms", "title": "DBMS"},
-    {"key": "springboot", "title": "Spring Boot"},
-    {"key": "jenkins", "title": "Jenkins"},
-    {"key": "deploy", "title": "Deploy"},
-    {"key": "aws", "title": "AWS"},
-    {"key": "flutter", "title": "Flutter"},
-    {"key": "rn", "title": "React Native"},
-    {"key": "javascript", "title": "JavaScript"},
-    {"key": "react", "title": "React"},
-    {"key": "vue", "title": "Vue"},
-    {"key": "python", "title": "Python"},
     {"key": "java", "title": "Java"},
-    {"key": "cs", "title": "Computer Science"},
-    {"key": "asp", "title": "ASP"},
+    {"key": "javascript", "title": "JavaScript"},
+    {"key": "python", "title": "Python"},
+    {"key": "dotnet", "title": ".NET"},
+    {"key": "os", "title": "OS"},
+    {"key": "infra", "title": "Infrastructure"},
+    {"key": "data", "title": "Data"},
+    {"key": "mobile", "title": "Mobile"},
+    {"key": "tools", "title": "Tools"},
+    {"key": "misc", "title": "Misc"},
 ]
 
 

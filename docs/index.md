@@ -9,10 +9,13 @@ hero:
   actions:
     - theme: alt
       text: Mac
-      link: /os/mac
+      link: /cs-os/mac
     - theme: alt
       text: VSCode
-      link: /software/vscode
+      link: /tools-software/vscode
+    - theme: alt
+      text: IntelliJ
+      link: /tools-software/intellij
 # features:
 #   - title: Feature A
 #     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit

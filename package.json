@@ -1,20 +1,27 @@
 {
   "devDependencies": {
     "mermaid": "^11.6.0",
-    "vitepress": "^1.6.3",
+    "sass-embedded": "^1.88.0",
+    "vitepress": "^1.6.4",
     "vitepress-export-pdf": "^1.0.0",
     "vitepress-plugin-mermaid": "^2.0.17"
   },
   "scripts": {
-    "dev": "vitepress dev docs --host 0.0.0.0  --port 8000",
+    "dev": "vitepress dev docs",
     "export-pdf": "press-export-pdf export docs",
-    "build": "vitepress build docs --host 0.0.0.0 --port 8000",
-    "docs:dev": "vitepress dev docs  --host 0.0.0.0 --port 8000",
+    "build": "vitepress build docs",
+    "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
     "@kangc/v-md-editor": "^2.3.18",
+    "@vue-flow/background": "1.3.2",
+    "@vue-flow/controls": "^1.1.3",
+    "@vue-flow/core": "1.42.1",
+    "@vue-flow/minimap": "1.5.3",
+    "codemirror": "^5.65.16",
+    "terser": "^5.39.2",
     "vitepress-plugin-image-viewer": "^1.1.6"
   }
 }

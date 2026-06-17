@@ -92,17 +92,9 @@
 
 :root {
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(
-    120deg,
-    #bd34fe 30%,
-    #41d1ff
-  );
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
 
-  --vp-home-hero-image-background-image: linear-gradient(
-    -45deg,
-    #bd34fe 50%,
-    #47caff 50%
-  );
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
   --vp-home-hero-image-filter: blur(44px);
 }
 
@@ -135,6 +127,46 @@
 
 .DocSearch {
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
+}
+
+.outline-link {
+  font-size: 0.8rem !important;
+}
+/* 
+.vp-doc {
+  padding: 0 !important;
+  width: 780px;
+} */
+
+.content {
+  /* padding: 0 0.5rem !important; */
+}
+
+.aside {
+  /* width: 100px !important; */
+}
+
+.v-md-editor__left-area-title {
+  font-size: 0.8rem !important;
+  font-weight: bold !important;
+  color: #083068 !important;
+}
+
+.v-md-editor__toc-nav-title {
+  font-size: 0.8rem !important;
+  /* font-weight: bold !important; */
+  color: #083068 !important;
+}
+
+/* code block */
+.language-sql {
+  font-size: 0.8rem;
+}
+
+table th,
+table td {
+  font-size: 12px !important;
+  /* text-align: center; */
 }
 
 /* personal setting */
@@ -193,3 +225,80 @@
   border: 2px solid white;
   /* 동그라미 테두리 */
 }
+
+/* Image comparison styles */
+.comparison-container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  border: 2px solid #083068;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.comparison-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.comparison-arrow {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  color: #32506eff;
+  margin-bottom: 35px;
+}
+
+.comparison-label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Markdown Editor dark theme fix */
+.dark .v-md-textarea-editor pre,
+.dark .v-md-textarea-editor textarea {
+  color: #e5e7eb !important;
+  background-color: #1f2937 !important;
+}
+
+/* Light theme backup for consistency */
+.v-md-textarea-editor pre,
+.v-md-textarea-editor textarea {
+  color: #374151;
+  background-color: #ffffff;
+}
+
+/* Custom Layout Settings */
+@media (min-width: 960px) {
+  :root {
+    --vp-layout-max-width: 100%;
+  }
+
+  .VPContent .container {
+    max-width: 100% !important;
+    padding: 0 40px;
+  }
+
+  .VPDoc {
+    /* Increase the width of the document content */
+    max-width: 1400px !important; 
+  }
+  
+  /* Ensure the container of the doc allows expansion */
+  .VPDoc.has-aside .content-container {
+    max-width: 100% !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .VPDoc {
+    max-width: 1600px !important;
+  }
+  
+  .VPNavBar .container {
+      max-width: 100% !important;
+  }
+}
+
