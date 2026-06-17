@@ -9,13 +9,13 @@ hero:
   actions:
     - theme: alt
       text: Mac
-      link: /cs-os/mac
+      link: /os/mac
     - theme: alt
       text: VSCode
-      link: /tools-software/vscode
+      link: /tools/vscode
     - theme: alt
       text: IntelliJ
-      link: /tools-software/intellij
+      link: /tools/intellij
 # features:
 #   - title: Feature A
 #     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -41,24 +41,24 @@ const members = [
       { icon: 'github', link: 'https://github.com/oseongryu' }
     ]
   },
-  {
-    avatar: '',
-    name: '',
-    title: '',
-    links: []
-  },
-  {
-    avatar: '',
-    name: '',
-    title: '',
-    links: []
-  },
-  {
-    avatar: '',
-    name: '',
-    title: '',
-    links: []
-  },
+  // {
+  //   avatar: '',
+  //   name: '',
+  //   title: '',
+  //   links: []
+  // },
+  // {
+  //   avatar: '',
+  //   name: '',
+  //   title: '',
+  //   links: []
+  // },
+  // {
+  //   avatar: '',
+  //   name: '',
+  //   title: '',
+  //   links: []
+  // },
   // {
   //   avatar: '',
   //   name: '',
