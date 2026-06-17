@@ -1,6 +1,7 @@
 import os
 import json
 import re
+import shutil
 
 
 priority_title_mapping = [
@@ -46,7 +47,24 @@ def process_sorted_config_array(sorted_config_array):
     return sorted_config_array
 
 
-# 완료 cp -R ~/git/til/docker/ ~/git/oseongryu.github.io/docs/docker/
+# ~/git/til 에서 docs로 파일들을 자동 동기화합니다.
+def sync_til_to_docs():
+    src_base = os.path.expanduser("~/git/til")
+    dest_base = os.path.expanduser("~/git/oseongryu.github.io/docs")
+    
+    target_folders = ["data", "dotnet", "infra", "java", "javascript", "misc", "mobile", "os", "public", "python", "tools"]
+    
+    print("🔄 ~/git/til 에서 폴더 동기화를 시작합니다...")
+    for folder in target_folders:
+        src_dir = os.path.join(src_base, folder)
+        dest_dir = os.path.join(dest_base, folder)
+        
+        if os.path.exists(src_dir):
+            if os.path.exists(dest_dir):
+                shutil.rmtree(dest_dir)
+            shutil.copytree(src_dir, dest_dir)
+            print(f"✅ {folder} 동기화 완료")
+
 def generate_config_array(docs_path):
     config_array = []
     for folder_name in os.listdir(docs_path):
@@ -87,6 +105,11 @@ def generate_config_array(docs_path):
 docs_path = (
     os.path.expanduser("~") + "/git/oseongryu.github.io/docs"
 )  # 'docs' 폴더의 경로를 지정
+
+# 1. til 레포지토리의 파일들을 동기화
+sync_til_to_docs()
+
+# 2. sidebar config 생성
 config_array = generate_config_array(docs_path)
 json_array = config_array
 json_array = json.dumps(
